@@ -2,17 +2,79 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Redirecting...</title>
-    <meta
-      http-equiv="refresh"
-      content="0; URL='https://tarekchaalan.github.io/'"
-    />
-    <script type="text/javascript">
-      sessionStorage.redirect =
-        location.pathname + location.search + location.hash;
-    </script>
+    <title>404 Not Found</title>
+    <style>
+      /* Add your CSS for the body and other elements here */
+      #tsparticles {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1; /* Put the particles behind your content */
+      }
+      /* Add other styles as needed */
+    </style>
+    <!-- Include particles.js from a CDN -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   </head>
   <body>
-    Redirecting...
+    <!-- Your content for the 404 page -->
+    <div id="tsparticles"></div>
+    <script>
+      /* Initialize particles.js */
+      particlesJS("tsparticles", {
+        /* Your particles configuration */
+        particles: {
+          number: {
+            value: 160,
+            density: {
+              enable: true,
+              value_area: 1500,
+            },
+          },
+          line_linked: {
+            enable: false,
+            opacity: 0.03,
+          },
+          move: {
+            direction: "right",
+            speed: 0.05,
+          },
+          size: {
+            value: 1,
+          },
+          opacity: {
+            anim: {
+              enable: true,
+              speed: 1,
+              opacity_min: 0.05,
+            },
+          },
+        },
+        interactivity: {
+          events: {
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+          },
+          modes: {
+            push: {
+              particles_nb: 1,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+    <script>
+      /* The script to redirect to the main page, preserving the path */
+      sessionStorage.redirect =
+        location.pathname + location.search + location.hash;
+      setTimeout(function () {
+        window.location.href = "/";
+      }, 5000); // Redirect after 5 seconds
+    </script>
   </body>
 </html>

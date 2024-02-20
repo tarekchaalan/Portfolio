@@ -2,42 +2,81 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Page Not Found</title>
+    <title>Redirecting</title>
     <style>
-      body,
-      html {
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #120e19;
+        color: #fff;
         margin: 0;
-        padding: 0;
-        height: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
       }
       #tsparticles {
-        position: absolute;
+        position: fixed !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
         width: 100%;
         height: 100%;
-        background-image: url("../src/Assets/home-bg.jpg"); /* Replace with the path to your background image */
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -1;
       }
-      /* Add additional styling for your content here */
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
   </head>
   <body>
-    <!-- The div for particles.js -->
     <div id="tsparticles"></div>
-    <!-- Your content goes here -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-      /* Your particles.js config */
-      particlesJS("tsparticles", {
-        /* ... Your Particles Config ... */
+      tsParticles.load("tsparticles", {
+        particles: {
+          number: {
+            value: 160,
+            density: {
+              enable: true,
+              value_area: 1500,
+            },
+          },
+          line_linked: {
+            enable: false,
+            opacity: 0.03,
+          },
+          move: {
+            direction: "right",
+            speed: 0.05,
+          },
+          size: {
+            value: 1,
+          },
+          opacity: {
+            anim: {
+              enable: true,
+              speed: 1,
+              opacity_min: 0.05,
+            },
+          },
+        },
+        interactivity: {
+          events: {
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+          },
+          modes: {
+            push: {
+              particles_nb: 1,
+            },
+          },
+        },
+        retina_detect: true,
       });
     </script>
-    <script>
-      /* The script to handle redirect */
+    <script type="text/javascript">
       sessionStorage.redirect =
         location.pathname + location.search + location.hash;
+      window.location.href = "https://tarekchaalan.github.io/";
     </script>
+    <div>Redirecting...</div>
   </body>
 </html>

@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.fb21cfef.css",
-    "main.js": "/static/js/main.12938a49.js",
+    "main.js": "/static/js/main.a47746b6.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/nourishfitplannermodel.png": "/static/media/nourishfitplannermodel.6577ce4653b83a7634e7.png",
+    "static/media/portfolio.png": "/static/media/portfolio.ab39826ebac5d15dae89.png",
+    "static/media/nourishfitplanner.png": "/static/media/nourishfitplanner.6577ce4653b83a7634e7.png",
     "static/media/home-main.svg": "/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
     "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/Tarek_Chaalan_Resume_Dark.pdf": "/static/media/Tarek_Chaalan_Resume_Dark.738dda2af9133da3acf8.pdf",
@@ -14,12 +15,12 @@
     "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/index.html",
     "main.fb21cfef.css.map": "/static/css/main.fb21cfef.css.map",
-    "main.12938a49.js.map": "/static/js/main.12938a49.js.map",
+    "main.a47746b6.js.map": "/static/js/main.a47746b6.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb21cfef.css",
-    "static/js/main.12938a49.js"
+    "static/js/main.a47746b6.js"
   ]
 }

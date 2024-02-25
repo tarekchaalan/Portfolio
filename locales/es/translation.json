@@ -1,0 +1,104 @@
+{
+  "home": {
+    "Homejs": {
+      "greeting": "¡Hola!",
+      "introduction1": "SOY",
+      "introduction2": "TAREK CHAALAN",
+      "developer": "Desarrollador",
+      "letMeIntroduce1": "PERMÍTEME",
+      "letMeIntroduce2": "PRESENTARME",
+      "letMeIntroduce3": "A MÍ MISMO",
+      "summary": "Me enamoré de la programación cuando tenía 13 años y ahora ha pasado un poco más de 8 años. Tengo un buen dominio sobre un número de",
+      "summary2": "lenguajes de programación y tecnologías.",
+      "summary3": "Soy una persona apasionada que siempre está dispuesta a aprender y trabajar en tecnologías y dominios diversos. Me encanta explorar nuevas tecnologías y aprovecharlas para resolver problemas del mundo real.",
+      "fluency1": "Tengo fluidez en clásicos como",
+      "languages": "Python, Javascript y C++",
+      "Interests": "Mis campos de interés son construir nuevos",
+      "Interests2": "Tecnologías Web y Productos",
+      "Interests3": "y también en áreas relacionadas con",
+      "Interests4": "Ciberseguridad e Inteligencia Artificial.",
+      "developwith": "Siempre que es posible, también aplico mi pasión por desarrollar productos con",
+      "developwith2": "Node.js",
+      "developwith3": "y",
+      "developwith4": "Librerías y Marcos de Javascript Modernos",
+      "developwith5": "como",
+      "developwith6": "React.js y Next.js",
+      "connect": "CONECTAR",
+      "connectWithMe": "Siéntete libre de",
+      "connectWithMe2": "conectar",
+      "connectWithMe3": "conmigo"
+    },
+    "Typejs": {
+      "string1": "Software",
+      "string2": "Pila Completa",
+      "string3": "Front End",
+      "string4": "Back End"
+    }
+  },
+  "about": {
+    "Aboutjs": {
+      "aboutMeIntro": "Conoce Quién",
+      "aboutMeIntro2": "SOY",
+      "skillset1": "Conjunto de Habilidades",
+      "skillset2": "Profesionales",
+      "tools1": "Herramientas",
+      "tools2": "que uso"
+    },
+    "AboutCardjs": {
+      "aboutMe1": "Hola a todos, soy",
+      "aboutMe2": "Tarek Chaalan",
+      "aboutMe3": "de",
+      "aboutMe4": "Long Beach, California",
+      "aboutMe5": "Crecí en",
+      "aboutMe6": "Kuwait 🇰🇼",
+      "aboutMe7": "pero nací en",
+      "aboutMe8": "Beirut, Líbano 🇱🇧",
+      "aboutMe9": "Actualmente estoy asistiendo a",
+      "aboutMe10": "CSUF",
+      "aboutMe11": "con la intención de graduarme en",
+      "aboutMe12": "Mayo de 2024",
+      "activities1": "Aparte de programar, aquí hay otras actividades que me encanta hacer:",
+      "activities2": "Jugar Videojuegos",
+      "activities3": "Salir con amigos",
+      "activities4": "Escuchar Música"
+    }
+  },
+  "projects": {
+    "Projectsjs": {
+      "projects": "Mis Recientes",
+      "projects2": "Trabajos",
+      "projects3": "Aquí hay algunos proyectos en los que he trabajado recientemente.",
+      "card1Description": "Este portafolio, desarrollado cuidadosamente usando JavaScript con el marco de React, muestra habilidades modernas de desarrollo web con un enfoque agudo en el estilo CSS y la experiencia del usuario. Presenta información personal detallada, habilidades, proyectos y detalles del currículum, todo reflejando la extensa experiencia del desarrollador. Node.js se utiliza para la gestión eficiente de dependencias, y los componentes personalizados destacan un enfoque profesional y meticuloso hacia el diseño interactivo.",
+      "card2Description": "NourishFit Planner, una aplicación innovadora, integra la planificación de comidas y ejercicios con IA y robusta conectividad de aplicaciones de salud, facilitando un viaje de bienestar completo. Diseñada para ofrecer planes personalizados, llena un hueco crítico en el mercado al enfocarse en usuarios y profesionales conscientes de la salud. Se centra en la seguridad de datos y fomenta la retroalimentación continua para promover un estilo de vida equilibrado. El planificador se adapta a las necesidades individuales, haciendo que la gestión de la salud sea accesible y atractiva.",
+      "card3Description": "¡Este sitio web aún está en desarrollo! ¡Espere!",
+      "card4Description": "¡Este sitio web aún está en desarrollo! ¡Espere!",
+      "card5Description": "¡Este sitio web aún está en desarrollo! ¡Espere!",
+      "card6Description": "¡Este sitio web aún está en desarrollo! ¡Espere!"
+    },
+    "ProjectCardjs": {
+      "project1": "Proyecto",
+      "project2": "Descripción",
+      "project3": "Tecnologías",
+      "project4": "Ver Proyecto",
+      "project5": "Ver Código"
+    },
+    "Githubjs": {
+      "github": "Días que",
+      "github2": "Programo"
+    }
+  },
+  "resume": {
+    "ResumeNewjs": {
+      "Download": "Descargar Currículum",
+      "Toggle": "Cambiar Tema"
+    }
+  },
+  "navbar": {
+    "Navbarjs": {
+      "Home": "Inicio",
+      "About": "Acerca de",
+      "Projects": "Proyectos",
+      "Resume": "Currículum"
+    }
+  }
+}

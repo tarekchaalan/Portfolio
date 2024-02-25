@@ -1,0 +1,104 @@
+{
+  "home": {
+    "Homejs": {
+      "greeting": "Salut !",
+      "introduction1": "JE SUIS",
+      "introduction2": "TAREK CHAALAN",
+      "developer": "Développeur",
+      "letMeIntroduce1": "PERMETTEZ-MOI DE",
+      "letMeIntroduce2": "ME",
+      "letMeIntroduce3": "PRÉSENTER ",
+      "summary": "Je suis tombé amoureux de la programmation quand j'avais 13 ans et maintenant ça fait un peu plus de 8 ans. J'ai une bonne maîtrise d'un certain nombre de",
+      "summary2": "langages de programmation et technologies.",
+      "summary3": "Je suis une personne passionnée qui est toujours prête à apprendre et à travailler sur des technologies et des domaines variés. J'aime explorer de nouvelles technologies et les utiliser pour résoudre des problèmes réels.",
+      "fluency1": "Je parle couramment des classiques comme",
+      "languages": "Python, Javascript, et C++",
+      "Interests": "Mes champs d'intérêt sont de construire de nouvelles",
+      "Interests2": "Technologies Web et Produits",
+      "Interests3": "et également dans des domaines liés à",
+      "Interests4": "la Cybersécurité et l'Intelligence Artificielle.",
+      "developwith": "Quand c'est possible, j'applique aussi ma passion pour développer des produits avec",
+      "developwith2": "Node.js",
+      "developwith3": "et",
+      "developwith4": "Bibliothèques & Frameworks Javascript Modernes",
+      "developwith5": "comme",
+      "developwith6": "React.js et Next.js",
+      "connect": "CONNEXION",
+      "connectWithMe": "N'hésitez pas à",
+      "connectWithMe2": "vous connecter",
+      "connectWithMe3": "avec moi"
+    },
+    "Typejs": {
+      "string1": "Logiciel",
+      "string2": "Full Stack",
+      "string3": "Frontal",
+      "string4": "Back End"
+    }
+  },
+  "about": {
+    "Aboutjs": {
+      "aboutMeIntro": "Savoir Qui",
+      "aboutMeIntro2": "JE SUIS",
+      "skillset1": "Compétences",
+      "skillset2": "Professionnelles",
+      "tools1": "Outils",
+      "tools2": "Que j'utilise"
+    },
+    "AboutCardjs": {
+      "aboutMe1": "Salut tout le monde, je suis",
+      "aboutMe2": "Tarek Chaalan",
+      "aboutMe3": "de",
+      "aboutMe4": "Long Beach, Californie",
+      "aboutMe5": "J'ai grandi au",
+      "aboutMe6": "Koweït 🇰🇼",
+      "aboutMe7": "mais je suis né à",
+      "aboutMe8": "Beyrouth, Liban 🇱🇧",
+      "aboutMe9": "Je suis actuellement inscrit à",
+      "aboutMe10": "CSUF",
+      "aboutMe11": "avec l'intention de graduer en",
+      "aboutMe12": "Mai 2024",
+      "activities1": "En dehors du codage, voici quelques autres activités que j'aime faire :",
+      "activities2": "Jouer à des jeux",
+      "activities3": "Sortir",
+      "activities4": "Écouter de la musique"
+    }
+  },
+  "projects": {
+    "Projectsjs": {
+      "projects": "Mes Récentes",
+      "projects2": "Œuvres",
+      "projects3": "Voici quelques projets sur lesquels j'ai travaillé récemment.",
+      "card1Description": "Ce portfolio, développé de manière réfléchie en utilisant JavaScript avec le framework React, met en avant des compétences modernes en développement web avec un accent particulier sur le style CSS et l'expérience utilisateur. Il présente des informations personnelles détaillées, des compétences, des projets, et des détails de CV, reflétant tous l'expertise étendue du développeur. Node.js est utilisé pour une gestion efficace des dépendances, et des composants personnalisés soulignent une approche professionnelle et minutieuse de la conception interactive.",
+      "card2Description": "NourishFit Planner, une application innovante, intègre la planification des repas et des entraînements avec l'IA et une connectivité robuste avec les applications de santé, facilitant un parcours de bien-être complet. Conçue pour offrir des plans personnalisés, elle comble un vide critique sur le marché en ciblant les utilisateurs et les professionnels soucieux de leur santé. Elle se concentre sur la sécurité des données et encourage les retours continus pour favoriser un style de vie équilibré. Le planificateur s'adapte aux besoins individuels, rendant la gestion de la santé accessible et engageante.",
+      "card3Description": "Ce site Web est encore en développement ! Patience !",
+      "card4Description": "Ce site Web est encore en développement ! Patience !",
+      "card5Description": "Ce site Web est encore en développement ! Patience !",
+      "card6Description": "Ce site Web est encore en développement ! Patience !"
+    },
+    "ProjectCardjs": {
+      "project1": "Projet",
+      "project2": "Description",
+      "project3": "Technologies",
+      "project4": "Voir le Projet",
+      "project5": "Voir le Code"
+    },
+    "Githubjs": {
+      "github": "Jours où je",
+      "github2": "Code"
+    }
+  },
+  "resume": {
+    "ResumeNewjs": {
+      "Download": "Télécharger le CV",
+      "Toggle": "Changer de Thème"
+    }
+  },
+  "navbar": {
+    "Navbarjs": {
+      "Home": "Accueil",
+      "About": "À Propos",
+      "Projects": "Projets",
+      "Resume": "CV"
+    }
+  }
+}

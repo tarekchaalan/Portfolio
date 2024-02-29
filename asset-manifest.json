@@ -1,33 +1,33 @@
 {
   "files": {
     "main.css": "/static/css/main.cf12a770.css",
-    "main.js": "/static/js/main.5711e624.js",
+    "main.js": "/static/js/main.5dbd0d2c.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/nourishfit_planner.png": "/static/media/nourishfit_planner.0031f486f43c763f8499.png",
     "static/media/portfolio.png": "/static/media/portfolio.9879af6975cd099b9c09.png",
     "static/media/home-main.svg": "/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
     "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
-    "static/media/Tarek_Chaalan_Resume_Dark-fr.pdf": "/static/media/Tarek_Chaalan_Resume_Dark-fr.5d4a861506efb2255cb9.pdf",
-    "static/media/Tarek_Chaalan_Resume_Light-fr.pdf": "/static/media/Tarek_Chaalan_Resume_Light-fr.d099b86189315924503a.pdf",
-    "static/media/Tarek_Chaalan_Resume_Dark-en.pdf": "/static/media/Tarek_Chaalan_Resume_Dark-en.a4e4d6bfab4544adf2ad.pdf",
-    "static/media/Tarek_Chaalan_Resume_Dark-es.pdf": "/static/media/Tarek_Chaalan_Resume_Dark-es.7cd658811ecb01c8a7e5.pdf",
-    "static/media/Tarek_Chaalan_Resume_Light-en.pdf": "/static/media/Tarek_Chaalan_Resume_Light-en.9639b04bf6699e7783c8.pdf",
-    "static/media/Tarek_Chaalan_Resume_Light-es.pdf": "/static/media/Tarek_Chaalan_Resume_Light-es.4375b5a8ab88b7511c6f.pdf",
-    "static/media/Tarek_Chaalan_Resume_Dark-ar.pdf": "/static/media/Tarek_Chaalan_Resume_Dark-ar.04f7c4c9ba57a542a805.pdf",
-    "static/media/Tarek_Chaalan_Resume_Light-ar.pdf": "/static/media/Tarek_Chaalan_Resume_Light-ar.6fc5b5f6452ea3774873.pdf",
+    "static/media/Tarek_Chaalan_Resume_Dark-fr.pdf": "/static/media/Tarek_Chaalan_Resume_Dark-fr.3556f14e645c1c4e0440.pdf",
+    "static/media/Tarek_Chaalan_Resume_Light-fr.pdf": "/static/media/Tarek_Chaalan_Resume_Light-fr.50d588cc0366f0ccd747.pdf",
+    "static/media/Tarek_Chaalan_Resume_Dark-en.pdf": "/static/media/Tarek_Chaalan_Resume_Dark-en.7a103f525e0a9241bb97.pdf",
+    "static/media/Tarek_Chaalan_Resume_Light-en.pdf": "/static/media/Tarek_Chaalan_Resume_Light-en.c44b8909ca117a7eb388.pdf",
+    "static/media/Tarek_Chaalan_Resume_Dark-es.pdf": "/static/media/Tarek_Chaalan_Resume_Dark-es.7c7784e9f56d2e9fe08e.pdf",
+    "static/media/Tarek_Chaalan_Resume_Light-es.pdf": "/static/media/Tarek_Chaalan_Resume_Light-es.9e37dc0511aac8e18e9b.pdf",
+    "static/media/Tarek_Chaalan_Resume_Dark-ar.pdf": "/static/media/Tarek_Chaalan_Resume_Dark-ar.d908f54a9623671df9be.pdf",
+    "static/media/Tarek_Chaalan_Resume_Light-ar.pdf": "/static/media/Tarek_Chaalan_Resume_Light-ar.9f5bd5dce46dfd914613.pdf",
     "static/media/myAvatar.svg": "/static/media/myAvatar.0c95f5557e55c023a40102a58350a997.svg",
     "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
     "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.cf12a770.css.map": "/static/css/main.cf12a770.css.map",
-    "main.5711e624.js.map": "/static/js/main.5711e624.js.map",
+    "main.5dbd0d2c.js.map": "/static/js/main.5dbd0d2c.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf12a770.css",
-    "static/js/main.5711e624.js"
+    "static/js/main.5dbd0d2c.js"
   ]
 }

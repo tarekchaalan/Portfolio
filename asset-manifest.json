@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cf12a770.css",
-    "main.js": "/static/js/main.86805465.js",
+    "main.js": "/static/js/main.70b4d44d.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/nourishfit_planner.png": "/static/media/nourishfit_planner.0031f486f43c763f8499.png",
@@ -22,12 +22,12 @@
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.cf12a770.css.map": "/static/css/main.cf12a770.css.map",
-    "main.86805465.js.map": "/static/js/main.86805465.js.map",
+    "main.70b4d44d.js.map": "/static/js/main.70b4d44d.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf12a770.css",
-    "static/js/main.86805465.js"
+    "static/js/main.70b4d44d.js"
   ]
 }

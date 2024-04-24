@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.549da6d7.css",
-    "main.js": "/static/js/main.6552e3b0.js",
+    "main.js": "/static/js/main.a19e8a20.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/fitfuel.png": "/static/media/fitfuel.d88fe33e499c9dd7e7c1.png",
@@ -22,12 +22,12 @@
     "index.html": "/index.html",
     "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.549da6d7.css.map": "/static/css/main.549da6d7.css.map",
-    "main.6552e3b0.js.map": "/static/js/main.6552e3b0.js.map",
+    "main.a19e8a20.js.map": "/static/js/main.a19e8a20.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.549da6d7.css",
-    "static/js/main.6552e3b0.js"
+    "static/js/main.a19e8a20.js"
   ]
 }

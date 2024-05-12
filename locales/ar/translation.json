@@ -93,12 +93,23 @@
       "Toggle": "تبديل الثيم"
     }
   },
+  "contact": {
+    "Contactjs": {
+      "header": "اتصل بي",
+      "name": "اسم",
+      "phone": "رقم التليفون",
+      "email": "عنوان البريد الإلكتروني",
+      "message": "رسالة",
+      "submit": "يُقدِّم"
+    }
+  },
   "navbar": {
     "Navbarjs": {
       "Home": "الرئيسية",
       "About": "عني",
       "Projects": "المشاريع",
-      "Resume": "السيرة الذاتية"
+      "Resume": "السيرة الذاتية",
+      "Contact": "اتصال"
     }
   }
 }

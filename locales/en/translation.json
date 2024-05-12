@@ -87,12 +87,23 @@
       "Toggle": "Toggle Theme"
     }
   },
+  "contact": {
+    "Contactjs": {
+      "header": "Contact Me",
+      "name": "Name",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "message": "Message",
+      "submit": "Submit"
+    }
+  },
   "navbar": {
     "Navbarjs": {
       "Home": "Home",
       "About": "About",
       "Projects": "Projects",
-      "Resume": "Resume"
+      "Resume": "Resume",
+      "Contact": "Contact"
     }
   }
 }

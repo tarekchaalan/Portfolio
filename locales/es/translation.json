@@ -93,12 +93,23 @@
       "Toggle": "Cambiar Tema"
     }
   },
+  "contact": {
+    "Contactjs": {
+      "header": "Contáctame",
+      "name": "Nombre",
+      "phone": "Número de teléfono",
+      "email": "Dirección de correo electrónico",
+      "message": "Mensaje",
+      "submit": "Entregar"
+    }
+  },
   "navbar": {
     "Navbarjs": {
       "Home": "Inicio",
       "About": "Acerca de",
       "Projects": "Proyectos",
-      "Resume": "Currículum"
+      "Resume": "Currículum",
+      "Contact": "Contacto"
     }
   }
 }

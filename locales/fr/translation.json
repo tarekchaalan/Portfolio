@@ -1,90 +1,90 @@
 {
   "home": {
     "Homejs": {
-      "greeting": "Salut !",
+      "greeting": "Bonjour!",
       "introduction1": "JE SUIS",
       "introduction2": "TAREK CHAALAN",
       "developer": "Développeur",
-      "letMeIntroduce1": "PERMETTEZ-MOI DE",
+      "letMeIntroduce1": "LAISSEZ-MOI",
       "letMeIntroduce2": "ME",
       "letMeIntroduce3": "PRÉSENTER",
-      "summary": "J'ai commencé à programmer à l'âge de 12 ans,",
-      "summary2": "et cela fait maintenant un peu plus de 9 ans.",
-      "summary3": "J'ai une bonne maîtrise de plusieurs langages de programmation et technologies. Je suis toujours prêt à apprendre et à travailler avec diverses technologies et domaines, à élargir mes connaissances et à créer plus d'opportunités. J'aime explorer de nouvelles technologies et les utiliser pour résoudre des problèmes réels.",
-      "fluency1": "Je maîtrise les classiques comme",
+      "summary": "J'ai commencé à programmer quand j'avais 12 ans et maintenant cela fait un peu plus de 9 ans depuis. J'ai une bonne maîtrise de plusieurs",
+      "summary2": "langages et technologies de programmation.",
+      "summary3": "Je suis toujours prêt à apprendre et à travailler à travers les technologies et domaines, pour élargir mes connaissances et créer plus d'opportunités. J'aime explorer de nouvelles technologies et les utiliser pour résoudre des problèmes du monde réel.",
+      "fluency1": "Je suis fluide dans les classiques comme",
       "languages": "Python, Javascript, C++, HTML et CSS.",
-      "Interests1": "Mes domaines d'intérêt incluent la création de nouvelles",
-      "Interests2": "technologies et produits web",
-      "Interests3": "ainsi que des domaines liés à",
-      "Interests4": "la cybersécurité et l'intelligence artificielle.",
-      "developwith1": "Lorsque c'est possible, j'applique aussi ma passion pour développer des produits avec",
-      "developwith2": "Node.js et des bibliothèques modernes de Javascript",
-      "developwith3": "comme React.js et Next.js.",
-      "connect": "CONNECTEZ-VOUS",
-      "connectWithMe1": "N'hésitez pas à",
-      "connectWithMe2": "vous connecter",
-      "connectWithMe3": "avec moi"
+      "Interests": "Mon domaine d'intérêt est de construire de nouvelles",
+      "Interests2": "Technologies Web et Produits",
+      "Interests3": "et aussi dans des domaines liés à",
+      "Interests4": "la Cybersécurité et l'Intelligence Artificielle.",
+      "developwith": "Chaque fois que possible, j'applique également ma passion pour développer des produits avec",
+      "developwith2": "Node.js",
+      "developwith3": "et",
+      "developwith4": "Bibliothèques & Frameworks Javascript Modernes",
+      "developwith5": "comme",
+      "developwith6": "React.js et Next.js",
+      "connect": "CONTACT",
+      "connectWithMe": "N'hésitez pas à",
+      "connectWithMe2": "me contacter",
+      "connectWithMe3": ""
     },
     "Typejs": {
       "string1": "Logiciel",
       "string2": "Full Stack",
-      "string3": "Frontal",
+      "string3": "Front End",
       "string4": "Back End"
     }
   },
   "about": {
     "Aboutjs": {
-      "aboutMeIntro1": "Découvrez Qui",
+      "aboutMeIntro": "Savoir Qui",
       "aboutMeIntro2": "JE SUIS",
       "skillset1": "Compétences",
       "skillset2": "Professionnelles",
       "tools1": "Outils",
-      "tools2": "Que j'utilise"
+      "tools2": "que j'utilise"
     },
     "AboutCardjs": {
       "aboutMe1": "Bonjour à tous, je suis",
       "aboutMe2": "Tarek Chaalan",
       "aboutMe3": "de",
-      "aboutMe4": "Long Beach, Californie.",
+      "aboutMe4": "Long Beach, Californie",
       "aboutMe5": "J'ai grandi au",
       "aboutMe6": "Koweït",
-      "aboutMe7": "mais je suis né à",
-      "aboutMe8": "Beyrouth, Liban.",
-      "aboutMe9": "J'ai récemment obtenu mon diplôme à",
+      "aboutMe7": ", mais je suis né à",
+      "aboutMe8": "Beyrouth, Liban",
+      "period": ".",
+      "aboutMe9": "Je viens de terminer mes études à",
       "aboutMe10": "CSUF",
-      "aboutMe11": "et je prévois de terminer mes études en",
-      "aboutMe12": "août 2024.",
-      "activities1": "En dehors du codage, j'aime faire les activités suivantes :",
+      "aboutMe11": "avec l'intention d'obtenir mon diplôme en",
+      "aboutMe12": "Août 2024",
+      "activities1": "En dehors du codage, voici quelques autres activités que j'aime faire :",
       "activities2": "Basket-ball",
-      "activities3": "Jeux",
+      "activities3": "Jeux vidéo",
       "activities4": "Musique"
     }
   },
   "projects": {
     "Projectsjs": {
-      "projects1": "Mes Projets",
-      "projects2": "Récents",
+      "projects": "Mes Récentes",
+      "projects2": "Réalisations",
       "projects3": "Voici quelques projets sur lesquels j'ai travaillé récemment.",
-      "card1Description1": "Ce portfolio a été développé avec JavaScript",
-      "card1Description2": "et le framework React, montrant des compétences modernes en développement web.",
-      "card1Description3": "Il inclut un design CSS avancé et une expérience utilisateur optimisée pour tous les appareils.",
-      "card2Description1": "FitFuel est une application innovante intégrant la planification de repas et d'exercices.",
-      "card2Description2": "Elle utilise l'IA et offre des plans personnalisés tout en mettant l'accent sur la sécurité des données.",
-      "card3Description1": "Cette application Tic Tac Toe offre une expérience nostalgique avec un fond de tableau noir.",
-      "card3Description2": "Elle utilise l'algorithme Minimax pour un défi amusant et difficile.",
-      "card4Description": "Ce site est encore en développement ! Merci de patienter !",
-      "card5Description": "Ce site est encore en développement ! Merci de patienter !",
-      "card6Description": "Ce site est encore en développement ! Merci de patienter !"
+      "card1Description": "Ce portfolio, qui a été développé en utilisant JavaScript avec le framework React, montre des compétences de développement web modernes avec un accent aigu sur le style CSS et l'UX, réactif sur tous les types d'appareils. Il présente des informations personnelles détaillées, des compétences, des projets et des détails de CV, reflétant tout ce sur quoi j'ai travaillé, en le mettant continuellement à jour au fur et à mesure. Node.js est utilisé pour une gestion efficace des dépendances, et les composants personnalisés mettent en évidence une excellente approche d'un design interactif.",
+      "card2Description": "FitFuel, une application innovante, intègre la planification des repas et des entraînements avec l'IA et une connectivité robuste aux applications de santé, facilitant un parcours de bien-être complet. Conçu pour offrir des plans personnalisés, il comble un vide critique sur le marché en ciblant les utilisateurs et les professionnels soucieux de leur santé. Il se concentre sur la sécurité des données et encourage les retours continus pour atteindre un style de vie équilibré. Le planificateur s'adapte aux besoins individuels, rendant la gestion de la santé à la fois accessible et engageante.",
+      "card3Description": "Cette application Tic Tac Toe, construite avec React, offre une expérience nostalgique avec son fond tableau noir et sa police semblable à de la craie. Jouez contre un ami ou défiez l'ordinateur, qui utilise l'algorithme Minimax pour déterminer le meilleur coup, le rendant difficile à battre (il serait plus précis de dire 'impossible à battre'). Avec des clics faciles pour placer vos marques et un tableau de score représenté par des bâtons pour garder la trace, c'est une façon amusante de tester vos compétences. Que vous jouiez avec des amis ou seul, c'est un excellent moyen de passer le temps.",
+      "card4Description": "Ce site Web est encore en développement ! Restez à l'écoute !",
+      "card5Description": "Ce site Web est encore en développement ! Restez à l'écoute !",
+      "card6Description": "Ce site Web est encore en développement ! Restez à l'écoute !"
     },
     "Githubjs": {
-      "github1": "Jours où je",
+      "github": "Jours où je",
       "github2": "Code"
     }
   },
   "resume": {
     "ResumeNewjs": {
       "Download": "Télécharger le CV",
-      "Toggle": "Changer de Thème"
+      "Toggle": "Changer le Thème"
     }
   },
   "contact": {
@@ -92,7 +92,7 @@
       "header": "Contactez-moi",
       "name": "Nom",
       "phone": "Numéro de Téléphone",
-      "email": "Adresse E-mail",
+      "email": "Adresse Email",
       "message": "Message",
       "submit": "Envoyer"
     }

@@ -8,82 +8,79 @@
       "letMeIntroduce1": "PERMÍTEME",
       "letMeIntroduce2": "PRESENTARME",
       "letMeIntroduce3": "A MÍ MISMO",
-      "summary": "Me enamoré de la programación cuando tenía 13 años y ahora ha pasado un poco más de 8 años. Tengo un buen dominio sobre un número de",
-      "summary2": "lenguajes de programación y tecnologías.",
-      "summary3": "Soy una persona apasionada que siempre está dispuesta a aprender y trabajar en tecnologías y dominios diversos. Me encanta explorar nuevas tecnologías y aprovecharlas para resolver problemas del mundo real.",
-      "fluency1": "Tengo fluidez en clásicos como",
-      "languages": "Python, Javascript y C++",
-      "Interests": "Mis campos de interés son construir nuevos",
-      "Interests2": "Tecnologías Web y Productos",
+      "summary1": "Comencé a programar cuando tenía 12 años,",
+      "summary2": "y ahora han pasado un poco más de 9 años.",
+      "summary3": "Tengo un buen dominio de varios lenguajes de programación y tecnologías.",
+      "summary4": "Siempre estoy dispuesto a aprender y trabajar en diferentes tecnologías y dominios,",
+      "summary5": "ampliar mis conocimientos y crear más oportunidades.",
+      "summary6": "Me encanta explorar nuevas tecnologías y usarlas para resolver problemas del mundo real.",
+      "fluency1": "Soy fluido en clásicos como",
+      "languages": "Python, Javascript, C++, HTML y CSS.",
+      "Interests1": "Mis áreas de interés incluyen construir nuevas",
+      "Interests2": "tecnologías y productos web",
       "Interests3": "y también en áreas relacionadas con",
-      "Interests4": "Ciberseguridad e Inteligencia Artificial.",
-      "developwith": "Siempre que es posible, también aplico mi pasión por desarrollar productos con",
-      "developwith2": "Node.js",
-      "developwith3": "y",
-      "developwith4": "Librerías y Marcos de Javascript Modernos",
-      "developwith5": "como",
-      "developwith6": "React.js y Next.js",
+      "Interests4": "ciberseguridad e inteligencia artificial.",
+      "developwith1": "Siempre que es posible, también aplico mi pasión por desarrollar productos con",
+      "developwith2": "Node.js y bibliotecas modernas de Javascript",
+      "developwith3": "como React.js y Next.js.",
       "connect": "CONECTAR",
-      "connectWithMe": "Siéntete libre de",
+      "connectWithMe1": "Siéntete libre de",
       "connectWithMe2": "conectar",
       "connectWithMe3": "conmigo"
     },
     "Typejs": {
       "string1": "Software",
-      "string2": "Pila Completa",
+      "string2": "Full Stack",
       "string3": "Front End",
       "string4": "Back End"
     }
   },
   "about": {
     "Aboutjs": {
-      "aboutMeIntro": "Conoce Quién",
+      "aboutMeIntro1": "Conoce Quién",
       "aboutMeIntro2": "SOY",
-      "skillset1": "Conjunto de Habilidades",
-      "skillset2": "Profesionales",
+      "skillset1": "Conjunto de",
+      "skillset2": "Habilidades",
       "tools1": "Herramientas",
-      "tools2": "que uso"
+      "tools2": "Que uso"
     },
     "AboutCardjs": {
       "aboutMe1": "Hola a todos, soy",
       "aboutMe2": "Tarek Chaalan",
       "aboutMe3": "de",
-      "aboutMe4": "Long Beach, California",
+      "aboutMe4": "Long Beach, California.",
       "aboutMe5": "Crecí en",
       "aboutMe6": "Kuwait",
       "aboutMe7": "pero nací en",
-      "aboutMe8": "Beirut, Líbano",
-      "aboutMe9": "Actualmente estoy asistiendo a",
+      "aboutMe8": "Beirut, Líbano.",
+      "aboutMe9": "Me gradué recientemente de",
       "aboutMe10": "CSUF",
-      "aboutMe11": "con la intención de graduarme en",
-      "aboutMe12": "Agosto de 2024",
-      "activities1": "Aparte de programar, aquí hay otras actividades que me encanta hacer:",
+      "aboutMe11": "y planeo graduarme en",
+      "aboutMe12": "agosto de 2024.",
+      "activities1": "Además de programar, me gusta hacer lo siguiente:",
       "activities2": "Baloncesto",
-      "activities3": "Juego de azar",
+      "activities3": "Juegos",
       "activities4": "Música"
     }
   },
   "projects": {
     "Projectsjs": {
-      "projects": "Mis Recientes",
-      "projects2": "Trabajos",
-      "projects3": "Aquí hay algunos proyectos en los que he trabajado recientemente.",
-      "card1Description": "Este portafolio, desarrollado cuidadosamente usando JavaScript con el marco de React, muestra habilidades modernas de desarrollo web con un enfoque agudo en el estilo CSS y la experiencia del usuario. Presenta información personal detallada, habilidades, proyectos y detalles del currículum, todo reflejando la extensa experiencia del desarrollador. Node.js se utiliza para la gestión eficiente de dependencias, y los componentes personalizados destacan un enfoque profesional y meticuloso hacia el diseño interactivo.",
-      "card2Description": "FitFuel, una aplicación innovadora, integra la planificación de comidas y ejercicios con IA y robusta conectividad de aplicaciones de salud, facilitando un viaje de bienestar completo. Diseñada para ofrecer planes personalizados, llena un hueco crítico en el mercado al enfocarse en usuarios y profesionales conscientes de la salud. Se centra en la seguridad de datos y fomenta la retroalimentación continua para promover un estilo de vida equilibrado. El planificador se adapta a las necesidades individuales, haciendo que la gestión de la salud sea accesible y atractiva.",
-      "card3Description": "Esta aplicación Tic Tac Toe, creada con React, ofrece una experiencia nostálgica con su fondo de pizarra y su fuente similar a la tiza. Juega contra un amigo o desafía a la computadora, que utiliza el algoritmo Minimax para determinar el mejor movimiento, lo que lo hace difícil de superar. Con sencillos clics para colocar tus marcas y un marcador representado por cuentas para realizar un seguimiento, es una forma divertida de poner a prueba tus habilidades. Ya sea que juegues con amigos o solo, es una excelente manera de pasar el tiempo.",
-      "card4Description": "¡Este sitio web aún está en desarrollo! ¡Espere!",
-      "card5Description": "¡Este sitio web aún está en desarrollo! ¡Espere!",
-      "card6Description": "¡Este sitio web aún está en desarrollo! ¡Espere!"
-    },
-    "ProjectCardjs": {
-      "project1": "Proyecto",
-      "project2": "Descripción",
-      "project3": "Tecnologías",
-      "project4": "Ver Proyecto",
-      "project5": "Ver Código"
+      "projects1": "Mis Proyectos",
+      "projects2": "Recientes",
+      "projects3": "Aquí tienes algunos proyectos en los que he trabajado recientemente.",
+      "card1Description1": "Este portafolio fue desarrollado usando JavaScript",
+      "card1Description2": "con el framework React, mostrando habilidades modernas en desarrollo web.",
+      "card1Description3": "Incluye diseño CSS y UX avanzados, compatible con todos los dispositivos.",
+      "card2Description1": "FitFuel es una aplicación innovadora que integra planificación de comidas y ejercicios.",
+      "card2Description2": "Usa IA y ofrece planes personalizados con un enfoque fuerte en seguridad de datos.",
+      "card3Description1": "Esta aplicación Tic Tac Toe ofrece una experiencia nostálgica con un fondo de pizarra.",
+      "card3Description2": "Cuenta con el algoritmo Minimax para un desafío divertido y difícil.",
+      "card4Description": "¡Este sitio web aún está en desarrollo! ¡Espera un poco!",
+      "card5Description": "¡Este sitio web aún está en desarrollo! ¡Espera un poco!",
+      "card6Description": "¡Este sitio web aún está en desarrollo! ¡Espera un poco!"
     },
     "Githubjs": {
-      "github": "Días que",
+      "github1": "Días en los que",
       "github2": "Programo"
     }
   },
@@ -97,10 +94,10 @@
     "Contactjs": {
       "header": "Contáctame",
       "name": "Nombre",
-      "phone": "Número de teléfono",
-      "email": "Dirección de correo electrónico",
+      "phone": "Número de Teléfono",
+      "email": "Correo Electrónico",
       "message": "Mensaje",
-      "submit": "Entregar"
+      "submit": "Enviar"
     }
   },
   "navbar": {

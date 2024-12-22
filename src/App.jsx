@@ -43,56 +43,58 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <LocaleContext.Provider value={{ locale, setLocale }}>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <Suspense fallback={<Loading />}>
-                  <Home />
-                </Suspense>
-              }
-            />
-            <Route
-              path="/project"
-              element={
-                <Suspense fallback={<Loading />}>
-                  <Projects />
-                </Suspense>
-              }
-            />
-            <Route
-              path="/about"
-              element={
-                <Suspense fallback={<Loading />}>
-                  <About />
-                </Suspense>
-              }
-            />
-            <Route
-              path="/resume"
-              element={
-                <Suspense fallback={<Loading />}>
-                  <Resume />
-                </Suspense>
-              }
-            />
-            <Route
-              path="/contact"
-              element={
-                <Suspense fallback={<Loading />}>
-                  <Contact />
-                </Suspense>
-              }
-            />
-            <Route
-              path="*"
-              element={
-                <Suspense fallback={<Loading />}>
-                  <Navigate to="/" />
-                </Suspense>
-              }
-            />
-          </Routes>
+          <div className="content-wrapper">
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <Suspense fallback={<Loading />}>
+                    <Home />
+                  </Suspense>
+                }
+              />
+              <Route
+                path="/project"
+                element={
+                  <Suspense fallback={<Loading />}>
+                    <Projects />
+                  </Suspense>
+                }
+              />
+              <Route
+                path="/about"
+                element={
+                  <Suspense fallback={<Loading />}>
+                    <About />
+                  </Suspense>
+                }
+              />
+              <Route
+                path="/resume"
+                element={
+                  <Suspense fallback={<Loading />}>
+                    <Resume />
+                  </Suspense>
+                }
+              />
+              <Route
+                path="/contact"
+                element={
+                  <Suspense fallback={<Loading />}>
+                    <Contact />
+                  </Suspense>
+                }
+              />
+              <Route
+                path="*"
+                element={
+                  <Suspense fallback={<Loading />}>
+                    <Navigate to="/" />
+                  </Suspense>
+                }
+              />
+            </Routes>
+          </div>
         </LocaleContext.Provider>
         <Footer />
       </div>

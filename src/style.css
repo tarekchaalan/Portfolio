@@ -1,22 +1,26 @@
-html {
+html,
+body,
+#root,
+.App {
   --section-background-color: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.582),
     rgba(12, 8, 24, 0.904)
   );
-
   --imp-text-color: #c770f0;
   overflow-x: hidden !important;
-  height: 100%; /* Full height to the root elements */
-  margin: 0; /* Remove default margin */
+  height: 100%; /* Ensure full height */
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column; /* Stack children vertically */
+  flex-direction: column;
 }
 
-body {
-  min-height: 100vh; /* Minimum height of the viewport */
+.content-wrapper {
+  flex: 1; /* Push the footer down */
   display: flex;
-  flex-direction: column; /* Ensures content is ordered from top to bottom */
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
 }
 
 .purple {
@@ -465,13 +469,11 @@ button:focus {
 /* --------- */
 .footer {
   background-color: rgb(10, 4, 22);
-  position: relative; /* Changed from absolute to fixed */
-  left: 0;
-  right: 0;
-  bottom: 0; /* Changed from 100 to 0 to stick to the bottom */
   padding-top: 10px;
   padding-bottom: 8px;
   z-index: 9999;
+  width: 100%;
+  position: relative;
 }
 
 .footer-copywright {
@@ -671,29 +673,10 @@ button:focus {
   justify-content: center;
 }
 
-.resume-left {
-  padding-right: 80px !important;
-}
-
-.resume-right {
-  padding-left: 80px !important;
-}
-
 .react-pdf__Page {
   margin-bottom: 20px;
 }
 
-@media (max-width: 767px) {
-  .resume-left {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-  }
-
-  .resume-right {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-  }
-}
 .resume .resume-title {
   font-size: 2em;
   font-weight: 700;

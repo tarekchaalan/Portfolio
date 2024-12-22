@@ -1,0 +1,109 @@
+{
+  "home": {
+    "Homejs": {
+      "greeting": "¡Hola!",
+      "introduction1": "SOY",
+      "introduction2": "TAREK CHAALAN",
+      "developer": "Desarrollador",
+      "letMeIntroduce1": "PERMÍTEME",
+      "letMeIntroduce2": "PRESENTAR",
+      "letMeIntroduce3": "ME",
+      "summary": "Comencé a programar cuando tenía 12 años y ahora han pasado un poco más de 9 años desde entonces. Tengo un buen dominio de varios",
+      "summary2": "lenguajes y tecnologías de programación.",
+      "summary3": "Siempre estoy dispuesto a aprender y trabajar a través de tecnologías y dominios, para expandir mi conocimiento y crear más oportunidades. Me encanta explorar nuevas tecnologías y aprovecharlas para resolver problemas del mundo real.",
+      "fluency1": "Soy fluido en clásicos como",
+      "languages": "Python, Javascript, C++, HTML y CSS.",
+      "Interests": "Mi campo de interés es construir nuevas",
+      "Interests2": "Tecnologías y Productos Web",
+      "Interests3": "y también en áreas relacionadas con",
+      "Interests4": "Ciberseguridad e Inteligencia Artificial.",
+      "developwith": "Siempre que sea posible, también aplico mi pasión por desarrollar productos con",
+      "developwith2": "Node.js",
+      "developwith3": "y",
+      "developwith4": "Bibliotecas y Frameworks Modernos de Javascript",
+      "developwith5": "como",
+      "developwith6": "React.js y Next.js",
+      "connect": "CONECTAR",
+      "connectWithMe": "No dudes en",
+      "connectWithMe2": "conectar",
+      "connectWithMe3": "conmigo"
+    },
+    "Typejs": {
+      "string1": "Software",
+      "string2": "Full Stack",
+      "string3": "Front End",
+      "string4": "Back End"
+    }
+  },
+  "about": {
+    "Aboutjs": {
+      "aboutMeIntro": "Saber Quién",
+      "aboutMeIntro2": "SOY",
+      "skillset1": "Conjunto de Habilidades",
+      "skillset2": "Profesional",
+      "tools1": "Herramientas",
+      "tools2": "Que uso"
+    },
+    "AboutCardjs": {
+      "aboutMe1": "Hola a todos, soy",
+      "aboutMe2": "Tarek Chaalan",
+      "aboutMe3": "de",
+      "aboutMe4": "Long Beach, California",
+      "aboutMe5": "Crecí en",
+      "aboutMe6": "Kuwait",
+      "aboutMe7": ", pero nací en",
+      "aboutMe8": "Beirut, Líbano",
+      "period": ".",
+      "aboutMe9": "Recientemente me gradué de",
+      "aboutMe10": "CSUF",
+      "aboutMe11": "con la intención de graduarme en",
+      "aboutMe12": "Agosto de 2024",
+      "activities1": "Además de programar, aquí hay otras actividades que me encanta hacer:",
+      "activities2": "Baloncesto",
+      "activities3": "Juegos",
+      "activities4": "Música"
+    }
+  },
+  "projects": {
+    "Projectsjs": {
+      "projects": "Mis Recientes",
+      "projects2": "Trabajos",
+      "projects3": "Aquí hay algunos proyectos en los que he trabajado recientemente.",
+      "card1Description": "Este portafolio, que fue desarrollado usando JavaScript con el framework React, muestra habilidades modernas de desarrollo web con un enfoque agudo en el estilo CSS y UX, respondiendo a través de todos los tipos de dispositivos. Presenta información personal detallada, habilidades, proyectos y detalles de currículum, todo reflejando en lo que he trabajado, actualizándolo continuamente a medida que avanzo. Se utiliza Node.js para una gestión eficiente de dependencias, y los componentes personalizados destacan un gran enfoque en un diseño interactivo.",
+      "card2Description": "FitFuel, una aplicación innovadora, integra planificación de comidas y entrenamientos con IA y una sólida conectividad con aplicaciones de salud, facilitando un viaje integral de bienestar. Diseñado para ofrecer planes personalizados, llena un vacío crítico en el mercado al apuntar a usuarios y profesionales preocupados por la salud. Se enfoca en la seguridad de datos y fomenta la retroalimentación continua para lograr un estilo de vida equilibrado. El planificador se adapta a las necesidades individuales, haciendo que la gestión de la salud sea accesible y atractiva.",
+      "card3Description": "Esta aplicación de Tic Tac Toe, construida con React, ofrece una experiencia nostálgica con su fondo de pizarra y fuente similar a la tiza. Juega contra un amigo o desafía a la computadora, que utiliza el Algoritmo Minimax para determinar el mejor movimiento, haciéndolo difícil de vencer (más preciso sería 'imposible de vencer'). Con clics fáciles para colocar tus marcas y un marcador representado por marcas para llevar la cuenta, es una forma divertida de probar tus habilidades. Ya sea que juegues con amigos o solo, es una gran manera de pasar el tiempo.",
+      "card4Description": "¡Este sitio web todavía está en desarrollo! ¡Mantente atento!",
+      "card5Description": "¡Este sitio web todavía está en desarrollo! ¡Mantente atento!",
+      "card6Description": "¡Este sitio web todavía está en desarrollo! ¡Mantente atento!"
+    },
+    "Githubjs": {
+      "github": "Días que",
+      "github2": "Código"
+    }
+  },
+  "resume": {
+    "ResumeNewjs": {
+      "Download": "Descargar Currículum",
+      "Toggle": "Cambiar Tema"
+    }
+  },
+  "contact": {
+    "Contactjs": {
+      "header": "Contáctame",
+      "name": "Nombre",
+      "phone": "Número de Teléfono",
+      "email": "Dirección de Correo Electrónico",
+      "message": "Mensaje",
+      "submit": "Enviar"
+    }
+  },
+  "navbar": {
+    "Navbarjs": {
+      "Home": "Inicio",
+      "About": "Acerca de",
+      "Projects": "Proyectos",
+      "Resume": "Currículum",
+      "Contact": "Contacto"
+    }
+  }
+}

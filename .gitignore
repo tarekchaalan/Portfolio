@@ -85,3 +85,6 @@ Server/config.js
 # CI/CD
 .github/
 .gitattributes
+
+#Other
+Icon?

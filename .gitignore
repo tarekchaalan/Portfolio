@@ -1,0 +1,87 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node modules
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+.out/
+.next/
+.vercel/
+.netlify/
+.svelte-kit/
+.angular/
+.temp/
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and settings
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# Testing
+/coverage/
+*.lcov
+*.clover
+
+# Linting and formatting
+.eslintcache
+.prettierignore
+.prettiercache
+
+# Translations
+/public/locales/*.json
+
+# Static assets
+/public/manifest.json
+/public/AvatarIcon.svg
+
+# Miscellaneous
+*.bak
+*.tmp
+*.lock
+*.pid
+*.seed
+*.toml
+*.swp
+*.icns
+*.db
+*.sqlite
+*.sqlite-journal
+
+# Logs and errors
+*.log
+*.error.log
+*.trace
+
+# Ignore server-specific files
+node_modules/
+Server/config.js
+
+# CI/CD
+.github/
+.gitattributes

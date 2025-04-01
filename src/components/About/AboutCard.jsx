@@ -46,6 +46,10 @@ function AboutCard() {
             &nbsp;
             <span className="purple">{t("about.AboutCardjs.aboutMe10")}</span>
             &nbsp;
+            {t("about.AboutCardjs.aboutMe11")}
+            &nbsp;
+            <span>{t("about.AboutCardjs.aboutMe12")}</span>
+            &nbsp;
             <br />
             <br />
             {t("about.AboutCardjs.activities1")}

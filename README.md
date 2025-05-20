@@ -2,7 +2,7 @@
 
 This portfolio website showcases my professional and personal projects. It's built with **React** and **Vite**, utilizing **React Bootstrap** for responsive design. It incorporates several custom components to highlight skills, projects, experiences, and contact information.
 
-View my website ([here](https://tarekchaalan.github.io/))
+View my website ([here](https://tarekchaalan.com/))
 
 ---
 
@@ -14,11 +14,11 @@ To run this project locally, follow these steps:
 
 2. Clone the repository:
    ```bash
-   git clone https://github.com/tarekchaalan/tarekchaalan.github.io.git
+   git clone https://github.com/tarekchaalan/Portfolio.git
    ```
 3. Navigate to the project directory:
    ```bash
-   cd tarekchaalan.github.io
+   cd Portfolio
    ```
 4. Install dependencies:
    ```bash
@@ -33,7 +33,7 @@ To run this project locally, follow these steps:
 Or if you're on Linux/MacOS, just paste this into the terminal at your desired directory:
 
 ```bash
-   git clone https://github.com/tarekchaalan/tarekchaalan.github.io.git && cd tarekchaalan.github.io && npm install && npm run dev
+   git clone https://github.com/tarekchaalan/Portfolio.git && cd Portfolio && npm install && npm run dev
 ```
 
 ---
@@ -82,7 +82,7 @@ Or if you're on Linux/MacOS, just paste this into the terminal at your desired d
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/tarekchaalan/tarekchaalan.github.io/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/tarekchaalan/Portfolio/blob/main/LICENSE) for more information.
 
 ---
 
@@ -90,4 +90,4 @@ Distributed under the MIT License. See [LICENSE](https://github.com/tarekchaalan
 
 Tarek Chaalan - @tarekchaalan <br>
 [Email Me](mailto:tarekJobs@outlook.com) <br>
-[GitHub Repository](https://github.com/tarekchaalan/tarekchaalan.github.io)
+[GitHub Repository](https://github.com/tarekchaalan/Portfolio)

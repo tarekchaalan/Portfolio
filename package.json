@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://tarekchaalan.github.io/",
+  "homepage": "https://tarekchaalan.com/",
   "type": "module",
   "scripts": {
     "dev": "vite",

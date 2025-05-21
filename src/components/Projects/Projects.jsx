@@ -63,7 +63,7 @@ function Projects() {
                 title="This Portfolio!"
                 description={t("projects.Projectsjs.card1Description")}
                 showGHButton={true}
-                ghLink="https://github.com/tarekchaalan/tarekchaalan.github.io"
+                ghLink="https://github.com/tarekchaalan/Portfolio"
                 showHomeButton={true}
                 homeLink="/"
               />

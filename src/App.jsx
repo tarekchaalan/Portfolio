@@ -33,6 +33,31 @@ function App() {
       upadateLoad(false);
     }, 1200);
 
+    // Dynamically preload project images
+    const preloadImages = [
+      "/src/Assets/Projects/placeholder.png",
+      "/src/Assets/Projects/fitfuel.png",
+      "/src/Assets/Projects/portfolio.png",
+      "/src/Assets/Projects/TicTacToe.png",
+    ];
+    preloadImages.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+
+    // Preload only the PDFs for the current language
+    const lang = localStorage.getItem("i18nextLng") || "en";
+    const darkPDF = `/src/Assets/Resumes/Tarek_Chaalan_Resume_Dark-${lang}.pdf`;
+    const lightPDF = `/src/Assets/Resumes/Tarek_Chaalan_Resume_Light-${lang}.pdf`;
+
+    [darkPDF, lightPDF].forEach((src) => {
+      const link = document.createElement("link");
+      link.rel = "prefetch";
+      link.href = src;
+      link.as = "document";
+      document.head.appendChild(link);
+    });
+
     return () => clearTimeout(timer);
   }, []);
 

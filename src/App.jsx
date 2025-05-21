@@ -5,7 +5,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
-import Resume from "./components/Resume/ResumeNew";
+import Resume from "./components/Resume/Resume";
 import Contact from "./components/Contact/Contact";
 import {
   BrowserRouter as Router,
@@ -33,12 +33,12 @@ function App() {
       upadateLoad(false);
     }, 1200);
 
-    // Dynamically preload project images
+    // Preload project images from public folder
     const preloadImages = [
-      "/src/Assets/Projects/placeholder.png",
-      "/src/Assets/Projects/fitfuel.png",
-      "/src/Assets/Projects/portfolio.png",
-      "/src/Assets/Projects/TicTacToe.png",
+      "/preload/projects/placeholder.png",
+      "/preload/projects/fitfuel.png",
+      "/preload/projects/portfolio.png",
+      "/preload/projects/TicTacToe.png",
     ];
     // ^^ To preload more pics in the future just add the path to the array ^^
 
@@ -47,10 +47,10 @@ function App() {
       img.src = src;
     });
 
-    // Preload only the PDFs for the current language
+    // Preload language-specific resume PDFs from public folder
     const lang = localStorage.getItem("i18nextLng") || "en";
-    const darkPDF = `/src/Assets/Resumes/Tarek_Chaalan_Resume_Dark-${lang}.pdf`;
-    const lightPDF = `/src/Assets/Resumes/Tarek_Chaalan_Resume_Light-${lang}.pdf`;
+    const darkPDF = `/preload/resumes/Tarek_Chaalan_Resume_Dark-${lang}.pdf`;
+    const lightPDF = `/preload/resumes/Tarek_Chaalan_Resume_Light-${lang}.pdf`;
 
     [darkPDF, lightPDF].forEach((src) => {
       const link = document.createElement("link");

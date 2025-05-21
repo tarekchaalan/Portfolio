@@ -8,28 +8,35 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import i18n from "../../i18n";
 import { useTranslation } from "react-i18next";
-import pdfDarkEN from "/src/Assets/Resumes/Tarek_Chaalan_Resume_Dark-en.pdf";
-import pdfLightEN from "/src/Assets/Resumes/Tarek_Chaalan_Resume_Light-en.pdf";
-import pdfDarkES from "/src/Assets/Resumes/Tarek_Chaalan_Resume_Dark-es.pdf";
-import pdfLightES from "/src/Assets/Resumes/Tarek_Chaalan_Resume_Light-es.pdf";
-import pdfDarkFR from "/src/Assets/Resumes/Tarek_Chaalan_Resume_Dark-fr.pdf";
-import pdfLightFR from "/src/Assets/Resumes/Tarek_Chaalan_Resume_Light-fr.pdf";
-import pdfDarkAR from "/src/Assets/Resumes/Tarek_Chaalan_Resume_Dark-ar.pdf";
-import pdfLightAR from "/src/Assets/Resumes/Tarek_Chaalan_Resume_Light-ar.pdf";
 
 // Set worker for PDF.js
 pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
 
 // Resume files categorized by language and theme
 const resumes = {
-  en: { dark: pdfDarkEN, light: pdfLightEN },
-  es: { dark: pdfDarkES, light: pdfLightES },
-  fr: { dark: pdfDarkFR, light: pdfLightFR },
-  ar: { dark: pdfDarkAR, light: pdfLightAR },
-  default: { dark: pdfDarkEN, light: pdfLightEN },
+  en: {
+    dark: "/preload/resumes/Tarek_Chaalan_Resume_Dark-en.pdf",
+    light: "/preload/resumes/Tarek_Chaalan_Resume_Light-en.pdf",
+  },
+  es: {
+    dark: "/preload/resumes/Tarek_Chaalan_Resume_Dark-es.pdf",
+    light: "/preload/resumes/Tarek_Chaalan_Resume_Light-es.pdf",
+  },
+  fr: {
+    dark: "/preload/resumes/Tarek_Chaalan_Resume_Dark-fr.pdf",
+    light: "/preload/resumes/Tarek_Chaalan_Resume_Light-fr.pdf",
+  },
+  ar: {
+    dark: "/preload/resumes/Tarek_Chaalan_Resume_Dark-ar.pdf",
+    light: "/preload/resumes/Tarek_Chaalan_Resume_Light-ar.pdf",
+  },
+  default: {
+    dark: "/preload/resumes/Tarek_Chaalan_Resume_Dark-en.pdf",
+    light: "/preload/resumes/Tarek_Chaalan_Resume_Light-en.pdf",
+  },
 };
 
-function ResumeNew() {
+function Resume() {
   const { t } = useTranslation();
   const [width, setWidth] = useState(1200);
   const [theme, setTheme] = useState("dark");
@@ -56,7 +63,6 @@ function ResumeNew() {
   return (
     <div>
       <Container fluid className="resume-section">
-
         {/* Buttons */}
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Col xs={12} sm={6} md={4} className="mb-2">
@@ -68,7 +74,7 @@ function ResumeNew() {
               style={{ width: "100%" }}
             >
               <AiOutlineDownload />
-              &nbsp;{t("resume.ResumeNewjs.Download")}
+              &nbsp;{t("resume.Resumejs.Download")}
             </Button>
           </Col>
           <Col xs={12} sm={6} md={4} className="mb-2">
@@ -78,7 +84,7 @@ function ResumeNew() {
               style={{ width: "100%" }}
             >
               <AiFillBulb />
-              &nbsp;{t("resume.ResumeNewjs.Toggle")}
+              &nbsp;{t("resume.Resumejs.Toggle")}
             </Button>
           </Col>
         </Row>
@@ -121,7 +127,7 @@ function ResumeNew() {
               style={{ width: "100%" }}
             >
               <AiOutlineDownload />
-              &nbsp;{t("resume.ResumeNewjs.Download")}
+              &nbsp;{t("resume.Resumejs.Download")}
             </Button>
           </Col>
           <Col xs={12} sm={6} md={4} className="mb-2">
@@ -131,7 +137,7 @@ function ResumeNew() {
               style={{ width: "100%" }}
             >
               <AiFillBulb />
-              &nbsp;{t("resume.ResumeNewjs.Toggle")}
+              &nbsp;{t("resume.Resumejs.Toggle")}
             </Button>
           </Col>
         </Row>
@@ -140,4 +146,4 @@ function ResumeNew() {
   );
 }
 
-export default ResumeNew;
+export default Resume;

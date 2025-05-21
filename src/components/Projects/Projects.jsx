@@ -3,10 +3,6 @@ import { Container, Row, Col, Modal } from "react-bootstrap";
 import Github from "./Github";
 import ProjectCard from "./ProjectCards";
 import { useTranslation } from "react-i18next";
-import placeholder from "../../Assets/Projects/placeholder.png";
-import FitFuel from "../../Assets/Projects/fitfuel.png";
-import Portfolio from "../../Assets/Projects/portfolio.png";
-import TicTacToe from "../../Assets/Projects/TicTacToe.png";
 
 function Projects() {
   const { t } = useTranslation();
@@ -36,10 +32,15 @@ function Projects() {
   }, [show]);
 
   useEffect(() => {
-    const imagesToPreload = [placeholder, FitFuel, Portfolio];
-    imagesToPreload.forEach((imageSrc) => {
+    const imagesToPreload = [
+      "/preload/projects/placeholder.png",
+      "/preload/projects/fitfuel.png",
+      "/preload/projects/portfolio.png",
+      "/preload/projects/TicTacToe.png",
+    ];
+    imagesToPreload.forEach((src) => {
       const img = new Image();
-      img.src = imageSrc;
+      img.src = src;
     });
   }, []);
 
@@ -58,8 +59,8 @@ function Projects() {
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col md={4} className="project-card">
               <ProjectCard
-                imgPath={Portfolio}
-                onClick={() => handleShow(Portfolio)}
+                imgPath="/preload/projects/portfolio.png"
+                onClick={() => handleShow("/preload/projects/portfolio.png")}
                 title="This Portfolio!"
                 description={t("projects.Projectsjs.card1Description")}
                 showGHButton={true}
@@ -71,8 +72,8 @@ function Projects() {
 
             <Col md={4} className="project-card">
               <ProjectCard
-                imgPath={FitFuel}
-                onClick={() => handleShow(FitFuel)}
+                imgPath="/preload/projects/fitfuel.png"
+                onClick={() => handleShow("/preload/projects/fitfuel.png")}
                 title="FitFuel"
                 description={t("projects.Projectsjs.card2Description")}
                 showAppleButton={true}
@@ -83,8 +84,8 @@ function Projects() {
 
             <Col md={4} className="project-card">
               <ProjectCard
-                imgPath={TicTacToe}
-                onClick={() => handleShow(TicTacToe)}
+                imgPath="/preload/projects/TicTacToe.png"
+                onClick={() => handleShow("/preload/projects/TicTacToe.png")}
                 title="Tic Tac Toe"
                 description={t("projects.Projectsjs.card3Description")}
                 showGHButton={true}
@@ -96,8 +97,8 @@ function Projects() {
 
             <Col md={4} className="project-card">
               <ProjectCard
-                imgPath={placeholder}
-                onClick={() => handleShow(placeholder)}
+                imgPath="/preload/projects/placeholder.png"
+                onClick={() => handleShow("/preload/projects/placeholder.png")}
                 title="Title Here"
                 description={t("projects.Projectsjs.card4Description")}
                 ghLink="https://github.com/tarekchaalan"
@@ -106,8 +107,8 @@ function Projects() {
 
             <Col md={4} className="project-card">
               <ProjectCard
-                imgPath={placeholder}
-                onClick={() => handleShow(placeholder)}
+                imgPath="/preload/projects/placeholder.png"
+                onClick={() => handleShow("/preload/projects/placeholder.png")}
                 title="Title Here"
                 description={t("projects.Projectsjs.card5Description")}
                 ghLink="https://github.com/tarekchaalan"
@@ -116,8 +117,8 @@ function Projects() {
 
             <Col md={4} className="project-card">
               <ProjectCard
-                imgPath={placeholder}
-                onClick={() => handleShow(placeholder)}
+                imgPath="/preload/projects/placeholder.png"
+                onClick={() => handleShow("/preload/projects/placeholder.png")}
                 title="Title Here"
                 description={t("projects.Projectsjs.card6Description")}
                 ghLink="https://github.com/tarekchaalan"

@@ -40,6 +40,8 @@ function App() {
       "/src/Assets/Projects/portfolio.png",
       "/src/Assets/Projects/TicTacToe.png",
     ];
+    // ^^ To preload more pics in the future just add the path to the array ^^
+
     preloadImages.forEach((src) => {
       const img = new Image();
       img.src = src;

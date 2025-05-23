@@ -33,7 +33,7 @@ function Github() {
         username="tarekchaalan"
         blockSize={15}
         blockMargin={5}
-        color="#c084f5"
+        color="#64ffda"
         fontSize={dynamicFontSize}
       />
     </Row>

@@ -136,21 +136,31 @@ function Projects() {
       <Modal
         show={show}
         onHide={handleClose}
-        centered
-        dialogClassName="custom-modal modal-lg"
+        fullscreen // ← full-screen modal
+        backdrop={true}
       >
         <Modal.Body
+          onClick={handleClose} // ← any click anywhere closes
           style={{
-            borderRadius: "10px",
+            backgroundColor: "transparent",
+            padding: 0,
+            cursor: "pointer",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
           }}
-          onClick={(e) => e.stopPropagation()} // Prevent clicks inside the modal from closing it
         >
           <img
             src={modalImg}
             alt="Project"
-            style={{ width: "100%", display: "block" }}
-            // You can also attach an onClick here if you specifically want to prevent the modal from closing when the image itself is clicked
-            onClick={(e) => e.stopPropagation()}
+            style={{
+              maxWidth: "100vw",
+              maxHeight: "100vh", // fit viewport
+              width: "auto",
+              height: "auto",
+              display: "block",
+            }}
           />
         </Modal.Body>
       </Modal>

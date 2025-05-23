@@ -1,0 +1,171 @@
+:root {
+  /*
+   * COLOR SCHEME DOCUMENTATION
+   *
+   * This color scheme is organized into several categories, each serving specific purposes.
+   * When changing colors, maintain these relationships to preserve the design system:
+   *
+   * 1. Main Colors: Core UI elements and interactions
+   * 2. Background Colors: Creates the base theme
+   * 3. Text Colors: Ensures readability
+   * 4. Accent Colors: Highlights and interactive elements
+   * 5. UI Element Colors: Specific component styling
+   */
+
+  /* Main Colors - Used for primary UI elements */
+  --color-primary: #8b5cf6; /* Base color for nav items, borders, and subtle UI elements */
+  --color-primary-dark: #7c3aed; /* Darker shade for hover states and active elements */
+  --color-primary-light: rgba(
+    139,
+    92,
+    246,
+    0.15
+  ); /* Light version for backgrounds and overlays */
+  --color-primary-lighter: rgba(
+    139,
+    92,
+    246,
+    0.25
+  ); /* Lighter version for hover backgrounds */
+
+  /* Background Colors - Creates the base theme */
+  --color-bg-primary: #0a0a0a; /* Main background color */
+  --color-bg-secondary: #1a1a1a; /* Slightly lighter shade for cards and sections */
+  --color-bg-gradient-start: rgba(
+    10,
+    10,
+    10,
+    0.95
+  ); /* Gradient start for overlays */
+  --color-bg-gradient-end: rgba(
+    26,
+    26,
+    26,
+    0.95
+  ); /* Gradient end for overlays */
+
+  /* Text Colors - Ensures readability */
+  --color-text-primary: #e5e5e5; /* Main text color - should contrast well with background */
+  --color-text-secondary: #f472b6; /* Accent text color - should stand out from primary text */
+
+  /* Border Colors - Subtle borders and separators */
+  --color-border-primary: rgba(
+    244,
+    114,
+    182,
+    0.15
+  ); /* Subtle border color - should be visible but not harsh */
+
+  /* Shadow Colors - Creates depth and hierarchy */
+  --color-shadow-primary: rgba(
+    244,
+    114,
+    182,
+    0.08
+  ); /* Lightest shadow - subtle depth */
+  --color-shadow-secondary: rgba(
+    244,
+    114,
+    182,
+    0.12
+  ); /* Medium shadow - medium depth */
+  --color-shadow-tertiary: rgba(
+    244,
+    114,
+    182,
+    0.2
+  ); /* Strongest shadow - strong depth */
+
+  /* Button Colors - Interactive elements */
+  --color-button-primary: #1e1b4b; /* Button background - should contrast with text */
+  --color-button-hover: #312e81; /* Button hover state - should be noticeably different */
+  --color-button-text: #fefefe; /* Button text color - should be readable on button background */
+
+  /* Input Colors - Form elements */
+  --color-input-bg: #1f1f1f; /* Input background - should be distinct from page background */
+  --color-input-border: rgba(
+    244,
+    114,
+    182,
+    0.15
+  ); /* Input border - should be subtler than the accent color */
+  --color-input-placeholder: rgba(
+    229,
+    229,
+    229,
+    0.2
+  ); /* should be subtler than the border color */
+
+  /* Scrollbar Colors - Custom scrollbar styling */
+  --color-scrollbar-track: #0a0a0a; /* Scrollbar track - should match main background */
+  --color-scrollbar-thumb: rgba(
+    244,
+    114,
+    182,
+    0.2
+  ); /* Scrollbar thumb - should be visible but subtle */
+  --color-scrollbar-thumb-hover: rgba(
+    244,
+    114,
+    182,
+    0.4
+  ); /* Scrollbar hover - should be noticeably brighter */
+
+  /* GitHub Contribution Colors - Activity calendar */
+  --github-contribution-0: #0a0a0a; /* No contributions - should match main background */
+  --github-contribution-1: rgba(
+    139,
+    92,
+    246,
+    0.1
+  ); /* 1-3 contributions - lightest accent */
+  --github-contribution-2: rgba(
+    139,
+    92,
+    246,
+    0.2
+  ); /* 4-6 contributions - light accent */
+  --github-contribution-3: rgba(
+    139,
+    92,
+    246,
+    0.3
+  ); /* 7-9 contributions - medium accent */
+  --github-contribution-4: rgba(
+    139,
+    92,
+    246,
+    0.4
+  ); /* 10+ contributions - strongest accent */
+
+  /*
+   * COLOR RELATIONSHIP NOTES:
+   *
+   * 1. Accent Color Usage:
+   *    - Should be used consistently for interactive elements
+   *    - Should be used for highlights and important text
+   *    - Should be used for borders and shadows
+   *    - Should be used for the activity calendar
+   *
+   * 2. Background Color Usage:
+   *    - Main background should be the darkest color
+   *    - Secondary background should be slightly lighter
+   *    - Should be used for scrollbar track
+   *    - Should be used as base for cards and sections
+   *
+   * 3. Text Color Relationships:
+   *    - Primary text should be highly readable on all backgrounds
+   *    - Secondary text should stand out from primary text
+   *    - Both should maintain good contrast ratios
+   *
+   * 4. Shadow Relationships:
+   *    - Should use accent color with varying opacity
+   *    - Creates depth while maintaining theme consistency
+   *    - Used for cards, buttons, and interactive elements
+   *
+   * 5. Interactive Element Colors:
+   *    - Should have clear hover states
+   *    - Should maintain good contrast for accessibility
+   *    - Should be consistent across all interactive elements
+   */
+}

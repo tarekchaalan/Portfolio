@@ -97,11 +97,14 @@ function Projects() {
 
             <Col md={4} className="project-card">
               <ProjectCard
-                imgPath="/preload/projects/placeholder.png"
-                onClick={() => handleShow("/preload/projects/placeholder.png")}
-                title="Title Here"
+                imgPath="/preload/projects/ChessvsGPT.png"
+                onClick={() => handleShow("/preload/projects/ChessvsGPT.png")}
+                title="Chess vs GPT"
                 description={t("projects.Projectsjs.card4Description")}
-                ghLink="https://github.com/tarekchaalan"
+                showGHButton={true}
+                ghLink="https://github.com/tarekchaalan/CHESSvsGPT"
+                showDemoButton={true}
+                demoLink="https://chess-vs-gpt.vercel.app/"
               />
             </Col>
 

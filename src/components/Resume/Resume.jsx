@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { AiOutlineDownload, AiFillBulb } from "react-icons/ai";
@@ -8,6 +8,7 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import i18n from "../../i18n";
 import { useTranslation } from "react-i18next";
+import { ThemeContext } from "../../ThemeContext";
 
 // Set worker for PDF.js
 pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
@@ -39,7 +40,8 @@ const resumes = {
 function Resume() {
   const { t } = useTranslation();
   const [width, setWidth] = useState(1200);
-  const [theme, setTheme] = useState("dark");
+  const { theme: appTheme } = useContext(ThemeContext);
+  const [theme, setTheme] = useState(appTheme === "dark" ? "dark" : "light");
   const [numPages, setNumPages] = useState(null);
   const currentLang = i18n.language;
 
@@ -47,6 +49,11 @@ function Resume() {
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
+
+  // Sync resume theme with app theme (inverted)
+  useEffect(() => {
+    setTheme(appTheme === "dark" ? "dark" : "light");
+  }, [appTheme]);
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
@@ -67,7 +74,7 @@ function Resume() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Col xs={12} sm={6} md={4} className="mb-2">
             <Button
-              variant="primary"
+              variant="secondary"
               href={currentResume}
               target="_blank"
               download="Tarek_Chaalan_Resume.pdf"
@@ -120,7 +127,7 @@ function Resume() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Col xs={12} sm={6} md={4} className="mb-2">
             <Button
-              variant="primary"
+              variant="secondary"
               href={currentResume}
               target="_blank"
               download="Tarek_Chaalan_Resume.pdf"

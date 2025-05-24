@@ -119,7 +119,7 @@ function Contact() {
                     />
                   </Form.Group>
                   <Button
-                    variant="primary"
+                    variant="secondary"
                     type="submit"
                     className="button-style"
                   >

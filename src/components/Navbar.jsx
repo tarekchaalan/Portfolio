@@ -18,6 +18,7 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 import { TbFilePhone } from "react-icons/tb";
 import LocaleContext from "../LocaleContext";
+import { ThemeContext } from "../ThemeContext";
 import i18n from "../i18n";
 import { useTranslation } from "react-i18next";
 
@@ -37,9 +38,30 @@ const BrandLogo = (props) => (
   </svg>
 );
 
+// Theme Toggle Icon as a React component
+const ThemeToggleIcon = (props) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z"
+      fill="currentColor"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z"
+      fill="currentColor"
+    />
+  </svg>
+);
+
 function NavBar() {
   const { t } = useTranslation();
-
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const { setLocale } = useContext(LocaleContext);
@@ -106,42 +128,6 @@ function NavBar() {
     setLocalLocale(newLocale); // Update local state
   };
 
-  const customStyles = {
-    indicatorSeparator: (base) => ({
-      ...base,
-      display: "none",
-    }),
-    dropdownIndicator: (base) => ({
-      ...base,
-      color: "var(--color-text-primary)",
-      marginLeft: "-15px",
-    }),
-    control: (styles) => ({
-      ...styles,
-      backgroundColor: "transparent",
-      color: "var(--color-text-primary)",
-      border: "none",
-      outline: "none",
-      boxShadow: "none",
-      cursor: "pointer",
-      marginTop: "8px",
-    }),
-    singleValue: (styles) => ({
-      ...styles,
-      color: "var(--color-text-primary)",
-    }),
-    option: (styles, { isFocused }) => {
-      return {
-        ...styles,
-        backgroundColor: isFocused
-          ? "var(--color-primary)"
-          : "var(--color-bg-primary)",
-        color: "var(--color-text-primary)",
-        cursor: "pointer",
-      };
-    },
-  };
-
   useEffect(() => {
     function handleLanguageChange(lng) {
       setLocalLocale(lng); // Update local state when language changes
@@ -167,104 +153,19 @@ function NavBar() {
     <Navbar
       expanded={expand}
       fixed="top"
-      expand="md"
+      expand="lg"
       className={(navColour ? "sticky" : "navbar") + " align-items-center"}
     >
       <Container fluid className="px-4">
-        <div className="d-flex w-100 align-items-center justify-content-between">
-          {/* Left: Logo */}
-          <Navbar.Brand href="/" className="d-flex">
-            <BrandLogo
-              className="logo align-self-center"
-              style={{ width: "2.5em", height: "2.5em", display: "block" }}
-            />
-          </Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
+          <BrandLogo
+            className="logo align-self-center"
+            style={{ width: "2.5em", height: "2.5em", display: "block" }}
+          />
+        </Navbar.Brand>
 
-          {/* Center: Nav links */}
-          <Navbar.Collapse
-            id="responsive-navbar-nav"
-            className="justify-content-center flex-grow-1"
-          >
-            <Nav
-              className="align-items-center justify-content-center mx-auto"
-              defaultActiveKey="#home"
-            >
-              <Nav.Item>
-                <Nav.Link
-                  as={Link}
-                  to="/"
-                  onClick={() => updateExpanded(false)}
-                >
-                  <AiOutlineHome style={{ marginBottom: "2px" }} />{" "}
-                  {t("navbar.Navbarjs.Home")}
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link
-                  as={Link}
-                  to="/about"
-                  onClick={() => updateExpanded(false)}
-                >
-                  <AiOutlineUser style={{ marginBottom: "2px" }} />{" "}
-                  {t("navbar.Navbarjs.About")}
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link
-                  as={Link}
-                  to="/project"
-                  onClick={() => updateExpanded(false)}
-                >
-                  <AiOutlineFundProjectionScreen
-                    style={{ marginBottom: "2px" }}
-                  />{" "}
-                  {t("navbar.Navbarjs.Projects")}
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link
-                  as={Link}
-                  to="/resume"
-                  onClick={() => updateExpanded(false)}
-                >
-                  <CgFileDocument style={{ marginBottom: "2px" }} />{" "}
-                  {t("navbar.Navbarjs.Resume")}
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link
-                  as={Link}
-                  to="/contact"
-                  onClick={() => updateExpanded(false)}
-                >
-                  <TbFilePhone style={{ marginBottom: "2px" }} />{" "}
-                  {t("navbar.Navbarjs.Contact")}
-                </Nav.Link>
-              </Nav.Item>
-            </Nav>
-          </Navbar.Collapse>
-
-          {/* Right: GitHub and Language */}
-          <div className="d-flex align-items-center gap-2">
-            <Button
-              href="https://github.com/tarekchaalan"
-              target="_blank"
-              className="git-btn-inner"
-            >
-              <AiFillGithub style={{ fontSize: "1.2em" }} />
-            </Button>
-            <Select
-              options={options}
-              value={options.find((o) => o.value === locale)}
-              onChange={handleLocaleChange}
-              styles={customStyles}
-              isSearchable={false}
-              classNamePrefix="select"
-            />
-          </div>
-        </div>
         <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
+          aria-controls="main-nav"
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
           }}
@@ -273,6 +174,88 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
+
+        <Navbar.Collapse id="main-nav" className="justify-content-between">
+          <Nav className="align-items-center">
+            <Nav.Item>
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                <AiOutlineHome style={{ marginBottom: "2px" }} />{" "}
+                {t("navbar.Navbarjs.Home")}
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/about"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineUser style={{ marginBottom: "2px" }} />{" "}
+                {t("navbar.Navbarjs.About")}
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/project"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                {t("navbar.Navbarjs.Projects")}
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/resume"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgFileDocument style={{ marginBottom: "2px" }} />{" "}
+                {t("navbar.Navbarjs.Resume")}
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
+              >
+                <TbFilePhone style={{ marginBottom: "2px" }} />{" "}
+                {t("navbar.Navbarjs.Contact")}
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+
+          <div className="navbar-actions">
+            <Button
+              href="https://github.com/tarekchaalan"
+              target="_blank"
+              className="git-btn-inner"
+            >
+              <AiFillGithub style={{ fontSize: "1.4em" }} />
+            </Button>
+
+            <button
+              onClick={toggleTheme}
+              className="theme"
+              style={{
+                transform: theme === "dark" ? "rotate(180deg)" : "rotate(0deg)",
+              }}
+            >
+              <ThemeToggleIcon style={{ width: "24px", height: "24px" }} />
+            </button>
+
+            <Select
+              options={options}
+              value={options.find((o) => o.value === locale)}
+              onChange={handleLocaleChange}
+              isSearchable={false}
+              className="lang-select"
+              classNamePrefix="select"
+            />
+          </div>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );

@@ -1,8 +1,9 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App";
+import App from "./App.jsx";
 import "./i18n";
+import { ThemeProvider } from "./ThemeContext";
 
 const root = createRoot(document.getElementById("root"));
 const originalConsoleLog = console.log;
@@ -18,4 +19,10 @@ console.log = (...args) => {
   originalConsoleLog.apply(console, args);
 };
 
-root.render(<App />);
+root.render(
+  <React.StrictMode>
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  </React.StrictMode>
+);

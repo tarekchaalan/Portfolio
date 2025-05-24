@@ -55,7 +55,9 @@ function Projects() {
               {t("projects.Projectsjs.projects2")}
             </strong>
           </h1>
-          <p style={{ color: "white" }}>{t("projects.Projectsjs.projects3")}</p>
+          <p style={{ color: "var(--color-text-primary)" }}>
+            {t("projects.Projectsjs.projects3")}
+          </p>
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col md={4} className="project-card">
               <ProjectCard

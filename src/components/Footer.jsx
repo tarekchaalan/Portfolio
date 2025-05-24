@@ -21,7 +21,7 @@ function Footer() {
             <li id="SIfooter" className="social-icons">
               <a
                 href="https://github.com/tarekchaalan"
-                style={{ color: "white" }}
+                style={{ color: "var(--color-text-primary)" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -31,7 +31,7 @@ function Footer() {
             <li id="SIfooter" className="social-icons">
               <a
                 href="https://www.linkedin.com/in/tarekchaalan/"
-                style={{ color: "white" }}
+                style={{ color: "var(--color-text-primary)" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -41,7 +41,7 @@ function Footer() {
             <li id="SIfooter" className="social-icons">
               <a
                 href="mailto:tarekJobs@outlook.com"
-                style={{ color: "white" }}
+                style={{ color: "var(--color-text-primary)" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >

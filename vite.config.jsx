@@ -13,4 +13,9 @@ export default defineConfig({
       "@": "/src", // Alias for easier imports
     },
   },
+  server: {
+    historyApiFallback: {
+      rewrites: [{ from: /^\//, to: "/404.html" }],
+    },
+  },
 });

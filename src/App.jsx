@@ -7,7 +7,6 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/Resume";
 import Contact from "./components/Contact/Contact";
-import NotFound from "./components/NotFound";
 import {
   BrowserRouter as Router,
   Route,
@@ -118,7 +117,7 @@ function App() {
                 path="*"
                 element={
                   <Suspense fallback={<Loading />}>
-                    <NotFound />
+                    <Navigate to="/" />
                   </Suspense>
                 }
               />

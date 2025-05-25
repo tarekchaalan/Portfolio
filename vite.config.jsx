@@ -14,6 +14,8 @@ export default defineConfig({
     },
   },
   server: {
-    historyApiFallback: true,
+    historyApiFallback: {
+      rewrites: [{ from: /^\//, to: "/404.html" }],
+    },
   },
 });

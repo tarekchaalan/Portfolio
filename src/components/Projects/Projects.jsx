@@ -99,24 +99,26 @@ function Projects() {
 
             <Col md={4} className="project-card">
               <ProjectCard
-                imgPath="/preload/projects/TicTacToe.png"
-                onClick={() => handleShow("/preload/projects/TicTacToe.png")}
-                title="Tic Tac Toe"
+                imgPath="/preload/projects/barbershop.png"
+                onClick={() => handleShow("/preload/projects/barbershop.png")}
+                title="Barbershop Management System"
                 description={t("projects.Projectsjs.card4Description")}
-                showGHButton={true}
-                ghLink="https://github.com/tarekchaalan/TicTacToe"
+                showGHButton={false}
                 showDemoButton={true}
-                demoLink="https://tic-tac-toe-zeta-two-20.vercel.app/"
+                demoLink="https://headlines-barbershop.firebaseapp.com/"
               />
             </Col>
 
             <Col md={4} className="project-card">
               <ProjectCard
-                imgPath="/preload/projects/placeholder.png"
-                onClick={() => handleShow("/preload/projects/placeholder.png")}
-                title="Title Here"
+                imgPath="/preload/projects/TicTacToe.png"
+                onClick={() => handleShow("/preload/projects/TicTacToe.png")}
+                title="Tic Tac Toe"
                 description={t("projects.Projectsjs.card5Description")}
-                ghLink="https://github.com/tarekchaalan"
+                showGHButton={true}
+                ghLink="https://github.com/tarekchaalan/TicTacToe"
+                showDemoButton={true}
+                demoLink="https://tic-tac-toe-zeta-two-20.vercel.app/"
               />
             </Col>
 

@@ -13,8 +13,14 @@ import { ThemeContext } from "../../ThemeContext";
 // Set worker for PDF.js
 pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
 
+// DEVELOPER SWITCH: Set to true to only show default resume (removes theme toggle)
+const SHOW_ONLY_DEFAULT_RESUME = true;
+
 // Resume files categorized by language and theme
 const resumes = {
+  default: {
+    default: "/preload/resumes/Tarek_Chaalan_Resume.pdf",
+  },
   en: {
     dark: "/preload/resumes/Tarek_Chaalan_Resume_Dark-en.pdf",
     light: "/preload/resumes/Tarek_Chaalan_Resume_Light-en.pdf",
@@ -31,7 +37,7 @@ const resumes = {
     dark: "/preload/resumes/Tarek_Chaalan_Resume_Dark-ar.pdf",
     light: "/preload/resumes/Tarek_Chaalan_Resume_Light-ar.pdf",
   },
-  default: {
+  fallback: {
     dark: "/preload/resumes/Tarek_Chaalan_Resume_Dark-en.pdf",
     light: "/preload/resumes/Tarek_Chaalan_Resume_Light-en.pdf",
   },
@@ -50,18 +56,25 @@ function Resume() {
     setWidth(window.innerWidth);
   }, []);
 
-  // Sync resume theme with app theme (inverted)
+  // Sync resume theme with app theme (inverted) - only when not in default-only mode
   useEffect(() => {
-    setTheme(appTheme === "dark" ? "dark" : "light");
+    if (!SHOW_ONLY_DEFAULT_RESUME) {
+      setTheme(appTheme === "dark" ? "dark" : "light");
+    }
   }, [appTheme]);
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+    if (!SHOW_ONLY_DEFAULT_RESUME) {
+      setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+    }
   };
 
-  const currentResume = resumes[currentLang]
-    ? resumes[currentLang][theme]
-    : resumes["default"][theme];
+  // Determine which resume to show based on developer switch
+  const currentResume = SHOW_ONLY_DEFAULT_RESUME
+    ? resumes.default.default
+    : (resumes[currentLang]
+        ? resumes[currentLang][theme]
+        : resumes["fallback"][theme]);
 
   const onDocumentLoadSuccess = ({ numPages }) => {
     setNumPages(numPages);
@@ -84,16 +97,18 @@ function Resume() {
               &nbsp;{t("resume.Resumejs.Download")}
             </Button>
           </Col>
-          <Col xs={12} sm={6} md={4} className="mb-2">
-            <Button
-              variant="secondary"
-              onClick={toggleTheme}
-              style={{ width: "100%" }}
-            >
-              <AiFillBulb />
-              &nbsp;{t("resume.Resumejs.Toggle")}
-            </Button>
-          </Col>
+          {!SHOW_ONLY_DEFAULT_RESUME && (
+            <Col xs={12} sm={6} md={4} className="mb-2">
+              <Button
+                variant="secondary"
+                onClick={toggleTheme}
+                style={{ width: "100%" }}
+              >
+                <AiFillBulb />
+                &nbsp;{t("resume.Resumejs.Toggle")}
+              </Button>
+            </Col>
+          )}
         </Row>
 
         <Row
@@ -137,16 +152,18 @@ function Resume() {
               &nbsp;{t("resume.Resumejs.Download")}
             </Button>
           </Col>
-          <Col xs={12} sm={6} md={4} className="mb-2">
-            <Button
-              variant="secondary"
-              onClick={toggleTheme}
-              style={{ width: "100%" }}
-            >
-              <AiFillBulb />
-              &nbsp;{t("resume.Resumejs.Toggle")}
-            </Button>
-          </Col>
+          {!SHOW_ONLY_DEFAULT_RESUME && (
+            <Col xs={12} sm={6} md={4} className="mb-2">
+              <Button
+                variant="secondary"
+                onClick={toggleTheme}
+                style={{ width: "100%" }}
+              >
+                <AiFillBulb />
+                &nbsp;{t("resume.Resumejs.Toggle")}
+              </Button>
+            </Col>
+          )}
         </Row>
       </Container>
     </div>

@@ -13,6 +13,8 @@ import {
   Route,
   Routes,
   Navigate,
+  useNavigate,
+  useLocation,
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./colors.css";
@@ -24,6 +26,25 @@ import LocaleContext from "./LocaleContext";
 
 function Loading() {
   return <>Loading...</>;
+}
+
+// Component to handle redirects from 404.html
+function RedirectHandler() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    // Check if we have a redirect path stored from 404.html
+    const redirectPath = sessionStorage.getItem('redirectPath');
+    if (redirectPath && location.pathname === '/') {
+      // Clear the stored path
+      sessionStorage.removeItem('redirectPath');
+      // Navigate to the intended path
+      navigate(redirectPath);
+    }
+  }, [navigate, location]);
+
+  return null;
 }
 
 function App() {
@@ -73,6 +94,7 @@ function App() {
         <ScrollToTop />
         <LocaleContext.Provider value={{ locale, setLocale }}>
           <div className="content-wrapper">
+            <RedirectHandler />
             <Routes>
               <Route
                 path="/"

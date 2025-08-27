@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        // Single Page App fallback for GitHub Pages
+        // This catches all 404s and redirects to the main app
+
+        // Get the current path and query parameters
+        const path = window.location.pathname;
+        const search = window.location.search;
+        const hash = window.location.hash;
+
+        // Store the intended path in sessionStorage for the main app to use
+        sessionStorage.setItem('redirectPath', path + search + hash);
+
+        // Redirect to the root where the React app can handle the routing
+        window.location.href = '/';
+    </script>
+</head>
+<body>
+    <p style="font-family: Arial, sans-serif; color: #555; font-size: 1.5rem; text-align: center; margin-top: 20vh;">
+        Redirecting<span class="dot-anim">...</span>
+    </p>
+    <style>
+      .dot-anim::after {
+        content: '';
+        display: inline-block;
+        width: 1.5em;
+        text-align: left;
+        animation: dots 1.2s steps(3, end) infinite;
+      }
+      @keyframes dots {
+        0%, 20% {
+          content: '';
+        }
+        40% {
+          content: '.';
+        }
+        60% {
+          content: '..';
+        }
+        80%, 100% {
+          content: '...';
+        }
+      }
+    </style>
+</body>
+</html>

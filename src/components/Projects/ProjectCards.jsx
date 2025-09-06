@@ -2,7 +2,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { BsGithub, BsArrowUpRightSquare, BsApple } from "react-icons/bs";
+import { BsGithub, BsArrowUpRightSquare, BsApple, BsBrowserChrome } from "react-icons/bs";
 import { AiOutlineHome } from "react-icons/ai";
 
 function ProjectCards(props) {
@@ -19,6 +19,8 @@ function ProjectCards(props) {
     demoLink,
     showAppleButton,
     AppStoreLink,
+    showChromeButton,
+    ChromeStoreLink,
   } = props;
 
   return (
@@ -75,6 +77,17 @@ function ProjectCards(props) {
             >
               <BsApple /> &nbsp;
               {"App Store"}
+            </Button>
+          )}
+          {showChromeButton && (
+            <Button
+              variant="secondary"
+              href={ChromeStoreLink}
+              target="_blank"
+              style={{ marginLeft: "10px" }}
+            >
+              <BsBrowserChrome /> &nbsp;
+              {"Chrome Store"}
             </Button>
           )}
         </div>

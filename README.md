@@ -21,7 +21,7 @@
   <img src="https://img.shields.io/badge/i18next-26A69A.svg?style=flat&logo=i18next&logoColor=fff" alt="i18next">
   <img src="https://img.shields.io/badge/React%20Bootstrap-7952B3.svg?style=flat&logo=Bootstrap&logoColor=fff" alt="React Bootstrap">
   <img src="https://img.shields.io/badge/ESLint-4B32C3.svg?style=flat&logo=ESLint&logoColor=fff" alt="ESLint">
-  <img src="https://img.shields.io/badge/Axios-5A29E4.svg?style=flat&logo=Axios&logoColor=fff" alt="Axios">
+  <img src="https://img.shields.io/badge/Vitest-6E9F18.svg?style=flat&logo=Vitest&logoColor=fff" alt="Vitest">
 </div>
 
 ---
@@ -68,8 +68,8 @@ A production-ready portfolio template using React + Vite. It includes multilingu
 | Internationalization | i18next with language files under `public/locales/{en,ar,es,fr}` |
 | Theming | Light/dark toggle via `ThemeContext.jsx` and CSS variables |
 | UI/UX | Responsive layout, project cards, resume viewer, preloader |
-| Integrations | EmailJS, Axios, GitHub contributions widget |
-| Quality | ESLint config, consistent formatting |
+| Integrations | EmailJS, GitHub contributions widget |
+| Quality | ESLint config, Vitest test suite, consistent formatting |
 | Performance | Vite dev server and optimized builds |
 
 ---
@@ -77,8 +77,7 @@ A production-ready portfolio template using React + Vite. It includes multilingu
 ## Tech Stack
 - **Core:** React, Vite, React Router, React Bootstrap
 - **i18n:** i18next + language detector
-- **HTTP:** Axios
-- **Tooling:** ESLint
+- **Tooling:** ESLint, Vitest + Testing Library
 - **Assets:** SVG/PNG under `src/Assets`
 
 ---
@@ -89,8 +88,8 @@ Portfolio/
 ├─ public/
 │  ├─ 404.html
 │  ├─ CNAME
-│  ├─ index.html
 │  ├─ manifest.json
+│  ├─ preload/
 │  └─ locales/
 │     ├─ en/translation.json
 │     ├─ ar/translation.json
@@ -104,21 +103,24 @@ Portfolio/
 │  │  ├─ Home/
 │  │  ├─ Projects/
 │  │  ├─ Resume/
+│  │  ├─ ErrorBoundary.jsx
 │  │  ├─ Footer.jsx
 │  │  ├─ Navbar.jsx
 │  │  ├─ NotFound.jsx
 │  │  └─ ScrollToTop.jsx
+│  ├─ test/
 │  ├─ App.jsx
 │  ├─ ThemeContext.jsx
 │  ├─ LocaleContext.jsx
 │  ├─ i18n.jsx
+│  ├─ colors.css
 │  ├─ index.css
 │  ├─ style.css
 │  └─ main.jsx
 ├─ index.html
 ├─ eslint.config.js
 ├─ package.json
-└─ vite.config.jsx
+└─ vite.config.js
 ```
 
 ---
@@ -149,7 +151,10 @@ git clone https://github.com/tarekchaalan/Portfolio.git && cd Portfolio && npm i
 npm run dev       # start Vite dev server with HMR
 npm run build     # production build to dist/
 npm run preview   # preview local production build
-npm test          # placeholder (add your test runner)
+npm test          # run the Vitest suite once
+npm run test:watch # run Vitest in watch mode
+npm run lint      # run ESLint over src/
+npm run deploy    # build and publish dist/ to GitHub Pages
 ```
 
 ---
@@ -170,7 +175,7 @@ npm test          # placeholder (add your test runner)
 
 ### SEO / PWA
 
-* Edit base tags in `public/index.html`.
+* Edit base tags (analytics, meta description, OG/Twitter) in `index.html`.
 * `public/manifest.json` provides icons, theme color, and display mode.
 * SPA 404 handling for GitHub Pages is in `public/404.html`.
 
@@ -181,12 +186,11 @@ npm test          # placeholder (add your test runner)
 ### GitHub Pages
 
 1. Enable GitHub Pages for the repo.
-2. Set `base` and `outDir` in `vite.config.jsx` if needed.
+2. Set `base` and `outDir` in `vite.config.js` if needed.
 3. Build and deploy:
 
    ```bash
-   npm run build
-   npm run deploy   # if you wire a deploy script (e.g., gh-pages)
+   npm run deploy   # runs the build, then publishes dist/ via gh-pages
    ```
 
 ### Vercel (alternative)

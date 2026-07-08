@@ -45,15 +45,17 @@ const resumes = {
 
 function Resume() {
   const { t } = useTranslation();
-  const [width, setWidth] = useState(1200);
+  const [width, setWidth] = useState(() => window.innerWidth);
   const { theme: appTheme } = useContext(ThemeContext);
   const [theme, setTheme] = useState(appTheme === "dark" ? "dark" : "light");
   const [numPages, setNumPages] = useState(null);
   const currentLang = i18n.language;
 
-  // Update width based on screen size
+  // Track screen size so the PDF scale follows resizes and rotations
   useEffect(() => {
-    setWidth(window.innerWidth);
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // Sync resume theme with app theme (inverted) - only when not in default-only mode

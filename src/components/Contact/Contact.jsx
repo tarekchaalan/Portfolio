@@ -12,6 +12,7 @@ function Contact() {
     email: "",
     message: "",
   });
+  const [isSending, setIsSending] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -39,6 +40,8 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (isSending) return; // guard against double submits
+    setIsSending(true);
     emailjs
       .sendForm(
         "service_qh1c1m8",
@@ -59,7 +62,10 @@ function Contact() {
         () => {
           alert("Failed to send your message. Please try again later.");
         }
-      );
+      )
+      .finally(() => {
+        setIsSending(false);
+      });
   };
 
   return (
@@ -122,6 +128,7 @@ function Contact() {
                     variant="secondary"
                     type="submit"
                     className="button-style"
+                    disabled={isSending}
                   >
                     {t("contact.Contactjs.submit")}
                   </Button>

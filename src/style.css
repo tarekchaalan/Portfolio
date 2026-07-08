@@ -617,12 +617,12 @@ button:focus {
   padding-left: 15px;
 }
 
-.social-icons#SIfooter a {
+.social-icons.SIfooter a {
   display: inline-block;
   transition: transform 0.6s ease;
 }
 
-.social-icons#SIfooter a:hover {
+.social-icons.SIfooter a:hover {
   transform: scale(2);
 }
 

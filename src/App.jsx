@@ -47,20 +47,23 @@ function RedirectHandler() {
 }
 
 function App() {
-  const [load, upadateLoad] = useState(true);
+  const [load, updateLoad] = useState(true);
   const [locale, setLocale] = useState(i18n.language);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      upadateLoad(false);
+      updateLoad(false);
     }, 1200);
 
     // Preload project images from public folder
     const preloadImages = [
       "/preload/projects/placeholder.png",
-      "/preload/projects/fitfuel.png",
       "/preload/projects/portfolio.png",
-      "/preload/projects/TicTacToe.png",
+      "/preload/projects/barbershop.png",
+      "/preload/projects/fitfuel.png",
+      "/preload/projects/KuwaitDrivingTest.png",
+      "/preload/projects/ChessEloShield.png",
+      "/preload/projects/ChessvsGPT.png",
     ];
     // ^^ To preload more pics in the future just add the path to the array ^^
 

@@ -17,7 +17,7 @@ function Footer() {
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
-            <li id="SIfooter" className="social-icons">
+            <li className="social-icons SIfooter">
               <a
                 href="https://github.com/tarekchaalan"
                 style={{ color: "var(--color-text-primary)" }}
@@ -27,7 +27,7 @@ function Footer() {
                 <AiFillGithub />
               </a>
             </li>
-            <li id="SIfooter" className="social-icons">
+            <li className="social-icons SIfooter">
               <a
                 href="https://www.linkedin.com/in/tarekchaalan/"
                 style={{ color: "var(--color-text-primary)" }}
@@ -37,7 +37,7 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
-            <li id="SIfooter" className="social-icons">
+            <li className="social-icons SIfooter">
               <a
                 href="mailto:tarekJobs@outlook.com"
                 style={{ color: "var(--color-text-primary)" }}

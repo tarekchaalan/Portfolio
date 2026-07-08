@@ -21,7 +21,7 @@ import { FaAws } from "react-icons/fa";
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons hover-show-text hover-show-text">
+      <Col xs={4} md={2} className="tech-icons hover-show-text">
         <CgCPlusPlus />
         <div className="tech-icon-text">C++</div>
       </Col>

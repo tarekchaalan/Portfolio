@@ -139,15 +139,13 @@ function NavBar() {
     };
   }, [setLocale]);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
+  useEffect(() => {
+    function scrollHandler() {
+      updateNavbar(window.scrollY >= 20);
     }
-  }
-
-  window.addEventListener("scroll", scrollHandler);
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, []);
 
   return (
     <Navbar

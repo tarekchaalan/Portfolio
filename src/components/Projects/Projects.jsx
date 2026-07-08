@@ -18,9 +18,9 @@ function Projects() {
     setModalTitle(title);
   };
 
-  // Single blur path: toggle on .main-content only
+  // Single blur path: toggle on .content-wrapper only
   useEffect(() => {
-    const mainContent = document.querySelector(".main-content");
+    const mainContent = document.querySelector(".content-wrapper");
     if (show) mainContent?.classList.add("blur-effect");
     else mainContent?.classList.remove("blur-effect");
     return () => mainContent?.classList.remove("blur-effect");

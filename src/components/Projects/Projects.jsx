@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Container, Row, Col, Modal } from "react-bootstrap";
 import Github from "./Github";
 import ProjectCard from "./ProjectCards";

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";

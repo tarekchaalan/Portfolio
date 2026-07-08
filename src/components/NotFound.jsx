@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "../colors.css";
 import "../style.css";
@@ -24,7 +23,7 @@ const NotFound = () => (
         margin: "1rem 0",
       }}
     >
-      Oops! The page you're looking for doesn't exist.
+      Oops! The page you&rsquo;re looking for doesn&rsquo;t exist.
       <br />
       You may have mistyped the address or the page may have moved.
     </p>

@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import { useState, useContext, useEffect } from "react";
 import Select from "react-select";
 import usFlag from "../Assets/flags/US-Flag.png";
 import esFlag from "../Assets/flags/ES-Flag.png";

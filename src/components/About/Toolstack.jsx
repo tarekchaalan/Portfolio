@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { SiGithub, SiApple, SiLinux, SiUbuntu } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";

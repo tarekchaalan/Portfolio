@@ -1,5 +1,4 @@
 // ProjectCards.js
-import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { BsGithub, BsArrowUpRightSquare, BsApple, BsBrowserChrome } from "react-icons/bs";

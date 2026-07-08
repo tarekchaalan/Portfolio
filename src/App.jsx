@@ -1,13 +1,8 @@
-import { useState, useEffect, Suspense } from "react";
-import Preloader from "../src/components/Pre";
+import { useState, useEffect, Suspense, lazy } from "react";
+import Preloader from "./components/Pre";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
-import Resume from "./components/Resume/Resume";
-import Contact from "./components/Contact/Contact";
-import NotFound from "./components/NotFound";
+import ErrorBoundary from "./components/ErrorBoundary";
 import {
   BrowserRouter as Router,
   Route,
@@ -22,6 +17,15 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import i18n from "./i18n";
 import LocaleContext from "./LocaleContext";
+
+// Route components are lazy so heavy dependencies (react-pdf on the resume
+// page in particular) stay out of the initial bundle
+const Home = lazy(() => import("./components/Home/Home"));
+const About = lazy(() => import("./components/About/About"));
+const Projects = lazy(() => import("./components/Projects/Projects"));
+const Resume = lazy(() => import("./components/Resume/Resume"));
+const Contact = lazy(() => import("./components/Contact/Contact"));
+const NotFound = lazy(() => import("./components/NotFound"));
 
 function Loading() {
   return <>Loading...</>;
@@ -97,56 +101,58 @@ function App() {
         <LocaleContext.Provider value={{ locale, setLocale }}>
           <div className="content-wrapper">
             <RedirectHandler />
-            <Routes>
-              <Route
-                path="/"
-                element={
-                  <Suspense fallback={<Loading />}>
-                    <Home />
-                  </Suspense>
-                }
-              />
-              <Route
-                path="/project"
-                element={
-                  <Suspense fallback={<Loading />}>
-                    <Projects />
-                  </Suspense>
-                }
-              />
-              <Route
-                path="/about"
-                element={
-                  <Suspense fallback={<Loading />}>
-                    <About />
-                  </Suspense>
-                }
-              />
-              <Route
-                path="/resume"
-                element={
-                  <Suspense fallback={<Loading />}>
-                    <Resume />
-                  </Suspense>
-                }
-              />
-              <Route
-                path="/contact"
-                element={
-                  <Suspense fallback={<Loading />}>
-                    <Contact />
-                  </Suspense>
-                }
-              />
-              <Route
-                path="*"
-                element={
-                  <Suspense fallback={<Loading />}>
-                    <NotFound />
-                  </Suspense>
-                }
-              />
-            </Routes>
+            <ErrorBoundary>
+              <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <Suspense fallback={<Loading />}>
+                      <Home />
+                    </Suspense>
+                  }
+                />
+                <Route
+                  path="/project"
+                  element={
+                    <Suspense fallback={<Loading />}>
+                      <Projects />
+                    </Suspense>
+                  }
+                />
+                <Route
+                  path="/about"
+                  element={
+                    <Suspense fallback={<Loading />}>
+                      <About />
+                    </Suspense>
+                  }
+                />
+                <Route
+                  path="/resume"
+                  element={
+                    <Suspense fallback={<Loading />}>
+                      <Resume />
+                    </Suspense>
+                  }
+                />
+                <Route
+                  path="/contact"
+                  element={
+                    <Suspense fallback={<Loading />}>
+                      <Contact />
+                    </Suspense>
+                  }
+                />
+                <Route
+                  path="*"
+                  element={
+                    <Suspense fallback={<Loading />}>
+                      <NotFound />
+                    </Suspense>
+                  }
+                />
+              </Routes>
+            </ErrorBoundary>
           </div>
         </LocaleContext.Provider>
         <Footer />

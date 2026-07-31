@@ -25,6 +25,9 @@ const About = lazy(() => import("./components/About/About"));
 const Projects = lazy(() => import("./components/Projects/Projects"));
 const Resume = lazy(() => import("./components/Resume/Resume"));
 const Contact = lazy(() => import("./components/Contact/Contact"));
+const OrbitalDownloads = lazy(() =>
+  import("./components/Orbital/OrbitalDownloads")
+);
 const NotFound = lazy(() => import("./components/NotFound"));
 
 function Loading() {
@@ -140,6 +143,16 @@ function App() {
                   element={
                     <Suspense fallback={<Loading />}>
                       <Contact />
+                    </Suspense>
+                  }
+                />
+                {/* Unlisted: intentionally absent from the navbar and any
+                    internal links; the page injects noindex while mounted */}
+                <Route
+                  path="/orbital-f9a83e"
+                  element={
+                    <Suspense fallback={<Loading />}>
+                      <OrbitalDownloads />
                     </Suspense>
                   }
                 />

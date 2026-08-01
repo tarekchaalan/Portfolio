@@ -105,5 +105,29 @@
       "Resume": "السيرة الذاتية",
       "Contact": "اتصل"
     }
+  },
+  "orbital": {
+    "OrbitalDownloadsjs": {
+      "forMacOS": "لنظام macOS",
+      "subtitle": "إصدارات مبكرة تُشارك بدعوة. اختر النسخة المناسبة لجهاز Mac الخاص بك.",
+      "requestKey": "اطلب مفتاحًا عبر",
+      "requestEmail": "البريد الإلكتروني",
+      "requestOr": "أو",
+      "siliconTagline": "لأجهزة Mac بشريحة من سلسلة M (M1 أو أحدث)",
+      "intelTagline": "لأجهزة Mac بمعالج Intel",
+      "download": "تحميل",
+      "helpTitle": "أي نسخة أحتاج؟",
+      "help1a": "افتح قائمة Apple",
+      "help1b": "في الزاوية العلوية من الشاشة واختر",
+      "helpAboutMac": "حول هذا الـ Mac",
+      "help2a": "إذا ظهرت شريحة مثل",
+      "helpChip": "Apple M1",
+      "help2b": "(أو M2، M3، M4…)، فحمّل نسخة Apple Silicon.",
+      "help3": "إذا ظهر معالج Intel، فحمّل نسخة Intel.",
+      "gatekeeper1": "إذا حذّرك macOS من أنه لا يمكن التحقق من التطبيق عند فتحه لأول مرة، فانقر بزر الفأرة الأيمن على",
+      "gatekeeper2": "واختر",
+      "gatekeeperOpen": "فتح",
+      "gatekeeper3": "، ثم أكّد."
+    }
   }
 }

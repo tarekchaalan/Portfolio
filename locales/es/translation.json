@@ -105,5 +105,29 @@
       "Resume": "Currículum",
       "Contact": "Contacto"
     }
+  },
+  "orbital": {
+    "OrbitalDownloadsjs": {
+      "forMacOS": "para macOS",
+      "subtitle": "Versiones preliminares, compartidas por invitación. Elige la versión que corresponda a tu Mac.",
+      "requestKey": "Solicita una clave por",
+      "requestEmail": "correo",
+      "requestOr": "o",
+      "siliconTagline": "Para Macs con chip de la serie M (M1 o posterior)",
+      "intelTagline": "Para Macs con procesador Intel",
+      "download": "Descargar",
+      "helpTitle": "¿Cuál necesito?",
+      "help1a": "Abre el menú Apple",
+      "help1b": "en la esquina superior izquierda de la pantalla y elige",
+      "helpAboutMac": "Acerca de este Mac",
+      "help2a": "Si aparece un chip como",
+      "helpChip": "Apple M1",
+      "help2b": "(o M2, M3, M4…), descarga la versión Apple Silicon.",
+      "help3": "Si aparece un procesador Intel, descarga la versión Intel.",
+      "gatekeeper1": "Si macOS advierte que no puede verificar la app al abrirla por primera vez, haz clic derecho en",
+      "gatekeeper2": "y elige",
+      "gatekeeperOpen": "Abrir",
+      "gatekeeper3": ", luego confirma."
+    }
   }
 }

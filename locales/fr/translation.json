@@ -105,5 +105,29 @@
       "Resume": "CV",
       "Contact": "Contact"
     }
+  },
+  "orbital": {
+    "OrbitalDownloadsjs": {
+      "forMacOS": "pour macOS",
+      "subtitle": "Versions préliminaires, partagées sur invitation. Choisissez la version adaptée à votre Mac.",
+      "requestKey": "Demandez une clé par",
+      "requestEmail": "e-mail",
+      "requestOr": "ou",
+      "siliconTagline": "Pour les Mac avec une puce de série M (M1 ou ultérieure)",
+      "intelTagline": "Pour les Mac à processeur Intel",
+      "download": "Télécharger",
+      "helpTitle": "Laquelle me faut-il ?",
+      "help1a": "Ouvrez le menu Pomme",
+      "help1b": "en haut à gauche de l’écran et choisissez",
+      "helpAboutMac": "À propos de ce Mac",
+      "help2a": "S’il affiche une puce comme",
+      "helpChip": "Apple M1",
+      "help2b": "(ou M2, M3, M4…), téléchargez la version Apple Silicon.",
+      "help3": "S’il affiche un processeur Intel, téléchargez la version Intel.",
+      "gatekeeper1": "Si macOS avertit qu’il ne peut pas vérifier l’app au premier lancement, faites un clic droit sur",
+      "gatekeeper2": "et choisissez",
+      "gatekeeperOpen": "Ouvrir",
+      "gatekeeper3": ", puis confirmez."
+    }
   }
 }

@@ -74,7 +74,8 @@
       "card3Description": "FitFuel, an innovative application, integrates meal and workout planning with AI and robust health app connectivity, facilitating a comprehensive wellness journey. Designed to offer personalized plans, it fills a critical gap in the market by targeting health-conscious users and professionals. It focuses on data security and encourages ongoing feedback to achieve a balanced lifestyle. The planner adapts to individual needs, making health management both accessible and engaging.",
       "card4Description": "Kuwait Driving Test is a polished SwiftUI prep app for Kuwait's theory exam. It includes multiple modes—standard mix, critical-only, true/false-only, image-only, and a study mode—backed by a local JSON question bank for fast offline use. MVVM architecture, accessible typography, subtle haptics, randomized question delivery, and a clean results screen (score, pass/fail, retake) make it production-ready and easy to showcase.",
       "card5Description": "ChessEloShield is a lightweight Chrome and Firefox extension that curbs tilt on chess.com. After each game it starts a configurable cooldown, blocks instant rematch and one-click queues with a subtle overlay timer, and preserves state across tabs and refreshes. Built for MV3 (Chrome) and MV2 (Firefox) with minimal permissions, sync storage, quick presets and custom durations, plus optional chat/opponent-info hiding. Privacy-first: no analytics or external calls.",
-      "card6Description": "Chess vs GPT is a secure, web-based chess game that lets you challenge OpenAI's GPT models in a responsive interface. You can select from multiple AI models (GPT-4.5, GPT-4 Turbo, GPT-4, GPT-3.5 Turbo) for different levels of challenge. The game features real-time move validation, illegal move detection, immersive sound effects, and secure API key management with client-side encryption. It uses chessboard.js for the interactive board and chess.js for move validation, ensuring a smooth, fair, and secure experience. Play, undo moves, flip the board, and enjoy a modern chess experience!"    },
+      "card6Description": "Chess vs GPT is a secure, web-based chess game that lets you challenge OpenAI's GPT models in a responsive interface. You can select from multiple AI models (GPT-4.5, GPT-4 Turbo, GPT-4, GPT-3.5 Turbo) for different levels of challenge. The game features real-time move validation, illegal move detection, immersive sound effects, and secure API key management with client-side encryption. It uses chessboard.js for the interactive board and chess.js for move validation, ensuring a smooth, fair, and secure experience. Play, undo moves, flip the board, and enjoy a modern chess experience!"
+    },
     "Githubjs": {
       "github": "Days I",
       "github2": "Code"
@@ -103,6 +104,30 @@
       "Projects": "Projects",
       "Resume": "Resume",
       "Contact": "Contact"
+    }
+  },
+  "orbital": {
+    "OrbitalDownloadsjs": {
+      "forMacOS": "for macOS",
+      "subtitle": "Early builds, shared by invitation. Pick the version that matches your Mac.",
+      "requestKey": "Request a key via",
+      "requestEmail": "email",
+      "requestOr": "or",
+      "siliconTagline": "For Macs with an M-series chip (M1 or later)",
+      "intelTagline": "For Intel-based Macs",
+      "download": "Download",
+      "helpTitle": "Which one do I need?",
+      "help1a": "Open the Apple menu",
+      "help1b": "in the top-left corner of your screen and choose",
+      "helpAboutMac": "About This Mac",
+      "help2a": "If it lists a chip like",
+      "helpChip": "Apple M1",
+      "help2b": "(or M2, M3, M4…), download the Apple Silicon version.",
+      "help3": "If it lists an Intel processor, download the Intel version.",
+      "gatekeeper1": "If macOS warns that it can’t verify the app on first launch, right-click",
+      "gatekeeper2": "and choose",
+      "gatekeeperOpen": "Open",
+      "gatekeeper3": ", then confirm."
     }
   }
 }

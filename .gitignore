@@ -89,3 +89,6 @@ Server/config.js
 #Other
 Icon?
 .gstack/
+
+# Private license keys — never publish (public repo)
+keys.md

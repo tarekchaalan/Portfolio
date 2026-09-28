@@ -41,6 +41,7 @@
   - [Localization (i18n)](#localization-i18n)
   - [Theme](#theme)
   - [SEO / PWA](#seo--pwa)
+  - [Orbital Notes pages](#orbital-notes-pages)
 - [Build & Deploy](#build--deploy)
 - [Contributing](#contributing)
 - [License](#license)
@@ -95,6 +96,8 @@ Portfolio/
 │     ├─ ar/translation.json
 │     ├─ es/translation.json
 │     └─ fr/translation.json
+├─ scripts/
+│  └─ build-orbital.mjs   # static Orbital Notes pages, runs after vite build
 ├─ src/
 │  ├─ Assets/
 │  ├─ components/
@@ -108,6 +111,7 @@ Portfolio/
 │  │  ├─ Navbar.jsx
 │  │  ├─ NotFound.jsx
 │  │  └─ ScrollToTop.jsx
+│  ├─ orbital/            # Orbital Notes pages: docs/, content, layout, styles
 │  ├─ test/
 │  ├─ App.jsx
 │  ├─ ThemeContext.jsx
@@ -149,7 +153,8 @@ git clone https://github.com/tarekchaalan/Portfolio.git && cd Portfolio && npm i
 
 ```bash
 npm run dev       # start Vite dev server with HMR
-npm run build     # production build to dist/
+npm run build     # production build to dist/ (SPA + static Orbital Notes pages)
+npm run build:orbital # rebuild only the Orbital Notes pages into an existing dist/
 npm run preview   # preview local production build
 npm test          # run the Vitest suite once
 npm run test:watch # run Vitest in watch mode
@@ -178,6 +183,18 @@ npm run deploy    # build and publish dist/ to GitHub Pages
 * Edit base tags (analytics, meta description, OG/Twitter) in `index.html`.
 * `public/manifest.json` provides icons, theme color, and display mode.
 * SPA 404 handling for GitHub Pages is in `public/404.html`.
+
+### Orbital Notes pages
+
+`/orbital`, `/orbital/guide`, `/orbital/support`, `/orbital/privacy` and `/orbital/terms` are static HTML pages, not SPA routes: the full text is in the served HTML, so they work without JavaScript and GitHub Pages serves them with a 200. `npm run build` runs `scripts/build-orbital.mjs` after `vite build`, which renders the markdown in `src/orbital/docs/` and writes each page twice (for example `dist/orbital/guide.html` and `dist/orbital/guide/index.html`). They use the site's fonts, the `src/colors.css` tokens, and the theme saved by the navbar toggle. Sources live in `src/orbital/` (`content.js` for the landing and support copy, `layout.js` for the shared shell, `orbital.css` for styles). `npm run dev` does not serve them; use `npm run build && npm run preview`.
+
+**Re-syncing the docs.** The privacy policy, terms and user guide are copies of the docs in the Orbital app repo. To pull in new versions (this keeps the first-line source comment, which the renderer drops):
+
+```bash
+for f in PRIVACY TERMS USER-GUIDE; do src="/Users/tarek/Developer/macos/orbital/docs/$f.md"; { echo "<!-- Source: $src — re-sync by copying that file over this one -->"; cat "$src"; } > "src/orbital/docs/$f.md"; done
+```
+
+**DRAFT hard stop.** Before emitting the privacy or terms page, the build checks that doc for `grep -nE '^> \*\*DRAFT|PLACEHOLDER'`. If anything matches, that page is not emitted, the matching lines are printed, and the rest of the build continues. The footer links to those pages stay in place, so they go live on the first build after the docs are final. The build also checks that every `#anchor` and cross-doc link in the docs resolves to a heading, and fails if one on a published page does not.
 
 ---
 

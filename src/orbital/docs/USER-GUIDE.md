@@ -872,7 +872,7 @@ Orbital updates through the Mac App Store. Settings ▸ General shows the versio
 - **Report a Problem…** drafts an email with the app and macOS versions and the last few
   diagnostic labels. You read it before it is sent.
 
-Support and privacy questions: [tchaalan23@gmail.com](mailto:tchaalan23@gmail.com).
+Support and privacy questions: [orbitaldevs@outlook.com](mailto:orbitaldevs@outlook.com).
 
 ---
 

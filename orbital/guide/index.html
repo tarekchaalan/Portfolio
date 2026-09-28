@@ -1,0 +1,2625 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Orbital Notes — User Guide</title>
+    <meta name="description" content="How to use Orbital Notes, an audio-first notebook for Mac: recording, transcription, the AI assistant, locking, iCloud sync, plans, and troubleshooting." />
+    <link rel="canonical" href="https://tarekchaalan.com/orbital/guide" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tarekchaalan.com/orbital/guide" />
+    <meta property="og:title" content="Orbital Notes — User Guide" />
+    <meta property="og:description" content="How to use Orbital Notes, an audio-first notebook for Mac: recording, transcription, the AI assistant, locking, iCloud sync, plans, and troubleshooting." />
+    <link rel="icon" type="image/svg+xml" href="/AvatarIcon.svg" />
+    <script>(function(){try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}})();</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" />
+    <style>
+[data-theme="light"] {
+  --color-primary: #d8a97f; 
+  --color-primary-dark: #bb7f55; 
+  --color-primary-light: rgba(
+    216,
+    169,
+    127,
+    0.15
+  ); 
+  --color-primary-lighter: rgba(
+    216,
+    169,
+    127,
+    0.25
+  ); 
+  --color-bg-primary: #f5f0ea; 
+  --color-bg-secondary: #e9e1d8; 
+  --color-bg-gradient-start: rgba(
+    245,
+    240,
+    234,
+    0.95
+  ); 
+  --color-bg-gradient-end: rgba(
+    233,
+    225,
+    216,
+    0.95
+  ); 
+  --color-text-primary: #3b2e2a; 
+  --color-text-secondary: #a8704f; 
+  --color-border-primary: rgba(
+    168,
+    112,
+    79,
+    0.15
+  ); 
+  --color-shadow-primary: rgba(
+    168,
+    112,
+    79,
+    0.08
+  ); 
+  --color-shadow-secondary: rgba(
+    168,
+    112,
+    79,
+    0.12
+  ); 
+  --color-shadow-tertiary: rgba(
+    168,
+    112,
+    79,
+    0.2
+  ); 
+  --color-button-primary: #cba17a; 
+  --color-button-hover: #ae8462; 
+  --color-button-text: #3b2e2a; 
+  --color-input-bg: #f0e9e1; 
+  --color-input-border: rgba(
+    168,
+    112,
+    79,
+    0.15
+  ); 
+  --color-input-placeholder: rgba(
+    59,
+    46,
+    42,
+    0.2
+  ); 
+  --color-scrollbar-track: #f5f0ea; 
+  --color-scrollbar-thumb: rgba(
+    168,
+    112,
+    79,
+    0.2
+  ); 
+  --color-scrollbar-thumb-hover: rgba(
+    168,
+    112,
+    79,
+    0.4
+  ); 
+  --github-contribution-0: #f5f0ea; 
+  --github-contribution-1: rgba(
+    168,
+    112,
+    79,
+    0.1
+  ); 
+  --github-contribution-2: rgba(
+    168,
+    112,
+    79,
+    0.2
+  ); 
+  --github-contribution-3: rgba(
+    168,
+    112,
+    79,
+    0.3
+  ); 
+  --github-contribution-4: rgba(
+    168,
+    112,
+    79,
+    0.4
+  ); 
+}
+[data-theme="dark"] {
+  --color-primary: #79f2d0; 
+  --color-primary-dark: #46c8a6; 
+  --color-primary-light: rgba(
+    121,
+    242,
+    208,
+    0.15
+  ); 
+  --color-primary-lighter: rgba(
+    121,
+    242,
+    208,
+    0.25
+  ); 
+  --color-bg-primary: #111111; 
+  --color-bg-secondary: #1c1c1c; 
+  --color-bg-gradient-start: rgba(
+    17,
+    17,
+    17,
+    0.95
+  ); 
+  --color-bg-gradient-end: rgba(
+    28,
+    28,
+    28,
+    0.95
+  ); 
+  --color-text-primary: #f0f0f0; 
+  --color-text-secondary: #79f2d0; 
+  --color-border-primary: rgba(
+    121,
+    242,
+    208,
+    0.15
+  ); 
+  --color-shadow-primary: rgba(
+    121,
+    242,
+    208,
+    0.08
+  ); 
+  --color-shadow-secondary: rgba(
+    121,
+    242,
+    208,
+    0.12
+  ); 
+  --color-shadow-tertiary: rgba(
+    121,
+    242,
+    208,
+    0.2
+  ); 
+  --color-button-primary: #22443c; 
+  --color-button-hover: #2e6c60; 
+  --color-button-text: #ffffff; 
+  --color-input-bg: #1f1f1f; 
+  --color-input-border: rgba(
+    121,
+    242,
+    208,
+    0.15
+  ); 
+  --color-input-placeholder: rgba(
+    240,
+    240,
+    240,
+    0.2
+  ); 
+  --color-scrollbar-track: #111111; 
+  --color-scrollbar-thumb: rgba(
+    121,
+    242,
+    208,
+    0.2
+  ); 
+  --color-scrollbar-thumb-hover: rgba(
+    121,
+    242,
+    208,
+    0.4
+  ); 
+  --github-contribution-0: #111111; 
+  --github-contribution-1: rgba(
+    121,
+    242,
+    208,
+    0.1
+  ); 
+  --github-contribution-2: rgba(
+    121,
+    242,
+    208,
+    0.2
+  ); 
+  --github-contribution-3: rgba(
+    121,
+    242,
+    208,
+    0.3
+  ); 
+  --github-contribution-4: rgba(
+    121,
+    242,
+    208,
+    0.4
+  ); 
+}
+html[data-theme="light"] {
+  color-scheme: light;
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+:root {
+  --gutter: 24px;
+  --column: 760px;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono",
+    monospace;
+}
+@media (max-width: 600px) {
+  :root {
+    --gutter: 16px;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::selection {
+  background-color: var(--color-primary-lighter);
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+  border-radius: 12px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-scrollbar-thumb-hover);
+}
+.wrap {
+  width: 100%;
+  max-width: calc(var(--column) + 2 * var(--gutter));
+  margin: 0 auto;
+  padding-inline: var(--gutter);
+}
+a {
+  color: var(--color-text-secondary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  transition: color 0.2s ease, text-decoration-thickness 0.2s ease;
+}
+a:hover {
+  color: var(--color-primary-dark);
+  text-decoration-thickness: 2px;
+}
+a:focus-visible,
+.table-wrap:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 12px;
+  z-index: 10;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background-color: var(--color-bg-secondary);
+}
+.skip-link:focus {
+  left: 16px;
+}
+.site-header {
+  border-bottom: 1px solid var(--color-border-primary);
+}
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 68px;
+}
+.site-name,
+.product-link {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.site-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.site-name:hover {
+  color: var(--color-text-primary);
+}
+.site-logo {
+  width: 2em;
+  height: 2em;
+  flex: none;
+  color: var(--color-text-secondary);
+}
+.product-link {
+  position: relative;
+  padding: 6px 0;
+}
+.product-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 16px;
+  background: var(--color-primary);
+  transition: width 0.3s ease-out;
+}
+.product-link:hover {
+  color: var(--color-text-primary);
+}
+.product-link:hover::after,
+.product-link[aria-current="page"]::after {
+  width: 100%;
+}
+main {
+  flex: 1;
+  padding-top: 48px;
+  padding-bottom: 64px;
+}
+@media (max-width: 600px) {
+  main {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+}
+.lede {
+  font-size: 1.2rem;
+  line-height: 1.55;
+}
+.back-to-top {
+  margin: 3em 0 0;
+  font-size: 0.95rem;
+}
+.prose {
+  overflow-wrap: break-word;
+}
+.prose > :first-child {
+  margin-top: 0;
+}
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  color: var(--color-text-primary);
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 2em 0 0.6em;
+}
+.prose h1 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin: 0 0 0.8em;
+}
+.prose h2 {
+  font-size: 1.55rem;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid var(--color-border-primary);
+}
+.prose h3 {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+}
+.prose h4 {
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+.prose h5,
+.prose h6 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.prose p,
+.prose ul,
+.prose ol,
+.prose blockquote,
+.prose pre,
+.prose .table-wrap {
+  margin: 0 0 1.1em;
+}
+.prose ul,
+.prose ol {
+  padding-left: 1.5em;
+}
+.prose li + li,
+.prose li > ul,
+.prose li > ol {
+  margin-top: 0.35em;
+}
+.prose li > ul,
+.prose li > ol {
+  margin-bottom: 0;
+}
+.prose li::marker {
+  color: var(--color-text-secondary);
+}
+.prose strong {
+  font-weight: 700;
+}
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--color-border-primary);
+  margin: 2.5em 0;
+}
+.prose blockquote {
+  padding: 0.9em 1.1em;
+  border-left: 3px solid var(--color-primary);
+  border-radius: 0 8px 8px 0;
+  background-color: var(--color-primary-light);
+}
+.prose blockquote > :last-child {
+  margin-bottom: 0;
+}
+.prose blockquote h2 {
+  margin-top: 1em;
+}
+.prose code {
+  font-family: var(--mono);
+  font-size: 0.86em;
+  padding: 0.12em 0.38em;
+  border: 1px solid var(--color-border-primary);
+  border-radius: 5px;
+  background-color: var(--color-bg-secondary);
+  overflow-wrap: anywhere;
+}
+.prose pre {
+  padding: 14px 16px;
+  overflow-x: auto;
+  border: 1px solid var(--color-border-primary);
+  border-radius: 8px;
+  background-color: var(--color-bg-secondary);
+  line-height: 1.5;
+}
+.prose pre code {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 0.86rem;
+  overflow-wrap: normal;
+  white-space: pre;
+}
+.prose .table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--color-border-primary);
+  border-radius: 8px;
+}
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.93rem;
+  line-height: 1.5;
+}
+.prose th,
+.prose td {
+  min-width: 7.5rem;
+  padding: 0.6em 0.85em;
+  text-align: start;
+  vertical-align: top;
+  border-bottom: 1px solid var(--color-border-primary);
+  overflow-wrap: normal;
+}
+.prose th + th,
+.prose td + td {
+  border-left: 1px solid var(--color-border-primary);
+}
+.prose tbody tr:last-child td {
+  border-bottom: 0;
+}
+.prose th {
+  font-weight: 700;
+  background-color: var(--color-bg-secondary);
+}
+.prose th[align="center"],
+.prose td[align="center"] {
+  text-align: center;
+}
+.prose th[align="right"],
+.prose td[align="right"] {
+  text-align: right;
+}
+.prose .table-wrap--wide th:first-child,
+.prose .table-wrap--wide td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  min-width: 10rem;
+  box-shadow: 1px 0 0 var(--color-border-primary);
+}
+.prose .table-wrap--wide td:first-child {
+  background-color: var(--color-bg-primary);
+  font-weight: 700;
+}
+.hero h1 {
+  margin: 0 0 0.4em;
+  font-size: clamp(2.5rem, 8vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.hero .accent {
+  color: var(--color-text-secondary);
+}
+.hero .lede {
+  max-width: 34em;
+  margin: 0 0 1.6em;
+  font-size: 1.3rem;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  margin: 0;
+  padding: 0.55em 1.15em;
+  border: 1px solid var(--color-primary);
+  border-radius: 999px;
+  background-color: var(--color-primary-light);
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.badge::before {
+  content: "";
+  flex: none;
+  width: 0.55em;
+  height: 0.55em;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 48px 0 36px;
+  padding: 0;
+  list-style: none;
+}
+@media (max-width: 600px) {
+  .features {
+    grid-template-columns: 1fr;
+    margin-top: 36px;
+  }
+}
+.feature {
+  padding: 20px 22px;
+  border: 1px solid var(--color-border-primary);
+  border-radius: 12px;
+  background-color: var(--color-bg-secondary);
+  box-shadow: 0 2px 8px var(--color-shadow-primary);
+}
+.feature h2 {
+  margin: 0 0 0.35em;
+  color: var(--color-text-secondary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.feature p {
+  margin: 0;
+  line-height: 1.55;
+}
+.landing-more {
+  margin: 0;
+}
+.site-footer {
+  border-top: 1px solid var(--color-border-primary);
+  padding: 22px 0 28px;
+  font-size: 0.95rem;
+}
+.site-footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+}
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+}
+.footer-nav a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+.footer-nav a:hover,
+.footer-nav a[aria-current="page"] {
+  color: var(--color-text-secondary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+}
+.copyright {
+  margin: 0;
+}
+    </style>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap site-header-inner">
+        <a class="site-name" href="/"><svg class="site-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 50" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.80 18.75L20.20 18.75L21.40 13.20L1.20 13.20L0 18.75L7.30 18.75L1 48.20L6.55 48.20L12.80 18.75ZM38.95 18.85L41.35 14.35Q39.75 13.45 37.78 13.02Q35.80 12.60 34 12.60Q31.25 12.60 28.95 13.75Q26.65 14.90 25.05 17.12Q23.45 19.35 22.75 22.65L19.25 39.00Q18.60 42.05 19.30 44.25Q20 46.45 21.98 47.62Q23.95 48.80 27.05 48.80Q29 48.80 31.13 48.32Q33.25 47.85 35.60 47.05L35.90 41.80Q35.65 41.85 34.48 42.20Q33.30 42.55 31.70 42.85Q30.10 43.15 28.55 43.15Q27.10 43.15 26.15 42.72Q25.20 42.30 24.85 41.37Q24.50 40.45 24.80 38.90L28.30 22.50Q28.65 20.95 29.35 19.95Q30.05 18.95 31.30 18.45Q32.55 17.95 34.45 17.95Q35.60 17.95 36.83 18.20Q38.05 18.45 38.95 18.85Z"/></svg><span>Tarek Chaalan</span></a>
+        <a class="product-link" href="/orbital">Orbital Notes</a>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+<article class="prose">
+<h1 id="orbital-user-guide">Orbital User Guide</h1>
+<p>Orbital is a note-taking app for Mac built around one idea: everything you type while
+recording is tied to the moment it was said. Click a timestamp, a TimeTag, or a transcript
+line, and playback jumps straight there. Recordings are transcribed on your Mac, and an AI
+assistant can summarize, pull out key moments, and answer questions about any note.</p>
+<p>This guide covers Orbital 1.5.1 on macOS 14 or later. It is written for people using the
+app, not building it. Developer documentation lives in <a href="/orbital">docs/README.md</a>.</p>
+<h2 id="contents">Contents</h2>
+<ol>
+<li><a href="#1-getting-started">Getting started</a></li>
+<li><a href="#2-the-window">The window</a></li>
+<li><a href="#3-notes-notebooks-and-folders">Notes, notebooks, and folders</a></li>
+<li><a href="#4-recording">Recording</a></li>
+<li><a href="#5-timestamps-and-timetags">Timestamps and TimeTags</a></li>
+<li><a href="#6-playback">Playback</a></li>
+<li><a href="#7-editing-audio">Editing audio</a></li>
+<li><a href="#8-transcription">Transcription</a></li>
+<li><a href="#9-dictation">Dictation</a></li>
+<li><a href="#10-the-editor">The editor</a></li>
+<li><a href="#11-the-ai-assistant">The AI assistant</a></li>
+<li><a href="#12-locking-privacy-and-where-your-data-lives">Locking, privacy, and where your data lives</a></li>
+<li><a href="#13-export-import-bundles-and-print">Export, import, bundles, and print</a></li>
+<li><a href="#14-storage">Storage</a></li>
+<li><a href="#15-plans-purchases-and-usage">Plans, purchases, and usage</a></li>
+<li><a href="#16-updates-and-getting-help">Updates and getting help</a></li>
+<li><a href="#17-troubleshooting">Troubleshooting</a></li>
+<li><a href="#18-settings-reference">Settings reference</a></li>
+<li><a href="#19-keyboard-shortcuts">Keyboard shortcuts</a></li>
+<li><a href="#20-how-orbital-compares-to-other-audio-note-apps">How Orbital compares to other audio note apps</a></li>
+<li><a href="#21-glossary">Glossary</a></li>
+</ol>
+<hr>
+<h2 id="1-getting-started">1. Getting started</h2>
+<h3 id="what-you-need">What you need</h3>
+<ul>
+<li>A Mac running macOS 14 (Sonoma) or later. Apple Silicon and Intel are both supported.</li>
+<li>A microphone (the built-in one is fine) for recording.</li>
+<li>Nothing else. There is no account to create and no sign-in.</li>
+</ul>
+<h3 id="install">Install</h3>
+<p>Get Orbital from the Mac App Store, the only place it is distributed. Updates arrive
+through the App Store. See <a href="#16-updates-and-getting-help">Updates</a>.</p>
+<h3 id="permissions-macos-will-ask-for">Permissions macOS will ask for</h3>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>When it is asked</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Microphone</td>
+<td>The first time you record</td>
+<td>To capture audio</td>
+</tr>
+<tr>
+<td>Speech Recognition</td>
+<td>The first time you transcribe or dictate</td>
+<td>On-device transcription uses Apple&#39;s Speech framework</td>
+</tr>
+<tr>
+<td>Screen &amp; System Audio Recording</td>
+<td>Only if you turn on Capture System Audio</td>
+<td>To record what your Mac is playing, such as the other side of a call. Orbital reads no screen pixels; see <a href="#recording-online-meetings">Recording online meetings</a></td>
+</tr>
+</tbody></table>
+</div>
+<p>If you decline one and change your mind later, turn it on in System Settings ▸ Privacy &amp;
+Security.</p>
+<h3 id="first-launch">First launch</h3>
+<p>Orbital creates an Onboarding notebook with a welcome note. The note has a narrated
+four-minute walkthrough attached: press play and read along, and every heading is one
+click away. A guided tour also runs over the real interface, spotlighting each area in turn.
+You can skip it and replay it any time from Help ▸ Show Onboarding.</p>
+<h3 id="your-first-note-in-three-steps">Your first note in three steps</h3>
+<ol>
+<li><strong>Record and type.</strong> Press ⌘N for a new note, then ⌘R to start recording. Type as you
+normally would. Every paragraph you start while recording gets a timestamp in the left
+gutter. Press ⌘R again to stop.</li>
+<li><strong>Jump back.</strong> Click any timestamp in the gutter. Playback jumps to the moment you
+started typing that paragraph.</li>
+<li><strong>Read the transcript.</strong> By default Orbital transcribes the recording on your Mac when
+you stop. Press ⌘⇧T to open the transcript panel, then click any line to hear it.</li>
+</ol>
+<p>That is the core of the app. Everything else in this guide builds on those three moves.</p>
+<hr>
+<h2 id="2-the-window">2. The window</h2>
+<p>From left to right:</p>
+<ul>
+<li><strong>Sidebar.</strong> Two tabs at the top: <strong>Notebooks</strong> and <strong>AI Notes</strong>. The Notebooks tab lists
+All Notes, your notebooks with their folders, and Archived. Hide or show it with ⌥⌘S.</li>
+<li><strong>Note list.</strong> The notes in whatever you selected in the sidebar, with search at the top
+and a New Note button. Hide or show it with ⌥⌘L.</li>
+<li><strong>Editor.</strong> The note title, a toolbar, the rich-text canvas, and the timestamp gutter
+down its left edge. The audio bar sits along the bottom.</li>
+<li><strong>Transcript panel</strong> (optional, on the right). Toggle with ⌘⇧T or the quote button in
+the toolbar.</li>
+<li><strong>AI panel</strong> (optional, on the right). Toggle with the ✨ button in the toolbar.</li>
+</ul>
+<p>Drag the dividers to resize panes; Orbital remembers each width.</p>
+<p><strong>Focus Mode</strong> (⌃⌘F) hides the sidebar and note list so only the note and its audio remain.
+<strong>Zoom</strong> the canvas with ⌘+ and ⌘−, and reset with ⌘0. <strong>Show Word Count</strong> in the View menu
+puts a live word and character count under the editor.</p>
+<h3 id="the-editor-toolbar">The editor toolbar</h3>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Lock</td>
+<td>Locks or unlocks this note (Pro and Premium). See <a href="#locking-notes">Locking</a></td>
+</tr>
+<tr>
+<td>#</td>
+<td>Inserts a TimeTag at the current audio position (⌘T)</td>
+</tr>
+<tr>
+<td>Aa</td>
+<td>Opens the formatting palette: headings, styles, lists, indent, separator, page break</td>
+</tr>
+<tr>
+<td>Highlighter</td>
+<td>Switches on the highlighter pen and its colours (⌘⇧H)</td>
+</tr>
+<tr>
+<td>Paperclip</td>
+<td>Attaches files to the note (⌘⇧A)</td>
+</tr>
+<tr>
+<td>Microphone</td>
+<td>Starts or stops dictation</td>
+</tr>
+<tr>
+<td>Quote</td>
+<td>Shows or hides the transcript panel (⌘⇧T)</td>
+</tr>
+<tr>
+<td>✨</td>
+<td>Shows or hides the AI assistant</td>
+</tr>
+<tr>
+<td>Share</td>
+<td>Opens the Export sheet (⌘⇧E)</td>
+</tr>
+<tr>
+<td>…</td>
+<td>More actions: pin, lock, move, Import Media, Transcribe Audio, delete</td>
+</tr>
+</tbody></table>
+</div>
+<h3 id="the-audio-bar">The audio bar</h3>
+<p>The bar along the bottom of the editor holds recording and playback in one place: the
+record button, a captions button that turns live transcription on and off, the input-source
+menu, trim and clean-up buttons, play/pause, skip buttons, a speed menu, the timeline with
+a draggable playhead and a dot for every TimeTag, and the time remaining. Each of these is
+covered in the sections that follow.</p>
+<hr>
+<h2 id="3-notes-notebooks-and-folders">3. Notes, notebooks, and folders</h2>
+<h3 id="notebooks">Notebooks</h3>
+<p>A notebook is a named, coloured group of notes. Create one with ⌘⇧N or the + button in the
+sidebar. Right-click a notebook for:</p>
+<ul>
+<li><strong>Customize Icon &amp; Color…</strong> Pick from nine colours (or Automatic) and a set of icons.</li>
+<li><strong>New Folder…</strong> One level of folders inside a notebook.</li>
+<li><strong>Rename…</strong></li>
+<li><strong>Hide Behind Password…</strong> Hides the notebook until your lock password is entered. This
+is a visibility gate only; the notes inside are not encrypted. See
+<a href="#hidden-notebooks">Hidden notebooks</a>.</li>
+<li><strong>Delete Notebook…</strong> The notes are not deleted; they move to Drafts.</li>
+</ul>
+<p><strong>Drafts</strong> is the built-in notebook that catches any note not filed elsewhere. It cannot be
+deleted. <strong>All Notes</strong> shows everything at once. <strong>Archived</strong> holds notes you have deleted
+(see below).</p>
+<p>Drag notebooks and folders into whatever order you want.</p>
+<h3 id="folders">Folders</h3>
+<p>Folders give you one level of structure inside a notebook. Right-click a notebook ▸ New
+Folder…, then drag notes into it, or use Note ▸ Move to Notebook, which lists folders too.
+Right-click a folder to rename or delete it. Deleting a folder never deletes notes; they
+return to the notebook.</p>
+<h3 id="working-with-notes">Working with notes</h3>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>How</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>New note</td>
+<td>⌘N, the + in the note list, or File ▸ New Note</td>
+</tr>
+<tr>
+<td>Rename</td>
+<td>Click the title at the top of the editor</td>
+</tr>
+<tr>
+<td>Pin to top</td>
+<td>Note ▸ Pin Note to Top, or right-click the note</td>
+</tr>
+<tr>
+<td>Duplicate</td>
+<td>⌘⇧D. The copy gets its own audio history</td>
+</tr>
+<tr>
+<td>Move</td>
+<td>Drag the note onto a notebook or folder in the sidebar, or Note ▸ Move to Notebook</td>
+</tr>
+<tr>
+<td>Lock</td>
+<td>Note ▸ Lock Note, or right-click ▸ Lock Note… (Pro and Premium)</td>
+</tr>
+<tr>
+<td>Show in Finder</td>
+<td>Right-click the note. The menu also shows the note&#39;s size on disk</td>
+</tr>
+<tr>
+<td>Delete</td>
+<td>Note ▸ Delete Note, right-click the note, or the … menu</td>
+</tr>
+</tbody></table>
+</div>
+<h3 id="deleting-and-the-archive">Deleting and the archive</h3>
+<p>By default, deleting a note moves it to <strong>Archived</strong> rather than erasing it. From Archived,
+right-click a note to <strong>Restore</strong> it or <strong>Delete Permanently</strong>. The trash button at the top
+of the Archived list is <strong>Delete All</strong>, which empties the archive in one go.</p>
+<p>Archiving a note also drops its audio-edit backup, if it had one, to free space.</p>
+<p>If you would rather deletes be permanent immediately, turn off Settings ▸ General ▸
+&quot;Archive deleted notes instead of erasing them&quot;.</p>
+<h3 id="search">Search</h3>
+<p>The search field at the top of the note list matches against note titles, body text, every
+transcript line, and TimeTag names. So you can find a note by something that was said out
+loud in it, not just what you typed. Search keeps up with typing even in large libraries.</p>
+<p>Locked notes are not searchable until you have unlocked the session.</p>
+<h3 id="sorting">Sorting</h3>
+<p>Settings ▸ General ▸ Notes list, or the sort button in the sidebar: sort by Last edited,
+Date created, or Title, ascending or descending. Pinned notes always stay at the top. The
+date shown on each note card can be relative (&quot;Yesterday&quot;), short, or long.</p>
+<hr>
+<h2 id="4-recording">4. Recording</h2>
+<h3 id="start-stop-and-record-more">Start, stop, and record more</h3>
+<p>Press ⌘R, click the record button in the audio bar, or choose Audio ▸ Record. Press ⌘R
+again to stop. A note can hold any number of recordings: once a note has audio, the record
+button becomes <strong>Record More Audio</strong>, and each new take is appended as a segment on the
+same timeline. Timestamps you add during later segments land in the right place.</p>
+<p>You cannot record while the AI Notes tab is showing; recording lives in your notes.</p>
+<h3 id="choosing-an-input">Choosing an input</h3>
+<p>Click the input-source button in the audio bar. It lists every microphone macOS can see;
+the one you pick is remembered across launches by device, so it comes back when you plug
+it in again. Choose <strong>Edit Input List…</strong> to hide the virtual inputs other apps install so
+they stop cluttering the picker; hiding an input never affects the device itself.</p>
+<p>The microphone has its own tick box in the same menu. Untick it and Orbital records only
+system audio (see below).</p>
+<h3 id="recording-online-meetings">Recording online meetings</h3>
+<p>Turn on <strong>Capture System Audio</strong> in the input-source menu and whatever your Mac plays, for
+example the other participants on a Teams or Zoom call, is mixed into the recording
+alongside your microphone. Wear headphones so your mic does not re-record the speakers.</p>
+<p>The first time you turn it on, macOS asks for the Screen &amp; System Audio Recording
+permission. That is simply the bucket Apple gates system audio behind. Orbital requests the
+smallest video stream the framework allows and never reads a frame of it; your screen is
+not captured, recorded, or sent anywhere.</p>
+<p>You can flip Capture System Audio on or off in the middle of a recording. If the system
+stream hiccups, Orbital restarts it and tells you.</p>
+<p>Recording other people may require their consent where you live. Orbital cannot make that
+judgement for you.</p>
+<h3 id="recording-quality">Recording quality</h3>
+<p>Settings ▸ Audio ▸ Quality controls the AAC bitrate for new recordings and converted
+imports:</p>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Bitrate</th>
+<th>Roughly</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Space saver</td>
+<td>48 kbps</td>
+<td>29 MB per hour</td>
+</tr>
+<tr>
+<td>Good (default)</td>
+<td>96 kbps</td>
+<td>51 MB per hour</td>
+</tr>
+<tr>
+<td>Best</td>
+<td>192 kbps</td>
+<td>94 MB per hour</td>
+</tr>
+</tbody></table>
+</div>
+<h3 id="what-happens-when-things-go-wrong">What happens when things go wrong</h3>
+<ul>
+<li><strong>Unplug the mic, or switch to AirPods mid-recording.</strong> The recording continues on the
+new input.</li>
+<li><strong>Every input disappears.</strong> Recording pauses and resumes on its own when one returns.</li>
+<li><strong>Force-quit, crash, or power loss.</strong> Recordings are written as they happen and are
+recovered the next time Orbital launches.</li>
+<li><strong>The Mac sleeps.</strong> Recording survives sleep.</li>
+</ul>
+<h3 id="the-free-plan-recording-allowance">The Free plan recording allowance</h3>
+<p>Free includes 120 minutes of recording per month. Typing, playback, and on-device
+transcription are never limited. When the allowance is used up, Orbital shows the plans
+sheet; Pro and Premium record without limits. See <a href="#15-plans-purchases-and-usage">Plans</a>.</p>
+<h3 id="importing-audio">Importing audio</h3>
+<p>File ▸ Import Audio… (⌘⇧I), the … menu ▸ Import Media…, or drag audio files straight onto
+the editor. Accepted formats: M4A, MP3, WAV, AIFF, CAF, AAC, and FLAC. Imported files
+become segments on the note&#39;s timeline, marked &quot;(imported)&quot; in Audio ▸ Delete a Recording.</p>
+<p>Lossless imports (WAV, AIFF, CAF, FLAC) are converted to AAC at your recording quality in
+the background once the note is idle. A two-hour WAV goes from about 1.2 GB to about 80 MB
+with the transcript and every timestamp unchanged. For notes imported before this feature
+existed, use Settings ▸ Storage ▸ Compress.</p>
+<hr>
+<h2 id="5-timestamps-and-timetags">5. Timestamps and TimeTags</h2>
+<p>Orbital has two kinds of time markers. Both are clickable, and both survive audio edits.</p>
+<h3 id="gutter-timestamps">Gutter timestamps</h3>
+<p>Every paragraph you start typing while recording or playing gets a stamp in the left
+gutter, such as <code>0:00:09</code>. Click a stamp and playback jumps to that moment. This happens on
+its own; there is nothing to press.</p>
+<ul>
+<li><strong>Set Timestamp</strong> (⌘&#39; in the Note menu) stamps the selected paragraphs with the current
+record or playback position. Use it to stamp something you typed before you hit record,
+or to move a stamp.</li>
+<li><strong>Remove Timestamp</strong> clears the stamp from the selected paragraphs.</li>
+<li>Hide the gutter entirely with Settings ▸ General ▸ &quot;Show timestamp gutter&quot;.</li>
+</ul>
+<p>Stamps travel with the note when you export Plain Text (as timecodes) and when you move
+paragraphs around.</p>
+<h3 id="timetags">TimeTags</h3>
+<p>A TimeTag is a named marker you drop at the current moment: &quot;Decision&quot;, &quot;Ask about
+pricing&quot;, anything. Press ⌘T or click the # button in the toolbar, type a name, and press
+Return. The popover shows the exact time the tag will point to.</p>
+<p>TimeTags appear three ways:</p>
+<ul>
+<li>As a red <code>#Name</code> pill in your note where the cursor was. Click it to jump there.</li>
+<li>As a dot on the audio-bar timeline. Hover for the name and time; click to jump.</li>
+<li>In search: TimeTag names are indexed, so searching &quot;pricing&quot; finds the note.</li>
+</ul>
+<p><strong>TimeTag offset.</strong> You usually tag something after you hear it. Settings ▸ Audio ▸ TimeTag
+offset lets new tags point 1, 3, 5, or 10 seconds before the moment you press the button.</p>
+<p><strong>Key Moments to TimeTags.</strong> The AI assistant&#39;s Key Moments action lists the notable moments
+in a recording, each with an Insert Tag button that drops it as a TimeTag. See
+<a href="#quick-actions">Quick actions</a>.</p>
+<hr>
+<h2 id="6-playback">6. Playback</h2>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Play / Pause</td>
+<td>⌘↩, the play button, or Audio ▸ Play / Pause</td>
+</tr>
+<tr>
+<td>Skip forward / back</td>
+<td>⌥⌘→ and ⌥⌘←. The interval is 5, 10, 15, 30, or 60 seconds (Settings ▸ Audio ▸ Skip interval; default 10)</td>
+</tr>
+<tr>
+<td>Nudge 3 seconds</td>
+<td>⌥⇧⌘→ and ⌥⇧⌘←</td>
+</tr>
+<tr>
+<td>Scrub</td>
+<td>Drag the playhead on the timeline</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>0.5×, 0.75×, 1×, 1.25×, 1.5×, 2× from the speed menu in the audio bar or Audio ▸ Playback Speed</td>
+</tr>
+</tbody></table>
+</div>
+<p>While audio plays, the transcript panel follows along and highlights the current line, and
+any paragraph you type gets stamped with the playback position, so you can take notes on a
+recording after the fact just as you would live.</p>
+<p>Plugging in or removing headphones mid-playback does not stop it.</p>
+<h3 id="playback-effects">Playback effects</h3>
+<p>Audio ▸ Noise Reduction and Audio ▸ EQ apply to playback only; the recordings on disk are
+never altered. Settings ▸ Audio has the noise-reduction strength slider and the three-band
+EQ (Low, Mid, High, each ±12 dB).</p>
+<hr>
+<h2 id="7-editing-audio">7. Editing audio</h2>
+<p>Every audio edit remaps the note&#39;s gutter stamps, TimeTags, and transcript lines onto the
+shortened timeline, so nothing points at the wrong moment afterwards.</p>
+<h3 id="trim-a-range">Trim a range</h3>
+<p>Click the trim button (the selection icon) in the audio bar, drag across the section of the
+timeline you want to remove, then confirm <strong>Remove</strong>. Playback pauses while you trim.</p>
+<h3 id="delete-a-recording">Delete a recording</h3>
+<p>If a note has more than one segment, Audio ▸ Delete a Recording lists each one by date and
+length so you can remove a single take. Audio ▸ Delete All Audio… removes every recording
+from the note, after confirming.</p>
+<h3 id="clean-up-audio-premium">Clean Up Audio (Premium)</h3>
+<p>Audio ▸ Clean Up Audio, or the scissors button in the audio bar, trims long silences and
+normalizes loudness in one pass. It adapts to the recording&#39;s own noise floor, so it works on
+laptop mics and phone recordings, not just studio-quiet ones. Clean-up cannot run while the
+note is recording or transcribing.</p>
+<h3 id="undo-or-commit-an-edit">Undo or commit an edit</h3>
+<ul>
+<li><strong>Revert Audio Edits</strong> (Audio menu) restores the original recordings and puts every
+timestamp back. This works because Orbital keeps a backup of the pre-edit originals.</li>
+<li><strong>Keep Audio Edits</strong> drops those originals once you are happy, so they stop taking space.</li>
+<li>Settings ▸ Storage ▸ &quot;Keep audio-edit backups&quot; can drop them automatically after 7 or 30
+days, and archiving a note drops its backup.</li>
+</ul>
+<hr>
+<h2 id="8-transcription">8. Transcription</h2>
+<h3 id="engines">Engines</h3>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Engine</th>
+<th>Where it runs</th>
+<th>Plan</th>
+<th>What you get</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Apple (default)</td>
+<td>On your Mac when possible; Apple&#39;s servers as a fallback</td>
+<td>All plans, unlimited</td>
+<td>Transcription in the dictation language you choose; live transcription while recording</td>
+</tr>
+<tr>
+<td>ElevenLabs Scribe, your key</td>
+<td>ElevenLabs&#39; servers under your account</td>
+<td>Pro and Premium</td>
+<td>Speaker labels, about 90 auto-detected languages, mixed-language recordings; ElevenLabs charges about $0.22 per hour of audio</td>
+</tr>
+<tr>
+<td>ElevenLabs Scribe, built in</td>
+<td>Orbital&#39;s relay, then ElevenLabs</td>
+<td>Premium</td>
+<td>The same, with no key: 10 hours per month included, then transcription continues on-device</td>
+</tr>
+</tbody></table>
+</div>
+<p>Pick the engine in Settings ▸ Speech. On-device transcription uses Apple&#39;s Speech framework,
+which processes audio on your Mac when possible. If on-device recognition is not available for
+your language, or it fails, macOS falls back to Apple&#39;s servers under the Speech Recognition
+permission you granted.</p>
+<h3 id="automatic-transcription">Automatic transcription</h3>
+<p>&quot;Transcribe recordings automatically&quot; (Settings ▸ Speech, on by default) transcribes every
+recording and import with the engine you chose, as soon as it stops. If a cloud engine fails
+on this automatic path, Orbital falls back to on-device so you always get a transcript.</p>
+<h3 id="transcribe-now">Transcribe Now</h3>
+<p>Transcript ▸ Transcribe Now, the … menu ▸ Transcribe Audio, or the Transcribe Audio button in
+an empty transcript panel runs transcription on demand, and re-runs it over an existing
+transcript. By default Orbital asks which engine to use each time; a checkbox in that dialog
+(or Settings ▸ Speech) turns the question off. A cloud engine you chose explicitly reports
+its error rather than silently transcribing on-device.</p>
+<h3 id="live-transcription-while-recording">Live transcription while recording</h3>
+<p>The captions button in the audio bar, or Transcript ▸ Transcribe While Recording, shows
+lines in the transcript panel as you speak. It is on by default and can be toggled
+mid-recording. When the recording stops, a more accurate pass replaces the live transcript.
+For very long sessions you can skip that pass with Transcript ▸ Keep Live Transcript.</p>
+<h3 id="the-transcript-panel">The transcript panel</h3>
+<p>Open it with ⌘⇧T or the quote button. It has two tabs.</p>
+<p><strong>Transcript.</strong> Every line carries its time and, with a cloud engine, its speaker. Click a
+line to seek playback to it; the panel scrolls to follow playback. Type in &quot;Search
+transcript&quot; to filter lines. The header has buttons to re-transcribe, delete the
+transcript, and close the panel.</p>
+<p><strong>Speakers.</strong> Lists each speaker with a line count and a play button that plays a short
+sample so you can tell who is who. Click a speaker to rename them; the new name applies to
+every line they spoke, and Reset restores the original label. You can also rename by
+clicking a speaker&#39;s name on any transcript line.</p>
+<p>Transcript ▸ Copy Transcript puts the whole thing on the clipboard as <code>[h:mm:ss] Speaker: text</code> lines.</p>
+<h3 id="importing-a-transcript-you-already-have">Importing a transcript you already have</h3>
+<p>File ▸ Import Transcript… reads a text file of timestamped lines into the note, speakers
+included, so a transcript from another service can drive click-to-seek in Orbital. A note
+can hold an imported transcript without any audio.</p>
+<h3 id="exporting-a-transcript">Exporting a transcript</h3>
+<p>Export ▸ Transcript gives you Text (<code>[0:01:23] Speaker: line</code>) or SubRip subtitles (<code>.srt</code>)
+for video players. See <a href="#13-export-import-bundles-and-print">Export</a>.</p>
+<hr>
+<h2 id="9-dictation">9. Dictation</h2>
+<p>Click the microphone button in the toolbar to dictate into the note at the cursor. Words
+appear underlined while they are provisional and firm up as each phrase completes. Clicking
+or typing mid-phrase keeps what was already recognized and starts the next phrase cleanly.
+Each utterance is a single undo step, and dictated text never overwrites a selection.
+Dictation works during a recording too.</p>
+<p>Settings ▸ Speech ▸ Dictation:</p>
+<ul>
+<li><strong>Put each dictated phrase on its own line</strong> (on by default). Off, phrases continue the
+current paragraph separated by spaces.</li>
+<li><strong>Language.</strong> Any language macOS speech recognition supports. This is also the hint
+language for on-device transcription.</li>
+</ul>
+<p>Dictation runs through Apple&#39;s Speech framework, on-device where your language supports it.</p>
+<hr>
+<h2 id="10-the-editor">10. The editor</h2>
+<h3 id="text-styles">Text styles</h3>
+<p>The Aa toolbar button and the Format menu cover everything:</p>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Style</th>
+<th>Shortcut</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Header Large / Header Medium / Body</td>
+<td>⌥⌘1 / ⌥⌘2 / ⌥⌘0</td>
+</tr>
+<tr>
+<td>Bold / Italic / Underline</td>
+<td>⌘B / ⌘I / ⌘U</td>
+</tr>
+<tr>
+<td>Strikethrough</td>
+<td>Format menu</td>
+</tr>
+<tr>
+<td>Bulleted list, Numbered list, Checkbox, Quote</td>
+<td>Format menu or the palette</td>
+</tr>
+<tr>
+<td>Increase / Decrease indent</td>
+<td>⌘] / ⌘[</td>
+</tr>
+<tr>
+<td>Separator, Page break</td>
+<td>Format menu or the palette</td>
+</tr>
+<tr>
+<td>Highlighter</td>
+<td>⌘⇧H</td>
+</tr>
+</tbody></table>
+</div>
+<p>Checkboxes are clickable. Page breaks are honoured by Print and PDF export.</p>
+<h3 id="markdown-shorthand">Markdown shorthand</h3>
+<p>At the start of a plain paragraph, type a marker and a space and the paragraph converts:</p>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Becomes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>- </code>, <code>* </code>, or <code>• </code></td>
+<td>Bulleted list</td>
+</tr>
+<tr>
+<td><code>1. </code> (any number)</td>
+<td>Numbered list</td>
+</tr>
+<tr>
+<td><code>[] </code> or <code>[ ] </code></td>
+<td>Checkbox</td>
+</tr>
+</tbody></table>
+</div>
+<p>Inside an existing list the marker is left as text. The AI assistant&#39;s answers and the Add
+to canvas button use the same conversions, so <code>**bold**</code>, <code>&gt; quotes</code>, and headings arrive
+formatted.</p>
+<h3 id="highlighter">Highlighter</h3>
+<p>Press ⌘⇧H or click the highlighter. Choose from six colours (yellow, green, orange, pink,
+blue, purple), then select text or drag across it. Settings ▸ General ▸ &quot;Highlighter selects
+by&quot; switches between whole words (default) and single characters. Use the eraser to remove a
+highlight and the tick to leave highlighting mode.</p>
+<h3 id="images">Images</h3>
+<p>Paste or drag any image format macOS can display and it appears inline on softly rounded
+corners. Drag a corner to resize it. Images travel with copy and paste, including between
+notes, and export into PDF and Print.</p>
+<h3 id="attachments">Attachments</h3>
+<p>⌘⇧A, the paperclip, or dragging files onto the editor attaches PDFs, Word documents,
+spreadsheets, anything, as a chip in the text. Click a chip: files macOS can preview open
+right in Orbital, everything else opens in its own app. Chips move with copy and paste,
+including between notes. Large files copy in the background, and the chip appears when the
+copy is done.</p>
+<p>The AI assistant reads attachments alongside the transcript: PDFs, Word and RTF documents,
+plain-text files, and even text inside images and slides, recognized on-device.</p>
+<h3 id="pasting-from-other-apps">Pasting from other apps</h3>
+<p>Text pasted from other apps comes in at the canvas&#39;s own font, size, and colour at the
+cursor; the other app&#39;s formatting is dropped. Copies from another Orbital note keep their
+styling.</p>
+<h3 id="find-print-and-word-count">Find, print, and word count</h3>
+<ul>
+<li><strong>Find</strong> with ⌘F.</li>
+<li><strong>Print</strong> with ⌘P. PDF export produces the same layout.</li>
+<li><strong>Word count</strong> from View ▸ Show Word Count.</li>
+</ul>
+<h3 id="appearance">Appearance</h3>
+<p>Settings ▸ Appearance:</p>
+<ul>
+<li><strong>Appearance.</strong> System, Dark (default), or Light. Dark is the original look; Light
+keeps the starfield but draws every theme as a pale tint with dark text.</li>
+<li><strong>Theme.</strong> Ten procedural space themes: Milky Way Centre (default), Eagle Nebula&#39;s
+Pillars of Creation, Earth, Galaxy IC 3639, Jupiter, Moon, TOI 700 d, Saturn,
+Andromeda, and Mars. Each has a dark and a light version; the cards preview whichever
+appearance is active.</li>
+<li><strong>Editor font.</strong> System, Rubik, OpenDyslexic, Avenir Next, Baskerville, Courier, Geeza
+Pro, Helvetica Neue, Menlo, Noto Sans, and Noto Sans Arabic, plus a size control. Only
+fonts installed on your Mac are offered.</li>
+</ul>
+<hr>
+<h2 id="11-the-ai-assistant">11. The AI assistant</h2>
+<p>Open the panel with the ✨ button. What you can do depends on your plan:</p>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Free</th>
+<th>Pro</th>
+<th>Premium</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Summarize, Key Moments, Action Items, Meeting Minutes, Suggest Title</td>
+<td>No</td>
+<td>With your own API key</td>
+<td>Built in, or your key</td>
+</tr>
+<tr>
+<td>Chat about a note, @-mention other notes</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>AI Notes (on the canvas and in the AI Notes tab)</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Auto-summarize every recording</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Add to canvas, timestamp pills, saved results</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+</div>
+<h3 id="providers-and-keys">Providers and keys</h3>
+<p>On Pro, the assistant runs on your own API key for OpenAI, Claude (Anthropic), Groq, or
+Google Gemini. Groq and Gemini offer free keys with no card required. Enter keys in
+Settings ▸ AI; they are stored in your Keychain and sent only to the provider they belong
+to. Orbital also picks up <code>OPENAI_API_KEY</code>, <code>ANTHROPIC_API_KEY</code>, <code>GROQ_API_KEY</code>, and
+<code>GEMINI_API_KEY</code> from the environment as defaults.</p>
+<p>On Premium, <strong>Orbital AI</strong> is built in with no keys: 300 AI actions per month, resetting
+monthly, covering every quick action, AI Notes, and chat. Auto-summaries count against the
+same 300. Add your own keys too and they appear beside Orbital AI in the model menu.</p>
+<p>The <strong>model menu</strong> sits under the chat box in the panel, so you can switch providers per
+question without opening Settings. Settings ▸ AI ▸ Provider picks the default and, for
+OpenAI and Claude, the model.</p>
+<p><strong>Fallback.</strong> &quot;Fall back to other configured providers when a request fails&quot; is on by
+default: if your chosen provider errors, Orbital retries with the other providers you have
+keys for (and Orbital AI on Premium). Turn it off and requests only ever go to the provider
+you selected. Every answer is labelled &quot;via &lt;provider&gt;&quot; so you know which one responded.</p>
+<h3 id="quick-actions">Quick actions</h3>
+<p>With a note open, the panel&#39;s Quick Actions row offers:</p>
+<ul>
+<li><strong>Summarize.</strong> A concise summary of the note and its transcript.</li>
+<li><strong>Key Moments.</strong> The notable moments, each with a timestamp and an <strong>Insert Tag</strong> button
+that drops it into the note as a TimeTag.</li>
+<li><strong>Action Items.</strong> A checklist of follow-ups.</li>
+<li><strong>Meeting Minutes.</strong> Structured minutes.</li>
+<li><strong>Suggest Title.</strong> A title, with a <strong>Use as Title</strong> button.</li>
+</ul>
+<p>Results are saved as a chat under the note, so they are still there after a relaunch.
+Timestamps in any answer are red pills: click one and playback jumps there. Copying an
+answer and pasting it into a note keeps the pills.</p>
+<p><strong>Add to canvas.</strong> Every answer, chat reply and quick-action result alike, has an Add to
+canvas button that drops it into the note at the cursor, on its own lines, formatted the way
+the canvas formats things: lists, bold, quotes, and every cited moment as a TimeTag pill.</p>
+<h3 id="chat-premium">Chat (Premium)</h3>
+<p>Type in &quot;Ask about this note…&quot; and press Return. The assistant sees the note&#39;s title, text,
+timestamped transcript with speakers, attachments&#39; extracted text, and brief context from
+earlier chats about the same note.</p>
+<ul>
+<li><strong>@-mention other notes.</strong> Click the @ button (or type @) to add another note from the
+same notebook as context, so you can ask across a week of meetings. Remove a mention with
+its ×.</li>
+<li><strong>Context meter.</strong> A percentage under the box shows how much of the chat&#39;s context is
+used. When it is full, start a New Chat.</li>
+<li><strong>Stop</strong> cancels a reply in progress. A question that cannot be sent stays in the box.</li>
+<li><strong>Conversations.</strong> The panel&#39;s home lists every chat for the note. New Chat starts a
+fresh one; right-click a chat to delete it.</li>
+</ul>
+<h3 id="ai-notes-on-the-canvas-premium">AI Notes on the canvas (Premium)</h3>
+<p>The <strong>AI Notes</strong> button on the canvas writes timestamped bullet notes from the transcript
+straight into the note: a title, sections, and an action-items list, nearly every line
+clickable to its moment. It needs a transcript first. Running it again replaces the previous
+run in place rather than appending a second copy.</p>
+<h3 id="the-ai-notes-tab-premium">The AI Notes tab (Premium)</h3>
+<p>The AI Notes tab in the sidebar writes one document across several recorded sessions.</p>
+<ol>
+<li>Click <strong>New AI Notes</strong>.</li>
+<li>Pick up to eight sessions (any note with a transcript counts as a session). The footer
+shows how many you picked and their total length.</li>
+<li>Click <strong>Generate Notes</strong>. This can take a minute or more.</li>
+</ol>
+<p>The document lists every line with an S1, S2… marker for the session it came from; click a
+line to play that session from that moment. A chat button opens &quot;Ask across these
+sessions…&quot;, grounded in the document and its source transcripts. Documents live in the
+sidebar under the tab; the trash button deletes one.</p>
+<h3 id="auto-summarize-premium">Auto-summarize (Premium)</h3>
+<p>Settings ▸ AI ▸ Automation ▸ &quot;Auto-summarize recordings when transcription finishes&quot; (on by
+default on Premium) summarizes every recording and extracts key moments with no button
+press. Each auto-summary counts as one AI action.</p>
+<h3 id="what-the-assistant-sends-and-where">What the assistant sends, and where</h3>
+<p>Only when you run an AI feature, and only to the provider that answers: the note&#39;s title,
+text, timestamped transcript with speaker labels, any notes you @-mentioned, attachments&#39;
+extracted text, and brief context from earlier chats about the same note. Nothing is sent in
+the background. On Premium, Orbital AI runs through Orbital&#39;s relay, which forwards only the
+message text to its upstream model and stores no note content. Chats about a locked note are
+never written to disk. Full details are in the <a href="/orbital/privacy">privacy policy</a>.</p>
+<hr>
+<h2 id="12-locking-privacy-and-where-your-data-lives">12. Locking, privacy, and where your data lives</h2>
+<h3 id="where-your-data-lives">Where your data lives</h3>
+<p>Everything is local, in the app&#39;s container at
+<code>~/Library/Containers/com.orbital.mac/Data/Library/Application Support/Orbital/</code>:</p>
+<ul>
+<li><code>notebooks.json</code> and the AI sidecars (<code>chats.json</code>, <code>ai-notes.json</code>).</li>
+<li>One folder per note, named after the note (<code>meeting-with-sam--&lt;id&gt;</code>), holding
+<code>note.json</code>, <code>transcript.json</code>, its audio segments under <code>audio/</code>, and attachments.</li>
+<li><code>Backups/</code>, timestamped snapshots of the notes&#39; metadata; the latest 15 are kept.</li>
+<li>A README explaining the layout.</li>
+</ul>
+<p>Settings ▸ Storage ▸ Show in Finder opens the folder. There is no Orbital account, no
+analytics, no telemetry, and no crash reporting. Nothing leaves your Mac unless you trigger
+it: cloud transcription, an AI action, a Premium quota check — or iCloud sync, if you turn it
+on (below). The one exception is Apple&#39;s own: on-device transcription falls back to Apple&#39;s
+servers when on-device recognition isn&#39;t available (see <a href="#engines">Engines</a>). To move notes to someone else&#39;s Mac, use <a href="#bundles">bundles</a>.</p>
+<h3 id="icloud-sync-optional">iCloud sync (optional)</h3>
+<p>Settings ▸ iCloud ▸ <strong>Sync this library with iCloud</strong> keeps your library the same on every Mac
+signed in to your Apple ID. It is <strong>off</strong> until you turn it on.</p>
+<ul>
+<li><strong>What syncs:</strong> notes and their text, notebooks and folders (with their order), transcripts,
+TimeTags and speaker names, attachments up to 1 MB, AI chats, and AI Notes documents. It goes
+to your own iCloud storage; Orbital runs no server for it.</li>
+<li><strong>Recordings sync in a later update.</strong> A recording made on another Mac shows up with its
+full length, its stamps and transcript lines in the right places, but it is not on this Mac
+yet: playback skips over it, and transcribing it, cleaning it up, trimming it, deleting it or
+reverting an edit waits until it is here (&quot;Recording is not on this Mac yet&quot;). Exporting such
+a note offers <strong>Export Without Recordings</strong>; the bundle leaves those recordings out and says
+so.</li>
+<li><strong>Editing on two Macs at once</strong> merges: different paragraphs both land. If both Macs changed
+the same paragraph, both versions are kept, one after the other, and Orbital tells you so you
+can pick. Recordings made on both Macs are placed in the order they were recorded, and every
+timestamp still points at the moment it was made.</li>
+<li><strong>Turning it on the first time</strong> on a second Mac replaces its untouched welcome note with
+your library; notes you already had there are merged in, with one Drafts and one Onboarding.</li>
+<li><strong>Locked notes stay on this Mac.</strong> Your other Macs only see that the note exists, under
+Settings ▸ iCloud ▸ Locked on other Macs. <strong>Locked notes are not in iCloud — if this Mac is
+lost they are lost with it unless you export a bundle.</strong> If a note is locked on one Mac while
+another has unsaved edits to it, that Mac asks whether to discard them (the default) or keep
+them as a new, unlocked note that stays on that Mac only.</li>
+<li><strong>Signing out of iCloud or into another Apple ID</strong> pauses sync; nothing is uploaded to the
+other account unless you turn sync on again there. Signing back in resumes where it left off.</li>
+<li><strong>Turn Off</strong> keeps everything on this Mac; turning it back on sends only what changed
+meanwhile. <strong>Turn Off and Remove from iCloud</strong> also deletes Orbital&#39;s data from iCloud; your
+other Macs keep their copies and stop syncing.</li>
+<li>Status and <strong>Last synced</strong> are in Settings ▸ iCloud, with <strong>Sync Now</strong>. Sync needs a build of
+Orbital from the Mac App Store; a development build says &quot;Not available in this build&quot;.</li>
+</ul>
+<h3 id="locking-notes">Locking notes</h3>
+<p>Note locking (Pro and Premium) encrypts a note on disk with AES-GCM, using a key derived
+from a password you choose.</p>
+<ol>
+<li><strong>Set a password</strong> in Settings ▸ General ▸ Note locking ▸ Set Password…, or the first
+time you choose Lock Note. At least six characters. Change it later from the same place;
+the current password is required.</li>
+<li><strong>Lock a note</strong> with Note ▸ Lock Note, right-click ▸ Lock Note…, the lock button in the
+toolbar, or the … menu.</li>
+<li><strong>Unlock</strong> by opening the note and entering the password. One password opens every
+locked note (and shows every hidden notebook) for the session.</li>
+<li><strong>Lock Session</strong> (⌃⌘L in the Note menu) closes them all again and forgets the password.
+Orbital also locks the session by itself when the Mac sleeps, the screen locks, or you
+switch users (Settings ▸ General, on by default), and optionally after 5, 15, 30, or 60
+minutes with no keyboard or mouse input.</li>
+<li><strong>Remove Lock</strong> turns the note back into a plain, unencrypted note.</li>
+</ol>
+<p>What is encrypted: the note&#39;s text, transcript, TimeTags, speaker names, recordings,
+attachments, and its audio-edit backup. Recordings are encrypted chunk by chunk, so a
+two-hour recording is no heavier to lock than a paragraph. What stays readable on disk: the
+note&#39;s title (and the folder name derived from it), how many recordings it has and how long
+they are, and which notebook and folder it sits in.</p>
+<p>While the session is unlocked, decrypted recordings sit in a hidden folder inside the
+library (excluded from Time Machine) and are sealed again when the session locks or you
+quit. Locking a note also purges its plaintext from the metadata backups. AI chats about a
+locked note are kept in memory only.</p>
+<p><strong>There is no password reset.</strong> The key is derived from your password and Orbital has no
+server or copy of it. If you forget the password, locked notes cannot be opened. After five
+wrong guesses, each further attempt waits longer (the prompt says how long), and the count
+survives a relaunch. Lock Session is refused while a locked note is recording or
+transcribing, so a result cannot land after the key is gone.</p>
+<h3 id="hidden-notebooks">Hidden notebooks</h3>
+<p>Right-click a notebook ▸ Hide Behind Password… hides it and its notes until the lock
+password is entered. This is a visibility gate inside the app, not encryption: the notes
+inside stay unencrypted on disk. To protect a notebook&#39;s contents at rest, lock its notes
+individually. Remove Lock un-hides it.</p>
+<h3 id="keys-and-secrets">Keys and secrets</h3>
+<p>API keys and the note-lock verifier live in your macOS Keychain; your purchases are kept by the App Store. They are
+never written to plain files and are sent only to the service they belong to.</p>
+<h3 id="the-diagnostics-log">The diagnostics log</h3>
+<p><code>~/Library/Containers/com.orbital.mac/Data/Library/Logs/Orbital/diagnostics.log</code> records labels like &quot;transcription failed&quot; and one
+line per launch with the version and macOS version. It never contains note content,
+transcripts, or keys, and it is never uploaded. Help ▸ Report a Problem… drafts an email in
+your mail app with the app version, macOS version, and the last few of those labels; you
+read it before deciding to send.</p>
+<hr>
+<h2 id="13-export-import-bundles-and-print">13. Export, import, bundles, and print</h2>
+<h3 id="the-export-sheet">The Export sheet</h3>
+<p>⌘⇧E, the share button, or File ▸ Export… opens a two-step chooser. Pick what, then a format:</p>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>What</th>
+<th>Formats</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Notes</td>
+<td><strong>Markdown</strong> (<code>.md</code>, headings, lists, and styling; special characters escaped so it renders in any Markdown app), <strong>Plain Text</strong> (<code>.txt</code>, with timecodes), <strong>PDF</strong> (formatted exactly like Print, images and page breaks included)</td>
+</tr>
+<tr>
+<td>Transcript</td>
+<td><strong>Text</strong> (<code>.txt</code>, <code>[0:01:23] Speaker: line</code>), <strong>Subtitles</strong> (<code>.srt</code>, SubRip)</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td><strong>M4A</strong> (AAC, small), <strong>WAV</strong> (uncompressed), <strong>AIFF</strong> (uncompressed). All of a note&#39;s recordings are joined into one file</td>
+</tr>
+<tr>
+<td>Orbital Bundle</td>
+<td><code>.orbitalnote</code>, see below</td>
+</tr>
+</tbody></table>
+</div>
+<h3 id="bundles">Bundles</h3>
+<p>Bundles move notes between Macs with everything intact.</p>
+<ul>
+<li><strong>File ▸ Export Note as Bundle…</strong> writes a <code>.orbitalnote</code> file: text, recordings,
+transcript, attachments, and the note&#39;s AI chats and AI Notes.</li>
+<li><strong>File ▸ Export Library…</strong> writes the whole library as one <code>.orbital</code> file.</li>
+<li><strong>File ▸ Import Note Bundle…</strong> and <strong>Import Library…</strong> bring either back. When a note
+already exists, Orbital asks whether to skip it, replace it, or keep both as copies.
+Replace names the notes it would delete and asks twice.</li>
+</ul>
+<p>A locked note travels sealed inside its bundle and opens only on the Mac that locked it;
+Orbital says so before the save panel. Bundles from elsewhere are treated as untrusted:
+every file&#39;s checksum is verified, and an archive with links, path traversal, or an
+implausible size is refused before anything is extracted.</p>
+<h3 id="print">Print</h3>
+<p>⌘P prints the note with its images and page breaks. PDF export uses the same layout.</p>
+<hr>
+<h2 id="14-storage">14. Storage</h2>
+<p>Settings ▸ Storage shows what your library is made of: recordings, imported originals,
+audio-edit backups, and attachments, plus the ten largest notes with Show in Finder buttons.
+From here you can:</p>
+<ul>
+<li>Set how long audio-edit backups are kept (Forever, 30 days, 7 days), or <strong>Discard All…</strong>
+of them at once.</li>
+<li><strong>Compress</strong> imported lossless audio that predates automatic conversion.</li>
+<li><strong>Show in Finder</strong> for the library folder.</li>
+</ul>
+<p>Snapshots in <code>Backups/</code> share disk blocks with the live notes, so their size overlaps with
+the rest.</p>
+<hr>
+<h2 id="15-plans-purchases-and-usage">15. Plans, purchases, and usage</h2>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Free</th>
+<th>Pro</th>
+<th>Premium</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Price</td>
+<td>$0</td>
+<td>$49 one-time</td>
+<td>$9.99 / month or $79.99 / year</td>
+</tr>
+<tr>
+<td>Notes and notebooks</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+</tr>
+<tr>
+<td>Recording</td>
+<td>120 min / month</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+</tr>
+<tr>
+<td>On-device transcription</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+</tr>
+<tr>
+<td>Full editor, themes, search</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Cloud transcription (ElevenLabs Scribe)</td>
+<td>No</td>
+<td>Your own key</td>
+<td>Built in, 10 h / month, or your key</td>
+</tr>
+<tr>
+<td>Encrypted note locking and hidden notebooks</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Summarize, Key Moments, Action Items, Meeting Minutes, Titles</td>
+<td>No</td>
+<td>Your own key</td>
+<td>Built in, 300 actions / month, or your key</td>
+</tr>
+<tr>
+<td>Chat and @-mention across notes</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>AI Notes (canvas and tab)</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Auto-summarize recordings</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Clean Up Audio</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody></table>
+</div>
+<p>Pro is a one-time purchase; major versions are paid upgrades. Premium is the only
+subscription, because it pays for the AI and transcription Orbital runs on your behalf.
+Premium annual works out to $6.67 a month, and starts with a <strong>3-day free trial</strong> (the monthly
+plan has no trial). The trial includes a smaller allowance for its three days — 2 hours of
+built-in transcription and 30 AI actions — and the full monthly allowance starts when the paid
+subscription does. Cancel at least 24 hours before the trial ends, in your App Store account
+settings, and you are not charged; cancel later than that and the first year may already be
+charged.</p>
+<h3 id="buying-and-restoring">Buying and restoring</h3>
+<p>Settings ▸ Plans (or the ✨ panel&#39;s See Plans button). Prices are the App Store&#39;s, in your
+currency:</p>
+<ul>
+<li><strong>Buy Pro</strong> — a one-time purchase. <strong>Subscribe monthly</strong> / <strong>Subscribe annually</strong> — Premium,
+which renews automatically until you cancel it in your App Store account settings
+(<strong>Manage Subscription</strong> opens them). While your Apple Account can still take the yearly
+plan&#39;s free trial, the annual button reads <strong>Start 3-day free trial</strong>, with the price it
+turns into and the trial&#39;s terms beside it. The monthly button never offers a trial.</li>
+<li><strong>Restore Purchases</strong> brings back what the Apple Account signed into the App Store has
+bought — on a new Mac, or after reinstalling. Purchases belong to that Apple Account.</li>
+<li>While you subscribe, the Plan pane says when Premium renews or expires. If the App Store
+cannot charge your card, Premium keeps working for a grace period while it retries, and
+the pane says so. If Premium ends, you keep Pro if you bought it.</li>
+<li>Built-in transcription and Orbital AI sign in to Orbital&#39;s servers with your App Store
+purchase, automatically. Nothing about you beyond that purchase record is sent.</li>
+</ul>
+<h3 id="usage">Usage</h3>
+<p>Settings ▸ Usage shows the meters that apply to your plan: recording minutes on Free; on
+Premium, live server-side counts of AI actions and transcription hours with their reset
+dates — during the free trial, when the trial ends instead, because the trial&#39;s allowance does
+not reset monthly. If you bring your own AI keys, the tab also keeps a running cost estimate you can
+reset.</p>
+<p>When Premium&#39;s included transcription hours are spent, recordings continue on-device. When
+the 300 AI actions are spent, the panel says so and they reset next month; your own keys, if
+any, keep working. During the free trial the same happens at the trial&#39;s allowance, which
+does not reset until the subscription starts.</p>
+<hr>
+<h2 id="16-updates-and-getting-help">16. Updates and getting help</h2>
+<h3 id="updates">Updates</h3>
+<p>Orbital updates through the Mac App Store. Settings ▸ General shows the version you have.</p>
+<h3 id="help-menu">Help menu</h3>
+<ul>
+<li><strong>Show Onboarding</strong> replays the guided tour on the welcome note.</li>
+<li><strong>Report a Problem…</strong> drafts an email with the app and macOS versions and the last few
+diagnostic labels. You read it before it is sent.</li>
+</ul>
+<p>Support and privacy questions: <a href="mailto:tchaalan23@gmail.com">tchaalan23@gmail.com</a>.</p>
+<hr>
+<h2 id="17-troubleshooting">17. Troubleshooting</h2>
+<p><strong>&quot;No audio input available&quot; or the mic is not detected.</strong> Orbital retries on its own after
+you grant Microphone access; if it still fails, quit and reopen. If macOS is blocking the
+microphone for an updated copy of the app, the error names the exact toggle in System
+Settings ▸ Privacy &amp; Security ▸ Microphone to flip.</p>
+<p><strong>&quot;Nothing to record.&quot;</strong> The microphone is unticked in the input menu and Capture System
+Audio is off. Tick an input or turn on system audio.</p>
+<p><strong>No transcript appears.</strong> Check System Settings ▸ Privacy &amp; Security ▸ Speech Recognition.
+On the automatic path a cloud failure falls back to on-device; a cloud engine you chose
+explicitly shows its error instead. Temporary service hiccups are retried automatically.</p>
+<p><strong>Cloud transcription of a long meeting fails on my network.</strong> Uploads try HTTP/3 first, which
+networks that cut off large transfers cannot interrupt, then fall back. You are never charged
+Premium quota for a transcript you did not receive.</p>
+<p><strong>Clean Up Audio says &quot;Nothing to clean&quot;.</strong> Since 1.5.1 the silence detector follows the
+recording&#39;s own noise floor. If it still finds nothing, the recording has no stretches of
+silence long enough to remove.</p>
+<p><strong>Revert Audio Edits is greyed out.</strong> There is no backup to restore: you chose Keep Audio
+Edits, the retention period passed, or the note was archived. It is also disabled while a
+recording, clean-up, or transcription is running.</p>
+<p><strong>Lock Session is greyed out.</strong> The session is already locked, or a locked note is
+currently recording. Stop the recording first.</p>
+<p><strong>&quot;This month&#39;s included AI actions are used up.&quot;</strong> Premium&#39;s 300 actions reset next month.
+Add your own key in Settings ▸ AI to keep going in the meantime.</p>
+<p><strong>The AI answer names a provider I did not pick.</strong> Fallback re-sent the request after your
+primary failed. Turn off Settings ▸ AI ▸ Fallback to send only to the provider you chose.</p>
+<p><strong>A note written by a newer Orbital.</strong> It opens on an older build instead of disappearing.</p>
+<p><strong>I need to see exactly what happened.</strong> Help ▸ Report a Problem… or open
+<code>~/Library/Containers/com.orbital.mac/Data/Library/Logs/Orbital/diagnostics.log</code>. Files Orbital cannot read are set aside in a
+<code>recovery</code> folder inside the library instead of being deleted.</p>
+<hr>
+<h2 id="18-settings-reference">18. Settings reference</h2>
+<p><strong>General</strong></p>
+<ul>
+<li>Notes list: Sort by (Last edited, Date created, Title), Descending, Date format
+(relative, Short, Long), Archive deleted notes instead of erasing them (on).</li>
+<li>Editor: Show timestamp gutter (on), Highlighter selects by (Word, Character).</li>
+<li>Privacy &amp; storage: Note locking Set / Change Password…, Lock again when the Mac sleeps or
+the screen locks (on), Lock again after (Never, 5, 15, 30 minutes, 1 hour idle).</li>
+<li>About: current version.</li>
+</ul>
+<p><strong>Audio</strong></p>
+<ul>
+<li>Recording: Quality (Space saver, Good, Best), TimeTag offset (−10, −5, −3, −1, 0 s).</li>
+<li>Playback: Skip interval (5, 10, 15, 30, 60 s), Noise reduction and strength, Equalizer
+with Low, Mid, High. Playback-only; recordings on disk are never altered.</li>
+</ul>
+<p><strong>iCloud</strong></p>
+<ul>
+<li>Sync this library with iCloud (off), status and Last synced, Sync Now, Turn Off and Remove
+from iCloud; notes locked on other Macs; the locked-notes sentence.</li>
+</ul>
+<p><strong>Storage</strong></p>
+<ul>
+<li>Library breakdown and the largest notes; Keep audio-edit backups (Forever, 30 days, 7
+days); Discard All audio-edit backups; Compress imported lossless audio; Show library in
+Finder.</li>
+</ul>
+<p><strong>Appearance</strong></p>
+<ul>
+<li>Appearance (System, Dark, Light), Theme (ten), Editor font and size, Reset to System Font.</li>
+</ul>
+<p><strong>Speech</strong></p>
+<ul>
+<li>Transcription: Engine (Apple, ElevenLabs Scribe), ElevenLabs API key (Pro), Transcribe
+recordings automatically (on), Ask which engine when transcribing manually (on).</li>
+<li>Dictation: Put each dictated phrase on its own line (on), Language.</li>
+</ul>
+<p><strong>AI</strong></p>
+<ul>
+<li>Built-in AI status and remaining actions (Premium).</li>
+<li>Provider (OpenAI, Claude, Groq, Google Gemini) and model; Fall back to other configured
+providers when a request fails (on).</li>
+<li>API keys for OpenAI, Claude, Groq, Gemini, with links to each console.</li>
+<li>Automation: Auto-summarize recordings when transcription finishes (Premium, on).</li>
+</ul>
+<p><strong>Plans</strong></p>
+<ul>
+<li>Current plan, App Store prices, Buy Pro, Subscribe monthly / annually, Restore Purchases,
+Manage Subscription, the subscription status, Terms of Use and Privacy Policy.</li>
+</ul>
+<p><strong>Usage</strong></p>
+<ul>
+<li>Recording minutes (Free), Orbital AI actions and transcription hours with reset dates
+(Premium), bring-your-own-key cost estimate and Reset.</li>
+</ul>
+<hr>
+<h2 id="19-keyboard-shortcuts">19. Keyboard shortcuts</h2>
+<h3 id="notes-and-files">Notes and files</h3>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>⌘N</td>
+<td>New Note</td>
+</tr>
+<tr>
+<td>⌘⇧N</td>
+<td>New Notebook</td>
+</tr>
+<tr>
+<td>⌘⇧D</td>
+<td>Duplicate Note</td>
+</tr>
+<tr>
+<td>⌘⇧I</td>
+<td>Import Audio…</td>
+</tr>
+<tr>
+<td>⌘⇧A</td>
+<td>Attach Files…</td>
+</tr>
+<tr>
+<td>⌘⇧E</td>
+<td>Export…</td>
+</tr>
+<tr>
+<td>⌘P</td>
+<td>Print…</td>
+</tr>
+<tr>
+<td>⌘F</td>
+<td>Find in note</td>
+</tr>
+<tr>
+<td>⌘,</td>
+<td>Settings</td>
+</tr>
+</tbody></table>
+</div>
+<h3 id="view">View</h3>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>⌘+ / ⌘− / ⌘0</td>
+<td>Zoom in / out / actual size</td>
+</tr>
+<tr>
+<td>⌥⌘S</td>
+<td>Show or hide the notebooks sidebar</td>
+</tr>
+<tr>
+<td>⌥⌘L</td>
+<td>Show or hide the note list</td>
+</tr>
+<tr>
+<td>⌃⌘F</td>
+<td>Focus Mode</td>
+</tr>
+<tr>
+<td>⌘⇧T</td>
+<td>Show or hide the transcript</td>
+</tr>
+</tbody></table>
+</div>
+<h3 id="note-and-audio">Note and audio</h3>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>⌘T</td>
+<td>Insert TimeTag</td>
+</tr>
+<tr>
+<td>⌘&#39;</td>
+<td>Set Timestamp on the selected paragraphs</td>
+</tr>
+<tr>
+<td>⌃⌘L</td>
+<td>Lock Session</td>
+</tr>
+<tr>
+<td>⌘R</td>
+<td>Record / Stop Recording</td>
+</tr>
+<tr>
+<td>⌘↩</td>
+<td>Play / Pause</td>
+</tr>
+<tr>
+<td>⌥⌘→ / ⌥⌘←</td>
+<td>Skip forward / backward by the skip interval</td>
+</tr>
+<tr>
+<td>⌥⇧⌘→ / ⌥⇧⌘←</td>
+<td>Forward / back 3 seconds</td>
+</tr>
+</tbody></table>
+</div>
+<h3 id="formatting">Formatting</h3>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>⌥⌘1 / ⌥⌘2 / ⌥⌘0</td>
+<td>Header Large / Header Medium / Body</td>
+</tr>
+<tr>
+<td>⌘B / ⌘I / ⌘U</td>
+<td>Bold / Italic / Underline</td>
+</tr>
+<tr>
+<td>⌘] / ⌘[</td>
+<td>Increase / Decrease indent</td>
+</tr>
+<tr>
+<td>⌘⇧H</td>
+<td>Highlighter</td>
+</tr>
+</tbody></table>
+</div>
+<p>Plain ⌘← and ⌘→ stay with the text editor (line start and end), as everywhere else on Mac,
+which is why the audio skips use ⌥.</p>
+<hr>
+<h2 id="20-how-orbital-compares-to-other-audio-note-apps">20. How Orbital compares to other audio note apps</h2>
+<p>This section compares Orbital with twelve other apps people use to take notes from
+audio. It is meant to help you decide whether Orbital is the right tool, not to sell it,
+so each entry lists what the other app has that Orbital does not, as well as the reverse.</p>
+<p><strong>How to read it.</strong> Facts were checked against each vendor&#39;s own pricing or support pages
+on September 15, 2026, or against 2026 third-party reviews where a vendor page could not be
+reached. Anything marked <em>unverified</em> could not be confirmed from a fetched page and should
+be checked before you rely on it. Prices are US dollars unless stated, exclude tax, and
+change often. Feature lists are not exhaustive.</p>
+<h3 id="where-orbital-sits">Where Orbital sits</h3>
+<p>These apps fall into four groups, and the right comparison depends on which one you need:</p>
+<ul>
+<li><strong>Timestamped note-takers</strong> tie what you write during a recording to the audio so you
+can click back to the moment. Orbital, Notability, Noted, AudioNote 2, Goodnotes, and
+OneNote are in this group.</li>
+<li><strong>Meeting recorders</strong> capture calls, transcribe them in the cloud, and produce AI
+summaries. Otter.ai, Granola, Notion AI Meeting Notes, and Fathom are built for this.
+Some of them do not keep the audio at all.</li>
+<li><strong>Transcription utilities</strong> turn audio into text and stop there. MacWhisper is the
+Mac-native example.</li>
+<li><strong>General note apps with audio</strong> record and transcribe as one feature among many. Apple
+Notes and Evernote fit here. Genio Notes (formerly Glean) is a student-focused variant.</li>
+</ul>
+<h3 id="what-orbital-does-not-do">What Orbital does not do</h3>
+<p>Read this list first. If any item is a requirement for you, another app on this page will
+serve you better.</p>
+<ul>
+<li><strong>Mac only.</strong> There is no iPhone, iPad, Windows, Android, or web app, and no sync
+between Macs. Notes move between Macs by exporting and importing bundles. Every other app
+here except MacWhisper and AudioNote 2&#39;s Mac edition runs on at least one more platform.</li>
+<li><strong>No handwriting.</strong> Notability, Goodnotes, AudioNote 2, and OneNote replay pen strokes in
+sync with audio. Orbital is typed text only.</li>
+<li><strong>No collaboration or sharing.</strong> No shared notebooks, comments, team spaces, or links.</li>
+<li><strong>No calendar integration, meeting bot, or video.</strong> Orbital records whatever your Mac
+plays when you press Record; it does not join calls for you, know your schedule, or
+record video.</li>
+<li><strong>On-device transcription is Apple&#39;s.</strong> It supports the languages macOS speech recognition
+supports, and it does not label speakers. Speaker labels and 90-language auto-detection
+require the ElevenLabs cloud engine (your key on Pro, built in on Premium). MacWhisper does
+speaker labels and 100+ languages locally.</li>
+<li><strong>Live transcription is on-device only.</strong> Cloud transcription runs after a recording
+stops, not while it runs.</li>
+<li><strong>AI on Pro needs your own API keys.</strong> Creating keys at OpenAI, Anthropic, Groq, or Google
+is a setup step most apps here do not ask of you. Premium removes it.</li>
+<li><strong>The free plan caps recording</strong> at 120 minutes a month. Apple Notes and Fathom record for
+free without a cap; Otter&#39;s free tier allows 300 minutes a month.</li>
+<li><strong>Mac only, through the App Store.</strong> Purchases are App Store in-app purchases; there is
+no iPhone or iPad app yet.</li>
+<li><strong>Built by one developer.</strong> The privacy policy says so plainly. There is no support team
+or status page. The larger products have both.</li>
+</ul>
+<h3 id="what-orbital-does-that-most-of-these-do-not">What Orbital does that most of these do not</h3>
+<ul>
+<li><strong>Typed notes stamped to audio, automatically.</strong> Verified in Notability, Noted, AudioNote 2,
+and OneNote as well. Apple Notes, Otter, MacWhisper, and Fathom make only the transcript
+clickable. Granola and Notion keep no audio to click back to.</li>
+<li><strong>Local by default, with no account.</strong> Only MacWhisper and AudioNote 2 also keep data on
+your Mac by default. Every other app centres on a cloud account.</li>
+<li><strong>Encrypted notes.</strong> Locked notes, including their recordings and attachments, are
+AES-GCM encrypted on disk under a password only you hold. None of the other apps here
+advertise encryption of audio notes at rest under a user-held key (Apple Notes and Evernote
+offer note locking; details were not re-verified).</li>
+<li><strong>Bring your own AI key.</strong> Among these apps, only MacWhisper also lets you point the AI at
+your own OpenAI, Anthropic, Groq, or Google key. The note-taking apps all bundle AI into a
+subscription.</li>
+<li><strong>One-time purchase that includes AI.</strong> Notability Classic ($49.99) and AudioNote 2
+($14.99) are one-time but exclude AI and cloud transcription. Noted&#39;s $59.99 lifetime
+includes transcription. MacWhisper Pro (€64) includes AI with your own key but is not a
+notes app.</li>
+<li><strong>System-audio capture without a bot.</strong> Shared with Granola, MacWhisper Pro, Notion, and
+Fathom&#39;s beta. Not offered by Notability, Noted, AudioNote 2, Goodnotes, Apple Notes, or
+OneNote on Mac.</li>
+<li><strong>Audio editing that keeps timestamps in sync.</strong> Trim, delete, and clean-up remap every
+stamp, tag, and transcript line. No other app here advertises this.</li>
+</ul>
+<h3 id="feature-matrix">Feature matrix</h3>
+<div class="table-wrap table-wrap--wide" tabindex="0">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Orbital</th>
+<th>Notability</th>
+<th>Noted</th>
+<th>Apple Notes</th>
+<th>OneNote</th>
+<th>Otter.ai</th>
+<th>Granola</th>
+<th>Genio Notes</th>
+<th>AudioNote 2</th>
+<th>MacWhisper</th>
+<th>Evernote</th>
+<th>Goodnotes</th>
+<th>Notion AI Meeting Notes</th>
+<th>Fathom</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mac app</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Web; desktop unverified</td>
+</tr>
+<tr>
+<td>iPhone / iPad</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>iPhone</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Unverified</td>
+<td>Unverified</td>
+</tr>
+<tr>
+<td>Windows / Android / web</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Web (partial)</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Win, Android</td>
+<td>Yes</td>
+<td>Win unverified</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Win</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>Typed notes tied to audio</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes (#TimeTags)</td>
+<td>Transcript only</td>
+<td>Yes</td>
+<td>Transcript only</td>
+<td>No audio kept</td>
+<td>Partial, unverified</td>
+<td>Yes</td>
+<td>Transcript only</td>
+<td>No</td>
+<td>Handwriting yes; typed unverified</td>
+<td>No audio kept</td>
+<td>Transcript only</td>
+</tr>
+<tr>
+<td>Handwriting tied to audio</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>Yes (Windows)</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Transcription runs</td>
+<td>On-device; cloud optional</td>
+<td>Unverified</td>
+<td>Unverified</td>
+<td>On-device (implied)</td>
+<td>Cloud, Windows only</td>
+<td>Cloud</td>
+<td>Cloud</td>
+<td>Unverified</td>
+<td>On-device</td>
+<td>On-device; cloud optional</td>
+<td>Cloud</td>
+<td>On-device; cloud optional</td>
+<td>Cloud</td>
+<td>Cloud</td>
+</tr>
+<tr>
+<td>Live transcription</td>
+<td>Yes (on-device)</td>
+<td>Pro tier</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Windows</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Institutional only</td>
+<td>Yes</td>
+<td>Yes (Pro)</td>
+<td>Meeting mode</td>
+<td>Unverified</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Speaker labels</td>
+<td>Cloud engine</td>
+<td>Unverified</td>
+<td>Yes (v7.0)</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Me / Them</td>
+<td>Unverified</td>
+<td>No</td>
+<td>Yes (Pro, Apple silicon)</td>
+<td>Yes</td>
+<td>Unverified</td>
+<td>Yes</td>
+<td>Unverified</td>
+</tr>
+<tr>
+<td>Languages</td>
+<td>~90 (cloud); Apple&#39;s list (on-device)</td>
+<td>Unverified</td>
+<td>18</td>
+<td>14</td>
+<td>80+</td>
+<td>6</td>
+<td>Multi, unverified</td>
+<td>Multi</td>
+<td>Dozens</td>
+<td>100+</td>
+<td>50+</td>
+<td>Multi</td>
+<td>Unverified</td>
+<td>Unverified</td>
+</tr>
+<tr>
+<td>AI summaries / chat</td>
+<td>Yes (Pro key or Premium)</td>
+<td>Yes (tiered)</td>
+<td>Siri, Assistant IAP</td>
+<td>Summaries</td>
+<td>Copilot</td>
+<td>Yes (paid)</td>
+<td>Yes</td>
+<td>Quiz, outline</td>
+<td>None</td>
+<td>Yes (Pro)</td>
+<td>Yes (paid)</td>
+<td>Yes (AI Pass)</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Bring your own AI key</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>n/a</td>
+<td>Yes, incl. local models</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Keeps the audio</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Unverified</td>
+<td>Yes (video)</td>
+</tr>
+<tr>
+<td>System audio on Mac, no bot</td>
+<td>Yes</td>
+<td>Unverified</td>
+<td>Unverified</td>
+<td>Phone/FaceTime only</td>
+<td>No</td>
+<td>Unverified</td>
+<td>Yes</td>
+<td>Unverified</td>
+<td>Unverified</td>
+<td>Yes (Pro)</td>
+<td>Unverified</td>
+<td>Unverified</td>
+<td>Yes</td>
+<td>Beta</td>
+</tr>
+<tr>
+<td>Local-only storage by default</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>Local + iCloud</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Encrypted notes, user-held key</td>
+<td>Yes</td>
+<td>Unverified</td>
+<td>Unverified</td>
+<td>Locked notes</td>
+<td>Section passwords</td>
+<td>No</td>
+<td>No</td>
+<td>Unverified</td>
+<td>No</td>
+<td>n/a</td>
+<td>Text encryption</td>
+<td>Unverified</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Works offline</td>
+<td>Yes, except cloud features</td>
+<td>Notes yes; AI unverified</td>
+<td>Recording yes</td>
+<td>Yes</td>
+<td>Notes yes; transcription no</td>
+<td>No</td>
+<td>No</td>
+<td>30 days</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Notes cached</td>
+<td>Notes yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Audio editing keeps timestamps</td>
+<td>Yes</td>
+<td>No</td>
+<td>Skip silences on playback</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>n/a</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>n/a</td>
+<td>Clips</td>
+</tr>
+</tbody></table>
+</div>
+<h3 id="pricing-at-a-glance">Pricing at a glance</h3>
+<div class="table-wrap" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>App</th>
+<th>Free tier</th>
+<th>Paid</th>
+<th>Model</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Orbital</td>
+<td>Unlimited notes; 120 recording min/month; unlimited on-device transcription</td>
+<td>Pro $49 once; Premium $9.99/month or $79.99/year</td>
+<td>One-time plus optional subscription</td>
+</tr>
+<tr>
+<td>Notability</td>
+<td>5 notes</td>
+<td>Lite $14.99/yr; Plus $19.99/yr; Pro $99.99/yr; Classic $49.99 once (no transcription or AI)</td>
+<td>Subscription; one-time for the classic feature set</td>
+</tr>
+<tr>
+<td>Noted</td>
+<td>Basic tier</td>
+<td>$9.99/month; $49.99/yr; $59.99 lifetime</td>
+<td>Subscription or lifetime</td>
+</tr>
+<tr>
+<td>Apple Notes / Voice Memos</td>
+<td>Everything</td>
+<td>None</td>
+<td>Free with macOS 15+ (Apple silicon for transcription)</td>
+</tr>
+<tr>
+<td>OneNote</td>
+<td>The app</td>
+<td>Transcribe needs Microsoft 365; 300 upload min/month</td>
+<td>Subscription</td>
+</tr>
+<tr>
+<td>Otter.ai</td>
+<td>300 min/month, 30 min per conversation</td>
+<td>Pro $8.33/month annual ($16.99 monthly); Business $19.99/month annual</td>
+<td>Subscription</td>
+</tr>
+<tr>
+<td>Granola</td>
+<td>Limited meeting history</td>
+<td>Business $14/user/month; Enterprise $35/user/month</td>
+<td>Subscription</td>
+</tr>
+<tr>
+<td>Genio Notes</td>
+<td>30-day trial</td>
+<td>From £12/month; £144/yr</td>
+<td>Subscription</td>
+</tr>
+<tr>
+<td>AudioNote 2</td>
+<td>Lite (Mac); iOS app free</td>
+<td>Mac $14.99 once; iOS Pro $9.99/yr</td>
+<td>One-time (Mac)</td>
+</tr>
+<tr>
+<td>MacWhisper</td>
+<td>Free tier</td>
+<td>Pro €64 once, lifetime updates</td>
+<td>One-time</td>
+</tr>
+<tr>
+<td>Evernote</td>
+<td>50 notes, 1 device</td>
+<td>Starter about $99/yr; Advanced about $249.99/yr (third-party figures)</td>
+<td>Subscription</td>
+</tr>
+<tr>
+<td>Goodnotes</td>
+<td>Limited</td>
+<td>Essential $11.99/yr; Pro $35.99/yr; AI Pass $9.99/month or $119.88/yr (third-party figures)</td>
+<td>Subscription</td>
+</tr>
+<tr>
+<td>Notion AI Meeting Notes</td>
+<td>Limited trial on Free and Plus</td>
+<td>Business $20/member/month for full use</td>
+<td>Subscription</td>
+</tr>
+<tr>
+<td>Fathom</td>
+<td>Unlimited recordings and transcriptions</td>
+<td>Premium $16/month annual ($20 monthly); Team $15/user/month annual; Business $25</td>
+<td>Free core; subscription for AI extras</td>
+</tr>
+</tbody></table>
+</div>
+<h3 id="app-by-app">App by app</h3>
+<h4 id="notability">Notability</h4>
+<p>Notability is the closest match to Orbital&#39;s core idea on Apple platforms, with the addition
+of handwriting.</p>
+<ul>
+<li><strong>Has that Orbital lacks:</strong> iPad, iPhone, and Vision Pro apps with sync through Notability
+Cloud and iCloud; Apple Pencil handwriting replayed in sync with audio; PDF annotation;
+AI flashcards, quizzes, and YouTube import; collaboration and a business tier.</li>
+<li><strong>Orbital has that it lacks:</strong> a free tier not capped at 5 notes; a one-time price that
+includes transcription and AI (Notability Classic excludes both); your own AI key;
+encrypted notes; system-audio capture; on-device transcription that is stated as such.</li>
+<li><strong>Unverified:</strong> whether transcription runs on-device or in the cloud; speaker labels;
+export formats. Notability&#39;s support site could not be fetched.</li>
+<li><strong>Sources:</strong> <a href="https://apps.apple.com/us/app/notability-notes-pdf/id360593530">App Store</a>,
+<a href="https://notability.com/pricing">notability.com/pricing</a>.</li>
+</ul>
+<h4 id="noted">Noted</h4>
+<p>Noted&#39;s #TimeTags are the same idea as Orbital&#39;s TimeTags, and it is the only other app here
+with a lifetime license that includes transcription.</p>
+<ul>
+<li><strong>Has that Orbital lacks:</strong> iPhone, iPad, Apple Watch, and Vision apps with iCloud sync;
+Siri integration; transcription of imported video; a lifetime license at $59.99.</li>
+<li><strong>Orbital has that it lacks:</strong> automatic paragraph timestamps without pressing anything;
+your own AI key; encrypted notes; audio editing that keeps timestamps in sync; a stated
+local-only posture; system-audio capture.</li>
+<li><strong>Unverified:</strong> on-device versus cloud transcription; note encryption; system audio.
+Speaker identification arrived in version 7.0 in September 2026.</li>
+<li><strong>Sources:</strong> <a href="https://apps.apple.com/us/app/noted-record-ai-transcribe/id1149425482">App Store</a>,
+<a href="https://www.digitalworkroom.co.uk/works/noted">digitalworkroom.co.uk</a>.</li>
+</ul>
+<h4 id="apple-notes-and-voice-memos">Apple Notes and Voice Memos</h4>
+<p>Free, built in, and the baseline any Mac user should compare against.</p>
+<ul>
+<li><strong>Has that Orbital lacks:</strong> no cost; every Apple device with iCloud sync; iPhone call
+recording, and on macOS Tahoe, Phone-app call recording with transcripts saved to Notes;
+Apple Intelligence summaries with no key; Markdown import and export.</li>
+<li><strong>Orbital has that it lacks:</strong> timestamps on the notes you type, not just the transcript;
+speaker labels; 90-language cloud transcription; a chat assistant and your choice of AI
+provider; system-audio capture for any app, not just calls; audio editing; export to SRT,
+PDF, and bundles.</li>
+<li><strong>Limits to know:</strong> transcription needs macOS 15 or later on Apple silicon, supports about
+14 languages, and is not available in every region.</li>
+<li><strong>Sources:</strong> <a href="https://support.apple.com/guide/notes/record-and-transcribe-audio-apdb5106e334/mac">Record and transcribe audio in Notes</a>,
+<a href="https://support.apple.com/guide/voice-memos/view-a-transcription-of-a-recording-vm4a03609f0d/mac">Voice Memos transcription</a>,
+<a href="https://support.apple.com/en-us/121583">Call recording</a>.</li>
+</ul>
+<h4 id="microsoft-onenote">Microsoft OneNote</h4>
+<p>OneNote has linked audio notes on both Windows and Mac, but its transcription is Windows only.</p>
+<ul>
+<li><strong>Has that Orbital lacks:</strong> Windows, Android, and web; the Microsoft 365 ecosystem; 80+
+transcript languages with speaker labels; ink linked to audio on Windows; enterprise
+administration.</li>
+<li><strong>Orbital has that it lacks:</strong> any transcription on the Mac client; local storage; a
+one-time price; your own AI key; encrypted notes; unlimited transcription (OneNote&#39;s cap
+is 300 uploaded minutes a month on a standard Microsoft 365 plan).</li>
+<li><strong>Sources:</strong> <a href="https://support.microsoft.com/en-us/word/transcribe-your-recordings">Transcribe your recordings</a>,
+<a href="https://support.microsoft.com/en-us/onenote/onenote-help-and-learning/record-audio-or-video-notes">Record audio or video notes</a>.</li>
+</ul>
+<h4 id="otterai">Otter.ai</h4>
+<p>A cloud meeting service rather than a notes app.</p>
+<ul>
+<li><strong>Has that Orbital lacks:</strong> a bot that joins Zoom, Teams, and Meet; calendar integration;
+web, iOS, and Android; team sharing; 300 free minutes a month.</li>
+<li><strong>Orbital has that it lacks:</strong> typed notes tied to audio; local storage and offline use;
+encryption under your key; a one-time price; your own AI key; more than six transcript
+languages; no per-conversation length cap (Otter&#39;s free tier stops at 30 minutes).</li>
+<li><strong>Sources:</strong> <a href="https://otter.ai/pricing">otter.ai/pricing</a>.</li>
+</ul>
+<h4 id="granola">Granola</h4>
+<p>Granola captures system audio on Mac without a bot, like Orbital, but keeps only the
+transcript.</p>
+<ul>
+<li><strong>Has that Orbital lacks:</strong> Windows, iPhone, and Android; calendar-aware meeting flow;
+team Spaces; integrations with Notion, Slack, HubSpot, and others; an API and MCP server;
+the fact that no audio is ever stored, which some compliance teams prefer.</li>
+<li><strong>Orbital has that it lacks:</strong> the recording itself, and therefore any way to replay a
+moment; timestamps into audio; import of existing files; local-only storage; a one-time
+price; your own AI key; named speakers without a Zoom or Meet setup (Granola labels
+&quot;Me&quot; and &quot;Them&quot;).</li>
+<li><strong>Sources:</strong> <a href="https://www.granola.ai/pricing">granola.ai/pricing</a>,
+<a href="https://docs.granola.ai/help-center/taking-notes/transcription">Granola transcription docs</a>.</li>
+</ul>
+<h4 id="genio-notes-formerly-glean-formerly-sonocent">Genio Notes (formerly Glean, formerly Sonocent)</h4>
+<p>Built for students and disability-support offices; glean.co now redirects to genio.co.</p>
+<ul>
+<li><strong>Has that Orbital lacks:</strong> web, Windows, Chromebook, iOS, and Android; institutional
+licensing; study tools (AI quiz, outline); live captions on institutional plans; 30 days of
+offline use with sync.</li>
+<li><strong>Orbital has that it lacks:</strong> a one-time price (Genio is from £12 a month); local-only
+storage; your own AI key; encrypted notes; live captions on an individual plan.</li>
+<li><strong>Unverified:</strong> whether free text is time-linked to audio; on-device transcription;
+speaker labels; export formats.</li>
+<li><strong>Sources:</strong> <a href="https://genio.co/pricing/individuals">genio.co/pricing/individuals</a>.</li>
+</ul>
+<h4 id="audionote-2">AudioNote 2</h4>
+<p>The cheapest one-time option, with on-device transcription and handwriting.</p>
+<ul>
+<li><strong>Has that Orbital lacks:</strong> iPhone and iPad with iCloud or Dropbox sync; handwriting,
+drawing, and PDF-slide annotation tied to audio; a $14.99 one-time price.</li>
+<li><strong>Orbital has that it lacks:</strong> any AI features; speaker labels; cloud transcription;
+encrypted notes; system-audio capture; audio editing; active development (the Mac app&#39;s
+last update was version 9.1 in March 2025, and recent reviews report recording failures).</li>
+<li><strong>Sources:</strong> <a href="https://apps.apple.com/us/app/audionote-2-voice-recorder/id1136796093?mt=12">Mac App Store</a>,
+<a href="https://luminantsoftware.com/apps/audionote-notepad-and-voice-recorder/">luminantsoftware.com</a>.</li>
+</ul>
+<h4 id="macwhisper">MacWhisper</h4>
+<p>A transcription utility, not a note-taker, but the closest to Orbital in privacy posture.</p>
+<ul>
+<li><strong>Has that Orbital lacks:</strong> local Whisper-family models in 100+ languages; speaker
+recognition on-device; batch and YouTube transcription; VTT, DOCX, and HTML export;
+AI with your own key from a longer list of providers, including local models through
+Ollama and LM Studio; system-wide dictation.</li>
+<li><strong>Orbital has that it lacks:</strong> a note library and editor; typed notes tied to audio;
+encrypted notes; a built-in AI tier that needs no key.</li>
+<li><strong>Sources:</strong> <a href="https://macwhisper.com/">macwhisper.com</a>.</li>
+</ul>
+<h4 id="evernote">Evernote</h4>
+<p>A general note app with cloud transcription added.</p>
+<ul>
+<li><strong>Has that Orbital lacks:</strong> every platform with sync; a web clipper; Slack and Teams
+integrations; 50+ transcript languages with speaker labels; document OCR search.</li>
+<li><strong>Orbital has that it lacks:</strong> notes tied to audio time; local storage; a free tier beyond
+50 notes on one device; a one-time price; your own AI key; per-recording limits (Evernote&#39;s
+pages disagree between 60 minutes and 2 hours per recording).</li>
+<li><strong>Sources:</strong> <a href="https://evernote.com/compare-plans">evernote.com/compare-plans</a>,
+<a href="https://evernote.com/ai-transcribe">evernote.com/ai-transcribe</a>. Paid prices are
+third-party figures.</li>
+</ul>
+<h4 id="goodnotes">Goodnotes</h4>
+<p>Handwriting-first, with audio replay and an on-device transcription model.</p>
+<ul>
+<li><strong>Has that Orbital lacks:</strong> iPad, iPhone, Windows, Android, and web; handwriting with tap-
+to-replay; PDF annotation; an infinite canvas; collaboration.</li>
+<li><strong>Orbital has that it lacks:</strong> AI without a separate $9.99-a-month pass; your own AI key;
+encrypted notes; system-audio capture; audio editing.</li>
+<li><strong>Unverified:</strong> typed-text linking to audio; speaker labels; exact plan prices (Goodnotes&#39;
+plan page could not be fetched).</li>
+<li><strong>Sources:</strong> <a href="https://www.goodnotes.com/features/audio-recording">goodnotes.com/features/audio-recording</a>.</li>
+</ul>
+<h4 id="notion-ai-meeting-notes">Notion AI Meeting Notes</h4>
+<p>Meeting capture inside the Notion desktop app, bot-free.</p>
+<ul>
+<li><strong>Has that Orbital lacks:</strong> a full workspace around the notes; team sharing; calendar
+sync; retention controls, SSO, and SOC 2; Windows and web.</li>
+<li><strong>Orbital has that it lacks:</strong> audio you can replay and timestamps into it; local storage
+and offline use; a one-time price; your own AI key; full use below the $20-per-member
+Business plan.</li>
+<li><strong>Sources:</strong> <a href="https://www.notion.com/product/ai-meeting-notes">notion.com/product/ai-meeting-notes</a>,
+<a href="https://www.notion.com/pricing">notion.com/pricing</a>.</li>
+</ul>
+<h4 id="fathom">Fathom</h4>
+<p>The meeting-bot category, with the most generous free tier on this page.</p>
+<ul>
+<li><strong>Has that Orbital lacks:</strong> unlimited free recordings and transcriptions of video calls; a
+bot that joins automatically; video; clips and playlists; CRM sync on team plans.</li>
+<li><strong>Orbital has that it lacks:</strong> in-person and dictation use (Fathom is call-centric); typed
+notes tied to audio; local storage; encryption under your key; your own AI key.</li>
+<li><strong>Sources:</strong> <a href="https://fathom.ai/pricing">fathom.ai/pricing</a>.</li>
+</ul>
+<h3 id="choosing">Choosing</h3>
+<ul>
+<li>You want to type during lectures or interviews and click back to the moment, on a Mac,
+with your data staying local: Orbital, or AudioNote 2 if you do not need AI.</li>
+<li>You want the same on an iPad with a pen: Notability or Goodnotes.</li>
+<li>You want the same on iPhone with sync and a lifetime price: Noted.</li>
+<li>You want meetings recorded automatically with summaries shared to a team: Otter, Fathom,
+Granola, or Notion, depending on which workspace you already live in.</li>
+<li>You want the best local transcription on a Mac and do not need a notes editor: MacWhisper.</li>
+<li>You want something free that is already installed: Apple Notes, if an Apple silicon Mac on
+macOS 15 or later and no typed-note timestamps are acceptable.</li>
+</ul>
+<hr>
+<h2 id="21-glossary">21. Glossary</h2>
+<ul>
+<li><strong>Gutter timestamp.</strong> The <code>0:00:09</code> stamp beside a paragraph, added automatically when
+you type while recording or playing. Click to seek.</li>
+<li><strong>TimeTag.</strong> A named marker (<code>#Decision</code>) dropped at a moment with ⌘T. Shows as a pill in
+the note and a dot on the timeline.</li>
+<li><strong>Segment.</strong> One recording or import. A note&#39;s segments play as a single timeline.</li>
+<li><strong>Session.</strong> In the AI Notes tab, any note with a transcript.</li>
+<li><strong>On-device transcription.</strong> Apple&#39;s Speech framework running on your Mac when possible,
+with Apple&#39;s servers as a fallback.</li>
+<li><strong>Scribe.</strong> ElevenLabs&#39; cloud transcription model, used for speaker labels and
+multilingual audio.</li>
+<li><strong>Orbital AI.</strong> The built-in, no-keys AI on Premium, metered at 300 actions a month.</li>
+<li><strong>BYOK.</strong> Bring your own key: using your own OpenAI, Claude, Groq, Gemini, or ElevenLabs
+API key on Pro.</li>
+<li><strong>Locked note.</strong> A note encrypted on disk under your lock password.</li>
+<li><strong>Hidden notebook.</strong> A notebook hidden in the app behind the same password, without
+encryption.</li>
+<li><strong>Bundle.</strong> A <code>.orbitalnote</code> (one note) or <code>.orbital</code> (whole library) file for moving
+notes between Macs.</li>
+<li><strong>Session lock.</strong> Forgetting the lock password until it is entered again: Note ▸ Lock
+Session, sleep, screen lock, or the idle timer.</li>
+</ul>
+
+</article>
+<p class="back-to-top"><a href="#top">Back to top</a></p>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap site-footer-inner">
+        <nav class="footer-nav" aria-label="Orbital Notes">
+        <a href="/orbital/privacy">Privacy</a>
+        <a href="/orbital/terms">Terms</a>
+        <a href="/orbital/support">Support</a>
+        <a href="/orbital/guide" aria-current="page">User Guide</a>
+        </nav>
+        <p class="copyright">&copy; 2026 Tarek Chaalan</p>
+      </div>
+    </footer>
+  </body>
+</html>

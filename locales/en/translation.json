@@ -105,33 +105,5 @@
       "Resume": "Resume",
       "Contact": "Contact"
     }
-  },
-  "orbital": {
-    "OrbitalDownloadsjs": {
-      "forMacOS": "for macOS",
-      "subtitle": "Early builds, shared by invitation. Pick the version that matches your Mac.",
-      "requestKey": "Request a key via",
-      "requestEmail": "email",
-      "requestOr": "or",
-      "siliconTagline": "For Macs with an M-series chip (M1 or later)",
-      "intelTagline": "For Intel-based Macs",
-      "download": "Download",
-      "versionLabel": "Version",
-      "latestTag": "Latest",
-      "changelogTitle": "Changelog",
-      "installThisVersion": "Install this version",
-      "helpTitle": "Which one do I need?",
-      "help1a": "Open the Apple menu",
-      "help1b": "in the top-left corner of your screen and choose",
-      "helpAboutMac": "About This Mac",
-      "help2a": "If it lists a chip like",
-      "helpChip": "Apple M1",
-      "help2b": "(or M2, M3, M4…), download the Apple Silicon version.",
-      "help3": "If it lists an Intel processor, download the Intel version.",
-      "gatekeeper1": "If macOS warns that it can’t verify the app on first launch, right-click",
-      "gatekeeper2": "and choose",
-      "gatekeeperOpen": "Open",
-      "gatekeeper3": ", then confirm."
-    }
   }
 }
